@@ -4,7 +4,7 @@ type EnvironmentValue<T> = T | {
     nonProduction: T
 }
 
-type Translations = {
+interface Translations {
     header: string,
     description: string,
     linkText: string,

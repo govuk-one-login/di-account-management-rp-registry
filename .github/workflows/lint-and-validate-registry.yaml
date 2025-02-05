@@ -7,7 +7,12 @@ on:
         required: false
         type: string
         default: ${{ github.ref }}
+  push:
+    branches:
+      - main
   pull_request:
+    branches:
+      - main
 
 jobs:
   lint_and_test:

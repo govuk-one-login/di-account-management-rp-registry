@@ -18,11 +18,7 @@ export default [
   ...tsEslint.configs.recommended,
   ...tsEslint.configs.stylistic,
   {
-    ignores: [
-      "*.d.ts",
-      "node_modules",
-      "dist"
-    ],
+    ignores: ["*.d.ts", "node_modules", "dist", "scripts"],
   },
   {
     rules: {

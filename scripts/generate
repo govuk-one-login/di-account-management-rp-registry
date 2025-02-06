@@ -1,0 +1,174 @@
+#!/usr/bin/env bun
+import { writeFileSync, readFileSync } from "fs";
+import { Client } from "../interfaces/client.interface";
+import {
+  getAllowedAccountListClientIDs,
+  clientsToShowInSearchProd,
+  hmrcClientIds,
+  rsaAllowList,
+} from "../../di-account-management-frontend/src/config";
+
+interface Translation {
+  header: string;
+  description?: string;
+  link_text: string;
+  link_href: string;
+}
+
+interface IDs {
+  production: string;
+  integration: string;
+  nonProduction: string;
+}
+
+const en = JSON.parse(
+  readFileSync(
+    "../../di-account-management-frontend/src/locales/en/translation.json",
+    "utf8",
+  ),
+);
+const cy = JSON.parse(
+  readFileSync(
+    "../../di-account-management-frontend/src/locales/cy/translation.json",
+    "utf8",
+  ),
+);
+const template = `import { Client } from "../interfaces/client.interface";
+
+const {{name}}: Client = {{data}} 
+
+export default {{name}}`;
+
+function findMatchingClientId(header: string, env: string) {
+  //assume that all clients have the same header in all environments
+  //we can use that to find the client id in the other environments
+  const id = Object.keys(en.clientRegistry[env]).find((id: string) => {
+    return en.clientRegistry[env][id].header === header;
+  });
+
+  if (!id) {
+    // eslint-disable-next-line no-console
+    console.warn(`Could not find a matching client id for ${header} in ${env}`);
+  }
+
+  return id;
+}
+
+function generateLinkObject(
+  ids: IDs,
+  language: "en" | "cy",
+): Client["translations"]["en"]["linkUrl"] | string {
+  const translations = language === "en" ? en : cy;
+  const object = {
+    nonProduction:
+      translations.clientRegistry.staging[ids.nonProduction].link_href,
+    integration:
+      translations.clientRegistry.integration[ids.integration].link_href,
+    production:
+      translations.clientRegistry.production[ids.production].link_href,
+  };
+
+  if (
+    object.production === object.integration &&
+    object.integration === object.nonProduction
+  ) {
+    return object.production;
+  }
+
+  return object;
+}
+
+function transformTranslate(
+  client: Translation,
+  language: "en" | "cy",
+  ids: IDs,
+): Client["translations"]["en"] {
+  return {
+    header: client.header,
+    description: client.description,
+    linkText: client.link_text,
+    linkUrl: generateLinkObject(ids, language),
+  };
+}
+
+const enClients = Object.keys(en.clientRegistry.production).map(
+  (productionId) => {
+    const entryEn = en.clientRegistry.production[productionId];
+    const entryCy = cy.clientRegistry.production[productionId];
+
+    const intId =
+      findMatchingClientId(entryEn.header, "integration") || productionId;
+    const nonProdId =
+      findMatchingClientId(entryEn.header, "staging") || productionId;
+
+    // if the headers are different, assume the cy entry is in Welsh
+    // and the client is available in Welsh
+    const isAvailableInWelsh = entryEn.header != entryCy.header;
+
+    const clientType = getAllowedAccountListClientIDs.includes(productionId)
+      ? "account"
+      : "service";
+
+    const isHmrc = hmrcClientIds.includes(productionId);
+    const isReportSuspiciousActivityEnabled =
+      rsaAllowList.includes(productionId);
+
+    const translations = {
+      en: transformTranslate(entryEn, "en", {
+        production: productionId,
+        integration: intId,
+        nonProduction: nonProdId,
+      }),
+      ...(isAvailableInWelsh && {
+        cy: transformTranslate(entryCy, "cy", {
+          production: productionId,
+          integration: intId,
+          nonProduction: nonProdId,
+        }),
+      }),
+    };
+
+    const client = {
+      clientId: {
+        production: productionId,
+        integration: intId,
+        nonProduction: nonProdId,
+      },
+      isAvailableInWelsh,
+      isAllowed: true,
+      clientType,
+      isHmrc,
+      isReportSuspiciousActivityEnabled,
+      showInClientSearch: {
+        production: clientsToShowInSearchProd.includes(productionId),
+        nonProduction: clientsToShowInSearchProd.includes(productionId),
+      },
+      translations,
+    };
+
+    return client;
+  },
+);
+
+const imports: string[] = [];
+const exportList: string[] = [];
+enClients.forEach((client) => {
+  let nonProdId = client.clientId.nonProduction.replace(/[^a-zA-Z0-9]/g, "");
+  if (nonProdId === "EMGmY82k92QSakDl9keKDFmZY") {
+    //special case as one login home is the only client with a non readable id in non production
+    nonProdId = "oneLoginHome";
+  }
+  const file = template
+    .replace(/{{name}}/g, nonProdId)
+    .replace("{{data}}", JSON.stringify(client));
+
+  writeFileSync(`../clients/${nonProdId}.ts`, file);
+
+  imports.push(`import ${nonProdId} from './${nonProdId}';`);
+  exportList.push(nonProdId);
+
+  writeFileSync(
+    `../clients/index.ts`,
+    imports.join("\n") + `\n\n export {${exportList.join(",")}}`,
+  );
+});

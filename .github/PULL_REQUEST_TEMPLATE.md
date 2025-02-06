@@ -17,14 +17,17 @@
 <!-- List any related ADRs or RFCs -->
 
 ## Checklists
+
 - [ ] Application configuration is up-to-date
 - [ ] Documented in the README
 
 ### Testing
 
 ### Sign-offs
-- [ ] New Node.JS/NPM dependencies have been signed-off by a Lead dev or Lead SRE 
+
+- [ ] New Node.JS/NPM dependencies have been signed-off by a Lead dev or Lead SRE
 
 ## How to review
+
 <!-- Provide a summary of any testing you've done -->
 <!-- Describe any non-standard steps to review this work, or highlight any areas that you'd like the reviewer's opinion on -->

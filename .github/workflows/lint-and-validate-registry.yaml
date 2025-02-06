@@ -1,4 +1,4 @@
-name: Lint and validate client registry
+name: Lint
 
 on:
   workflow_call:
@@ -16,7 +16,7 @@ on:
 
 jobs:
   lint_and_test:
-    name: di-account-management-client-registry
+    name: Lint
     runs-on: ubuntu-latest
     timeout-minutes: 15
     defaults:

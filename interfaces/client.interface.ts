@@ -1,4 +1,4 @@
-type EnvironmentValue<T> =
+export type EnvironmentValue<T> =
   | T
   | {
       production: T;

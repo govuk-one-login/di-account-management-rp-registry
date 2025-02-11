@@ -17,6 +17,7 @@
     "precommit": "pre-commit run",
     "test": "jest"
   },
+  "type": "module",
   "author": "",
   "license": "ISC",
   "devDependencies": {

@@ -18,7 +18,7 @@ const dfeApplyForTeacherTraining: Client = {
       description: "Apply for a teacher training course to teach in England.",
       linkText: "Go to your Apply for teacher training account",
       linkUrl:
-        "https://www.apply-for-teacher-training.service.gov.uk/candidate/",
+        "https://www.apply-for-teacher-training.service.gov.uk/candidate/account",
     },
   },
 };

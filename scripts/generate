@@ -1,19 +1,13 @@
 #!/usr/bin/env bun
 import { writeFileSync, readFileSync } from "fs";
 import { Client } from "../interfaces/client.interface";
+import { Translation } from '../interfaces/translations.interface'
 import {
   getAllowedAccountListClientIDs,
   clientsToShowInSearchProd,
   hmrcClientIds,
   rsaAllowList,
 } from "../../di-account-management-frontend/src/config";
-
-interface Translation {
-  header: string;
-  description?: string;
-  link_text: string;
-  link_href: string;
-}
 
 interface IDs {
   production: string;
@@ -88,6 +82,9 @@ function transformTranslate(
     description: client.description,
     linkText: client.link_text,
     linkUrl: generateLinkObject(ids, language),
+    ...client.hint_text && { hintText: client.hint_text },
+    ...client.paragraph1 && { paragraph1: client.paragraph1 },
+    ...client.paragraph2 && { paragraph2: client.paragraph2 },
   };
 }
 

@@ -11,6 +11,9 @@ interface Translations {
   description?: string;
   linkText: string;
   linkUrl: EnvironmentValue<string>;
+  hintText?: string;
+  paragraph1?: string;
+  paragraph2?: string;
 }
 
 interface BaseClient {

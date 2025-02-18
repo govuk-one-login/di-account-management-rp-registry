@@ -6,7 +6,7 @@ const iaa: Client = {
     integration: "Gk-D7WMvytB44Nze7oEC5KcThQZ4yl7sAA",
     nonProduction: "iaa",
   },
-  isAvailableInWelsh: true,
+  isAvailableInWelsh: false,
   isAllowed: true,
   clientType: "account",
   isHmrc: false,
@@ -14,19 +14,12 @@ const iaa: Client = {
   showInClientSearch: { production: true, nonProduction: true },
   translations: {
     en: {
-      header: "Register of immigration advisers",
+      header: "Immigration Advice Authority",
       description:
         "Authorise and register an immigration adviser or organisation.",
-      linkText: "Go to your Register of immigration advisers account",
-      linkUrl: "https://portal.oisc.gov.uk/",
-    },
-    cy: {
-      header: "Cofrestr o ymgynghorwyr mewnfudo",
-      description:
-        "Awdurdodi a chofrestru ymgynghorydd neu sefydliad mewnfudo.",
-      linkText: "Ewch i'ch cyfrif Cofrestr o gynghorwyr mewnfudo",
-      linkUrl: "https://portal.oisc.gov.uk/",
-    },
+      linkText: "Go to your Immigration Advice Authority account",
+      linkUrl: "https://www.gov.uk/government/organisations/immigration-advice-authority",
+    }
   },
 };
 

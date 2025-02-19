@@ -8,7 +8,10 @@ const convertToTranslation = (translations: Client["translations"]["en"], enviro
         header: translations.header,
         link_text: translations.linkText,
         link_href: getValueForEnvironment(environment, translations.linkUrl),
-        description: translations.description || undefined
+        ...translations.description && { description: translations.description },
+        ...translations.hintText && { hint_text: translations.hintText },
+        ...translations.paragraph1 && { paragraph1: translations.paragraph1 },
+        ...translations.paragraph2 && { paragraph2: translations.paragraph2 }
     }
 }
 

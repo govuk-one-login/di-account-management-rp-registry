@@ -10,7 +10,6 @@ jest.mock('../clients', () => ({
                 header: 'header en',
                 linkText: 'link text en',
                 linkUrl: 'link url en',
-                description: 'description en'
             },
             cy: {
                 header: 'header cy',
@@ -19,7 +18,6 @@ jest.mock('../clients', () => ({
                     production: 'link url cy production',
                     nonProduction: 'link url cy non production'
                 },
-                description: 'description cy'
             }
         },
         clientId: 'welshClient',
@@ -71,12 +69,11 @@ jest.mock('../clients', () => ({
 describe('getTranslations', () => {
     test('should return translations in english', async () => {
         const translations = getTranslations('test', 'en');
-        expect(translations).toEqual({
+        expect(translations).toStrictEqual({
             cyClient: {
                 header: 'header en',
                 link_text: 'link text en',
                 link_href: 'link url en',
-                description: 'description en'
             },
             enClient: {
                 header: 'header en',
@@ -97,12 +94,11 @@ describe('getTranslations', () => {
     });
     test('should return transaltions in welsh', async () => {
         const translations = getTranslations('test', 'cy');
-        expect(translations).toEqual({
+        expect(translations).toStrictEqual({
             cyClient: {
                 header: 'header cy',
                 link_text: 'link text cy',
                 link_href: 'link url cy non production',
-                description: 'description cy'
             },
             enClient: {
                 header: 'header en',
@@ -123,12 +119,11 @@ describe('getTranslations', () => {
     })
     test('should return correct environment varialbes', async () => {
         const translations = getTranslations('production', 'cy');
-        expect(translations).toEqual({
+        expect(translations).toStrictEqual({
             cyClient: {
                 header: 'header cy',
                 link_text: 'link text cy',
                 link_href: 'link url cy production',
-                description: 'description cy'
             },
             enClient: {
                 header: 'header en',

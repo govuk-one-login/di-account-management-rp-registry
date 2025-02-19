@@ -45,6 +45,26 @@ jest.mock('../clients', () => ({
         isHmrc: false,
         isReportSuspiciousActivityEnabled: false,
         showInClientSearch: true
+    },
+    hmrcClient: {
+        isAvailableInWelsh: false,
+        translations: {
+            en: {
+                header: 'header en',
+                linkText: 'link text en',
+                linkUrl: 'link url en',
+                description: 'description en',
+                hintText: 'hint text en',
+                paragraph1: 'paragraph 1 en',
+                paragraph2: 'paragraph 2 en'
+            },
+        },
+        clientId: 'englishClient',
+        clientType: 'account',
+        isAllowed: true,
+        isHmrc: false,
+        isReportSuspiciousActivityEnabled: false,
+        showInClientSearch: true
     }
 }));
 
@@ -63,7 +83,16 @@ describe('getTranslations', () => {
                 link_text: 'link text en',
                 link_href: 'link url en',
                 description: 'description en'
-            }
+            },
+            hmrcClient: {
+                description: "description en",
+                header: "header en",
+                hint_text: "hint text en",
+                link_href: "link url en",
+                link_text: "link text en",
+                paragraph1: "paragraph 1 en",
+                paragraph2: "paragraph 2 en",
+            },
         });
     });
     test('should return transaltions in welsh', async () => {
@@ -80,6 +109,15 @@ describe('getTranslations', () => {
                 link_text: 'link text en',
                 link_href: 'link url en',
                 description: 'description en'
+            },
+            hmrcClient: {
+                description: "description en",
+                header: "header en",
+                hint_text: "hint text en",
+                link_href: "link url en",
+                link_text: "link text en",
+                paragraph1: "paragraph 1 en",
+                paragraph2: "paragraph 2 en",
             }
         });
     })
@@ -97,6 +135,15 @@ describe('getTranslations', () => {
                 link_text: 'link text en',
                 link_href: 'link url en',
                 description: 'description en'
+            },
+            hmrcClient: {
+                description: "description en",
+                header: "header en",
+                hint_text: "hint text en",
+                link_href: "link url en",
+                link_text: "link text en",
+                paragraph1: "paragraph 1 en",
+                paragraph2: "paragraph 2 en",
             }
         });
     })

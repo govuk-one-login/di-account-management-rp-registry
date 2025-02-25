@@ -1,8 +1,6 @@
 import getTranslations from './src/get-translations'
 import getClient from './src/get-client'
-import {Translation} from './interfaces/translations.interface'
-import {TranslationsObject} from './interfaces/translations.interface'
-
-export type { Translation, TranslationsObject }
+import { Translation, TranslationsObject} from './interfaces/translations.interface'
 
 export { getTranslations, getClient }
+export type { Translation, TranslationsObject }

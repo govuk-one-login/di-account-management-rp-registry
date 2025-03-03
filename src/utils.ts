@@ -1,4 +1,5 @@
-import { EnvironmentValue } from "../interfaces/client.interface"
+import {Client, EnvironmentValue} from "../interfaces/client.interface"
+import {RegistryEntry} from "../interfaces/registry.interface";
 
 const isEnvironmentObject = <T>(
     value: EnvironmentValue<T>
@@ -37,4 +38,18 @@ const getValueForEnvironment = <T>(environment: string, value: EnvironmentValue<
     return value.nonProduction;
 }
 
-export { getEnvironmentType, getValueForEnvironment }
+const transformClientObject = (client: Client, environment: string): RegistryEntry => {
+    const clientId = getValueForEnvironment(environment, client.clientId)
+    return {
+        clientId,
+        clientType: client.clientType,
+        isAllowed: client.isAllowed,
+        isHmrc: client.isHmrc,
+        isReportSuspiciousActivityEnabled: client.isReportSuspiciousActivityEnabled,
+        isAvailableInWelsh: client.isAvailableInWelsh,
+        showInClientSearch: getValueForEnvironment(environment, client.showInClientSearch),
+    }
+}
+
+
+export { getEnvironmentType, getValueForEnvironment, transformClientObject }

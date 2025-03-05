@@ -18,7 +18,7 @@ const iaa: Client = {
       description:
         "Authorise and register an immigration adviser or organisation.",
       linkText: "Go to your Immigration Advice Authority account",
-      linkUrl: "https://www.gov.uk/government/organisations/immigration-advice-authority",
+      linkUrl: "https://portal.immigrationadviceauthority.gov.uk/s/",
     }
   },
 };

@@ -4,7 +4,7 @@ import { Client } from "../interfaces/client.interface";
 import { Translation } from '../interfaces/translations.interface'
 import {
   getAllowedAccountListClientIDs,
-  clientsToShowInSearchProd,
+  getClientsToShowInSearch,
   hmrcClientIds,
   rsaAllowList,
 } from "../../di-account-management-frontend/src/config";
@@ -88,6 +88,16 @@ function transformTranslate(
   };
 }
 
+const getClientSearch = () => {
+  const oldEnv = process.env.APP_ENV
+  process.env.APP_ENV = "production"
+  const clients = getClientsToShowInSearch()
+  process.env.APP_ENV = oldEnv
+  return clients
+};
+
+const clientsToShowInSearch = getClientSearch()
+
 const enClients = Object.keys(en.clientRegistry.production).map(
   (productionId) => {
     const entryEn = en.clientRegistry.production[productionId];
@@ -125,6 +135,8 @@ const enClients = Object.keys(en.clientRegistry.production).map(
       }),
     };
 
+
+
     const client = {
       clientId: {
         production: productionId,
@@ -137,8 +149,8 @@ const enClients = Object.keys(en.clientRegistry.production).map(
       isHmrc,
       isReportSuspiciousActivityEnabled,
       showInClientSearch: {
-        production: clientsToShowInSearchProd.includes(productionId),
-        nonProduction: clientsToShowInSearchProd.includes(productionId),
+        production: clientsToShowInSearch.includes(productionId),
+        nonProduction: clientsToShowInSearch.includes(productionId),
       },
       translations,
     };

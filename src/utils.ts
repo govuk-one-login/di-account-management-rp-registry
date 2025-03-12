@@ -1,55 +1,67 @@
-import {Client, EnvironmentValue} from "../interfaces/client.interface"
-import {RegistryEntry} from "../interfaces/registry.interface";
+import { Client, EnvironmentValue } from "../interfaces/client.interface";
+import { RegistryEntry } from "../interfaces/registry.interface";
 
 const isEnvironmentObject = <T>(
-    value: EnvironmentValue<T>
+  value: EnvironmentValue<T>
 ): value is { production: T; integration?: T; nonProduction: T } => {
-    return typeof value === "object" &&
-        value !== null &&
-        Object.prototype.hasOwnProperty.call(value, "production");
-}
+  return (
+    typeof value === "object" &&
+    value !== null &&
+    Object.prototype.hasOwnProperty.call(value, "production")
+  );
+};
 
-const getEnvironmentType = (environment: string): 'production' | 'integration' | 'nonProduction' => {
-    if (environment === 'production') {
-        return 'production'
-    }
+const getEnvironmentType = (
+  environment: string
+): "production" | "integration" | "nonProduction" => {
+  if (environment === "production") {
+    return "production";
+  }
 
-    if (environment === 'integration') {
-        return 'integration'
-    }
+  if (environment === "integration") {
+    return "integration";
+  }
 
-    return 'nonProduction'
-}
+  return "nonProduction";
+};
 
-const getValueForEnvironment = <T>(environment: string, value: EnvironmentValue<T>): T => {
-    if (!isEnvironmentObject(value)) {
-        return value as T
-    }
-    const env = getEnvironmentType(environment)
+const getValueForEnvironment = <T>(
+  environment: string,
+  value: EnvironmentValue<T>
+): T => {
+  if (!isEnvironmentObject(value)) {
+    return value as T;
+  }
+  const env = getEnvironmentType(environment);
 
-    if (env === 'integration') {
-        return value.integration || value.production;
-    }
+  if (env === "integration") {
+    return value.integration || value.production;
+  }
 
-    if (env === "production") {
-        return value.production;
-    }
+  if (env === "production") {
+    return value.production;
+  }
 
-    return value.nonProduction;
-}
+  return value.nonProduction;
+};
 
-const transformClientObject = (client: Client, environment: string): RegistryEntry => {
-    const clientId = getValueForEnvironment(environment, client.clientId)
-    return {
-        clientId,
-        clientType: client.clientType,
-        isAllowed: client.isAllowed,
-        isHmrc: client.isHmrc,
-        isReportSuspiciousActivityEnabled: client.isReportSuspiciousActivityEnabled,
-        isAvailableInWelsh: client.isAvailableInWelsh,
-        showInClientSearch: getValueForEnvironment(environment, client.showInClientSearch),
-    }
-}
+const transformClientObject = (
+  client: Client,
+  environment: string
+): RegistryEntry => {
+  const clientId = getValueForEnvironment(environment, client.clientId);
+  return {
+    clientId,
+    clientType: client.clientType,
+    isAllowed: client.isAllowed,
+    isHmrc: client.isHmrc,
+    isReportSuspiciousActivityEnabled: client.isReportSuspiciousActivityEnabled,
+    isAvailableInWelsh: client.isAvailableInWelsh,
+    showInClientSearch: getValueForEnvironment(
+      environment,
+      client.showInClientSearch
+    ),
+  };
+};
 
-
-export { getEnvironmentType, getValueForEnvironment, transformClientObject }
+export { getEnvironmentType, getValueForEnvironment, transformClientObject };

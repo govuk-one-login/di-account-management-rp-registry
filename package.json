@@ -9,7 +9,9 @@
       "tsc --noEmit"
     ],
     "*.js": "eslint --fix",
-    "*.json": "prettier --write"
+    "**/*.{js,jsx,ts,tsx,json,css,scss,md,yaml}": [
+      "npx prettier --write"
+    ]
   },
   "scripts": {
     "lint": "tsc && eslint .",

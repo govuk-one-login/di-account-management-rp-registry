@@ -11,7 +11,7 @@ const ruralPaymentWales: Client = {
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
-  showInClientSearch: { production: true, nonProduction: true },
+  showInClientSearch: { production: false, nonProduction: false },
   translations: {
     en: {
       header: "Rural Payment Wales",

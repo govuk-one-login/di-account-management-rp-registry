@@ -101,5 +101,5 @@ export {
   dbTrade,
   intellectualPropertyOffice,
   heatNetworkZoning,
-  ruralPaymentWales
+  ruralPaymentWales,
 };

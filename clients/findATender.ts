@@ -18,16 +18,14 @@ const findATender: Client = {
       description:
         "Publish opportunities so that suppliers can search and apply for them.",
       linkText: "Go to your Find a tender account",
-      linkUrl:
-        "https://supplier-information.find-tender.service.gov.uk",
+      linkUrl: "https://supplier-information.find-tender.service.gov.uk",
     },
     cy: {
       header: "Darganfyddwch dendr",
       description:
         "Cyhoeddi cyfleoedd fel y gall cyflenwyr chwilio a gwneud cais amdanynt.",
       linkText: "Ewch i'ch cyfrif Dod o hyd i dendr",
-      linkUrl:
-        "https://supplier-information.find-tender.service.gov.uk",
+      linkUrl: "https://supplier-information.find-tender.service.gov.uk",
     },
   },
 };

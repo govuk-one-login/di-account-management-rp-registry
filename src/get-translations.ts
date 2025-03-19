@@ -35,8 +35,9 @@ const getTranslations = (
         clientData.isAvailableInWelsh && language === "cy"
           ? clientData.translations.cy
           : clientData.translations.en;
+      const clientId = getValueForEnvironment(environment, clientData.clientId);
 
-      translations[client] = convertToTranslation(
+      translations[clientId] = convertToTranslation(
         clientTranslations,
         environment
       );

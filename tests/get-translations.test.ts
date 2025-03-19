@@ -57,7 +57,7 @@ jest.mock("../clients", () => ({
         paragraph2: "paragraph 2 en",
       },
     },
-    clientId: "englishClient",
+    clientId: "englishClientHmrc",
     clientType: "account",
     isAllowed: true,
     isHmrc: false,
@@ -70,18 +70,18 @@ describe("getTranslations", () => {
   test("should return translations in english", async () => {
     const translations = getTranslations("test", "en");
     expect(translations).toStrictEqual({
-      cyClient: {
+      welshClient: {
         header: "header en",
         link_text: "link text en",
         link_href: "link url en",
       },
-      enClient: {
+      englishClient: {
         header: "header en",
         link_text: "link text en",
         link_href: "link url en",
         description: "description en",
       },
-      hmrcClient: {
+      englishClientHmrc: {
         description: "description en",
         header: "header en",
         hint_text: "hint text en",
@@ -95,18 +95,18 @@ describe("getTranslations", () => {
   test("should return transaltions in welsh", async () => {
     const translations = getTranslations("test", "cy");
     expect(translations).toStrictEqual({
-      cyClient: {
+      welshClient: {
         header: "header cy",
         link_text: "link text cy",
         link_href: "link url cy non production",
       },
-      enClient: {
+      englishClient: {
         header: "header en",
         link_text: "link text en",
         link_href: "link url en",
         description: "description en",
       },
-      hmrcClient: {
+      englishClientHmrc: {
         description: "description en",
         header: "header en",
         hint_text: "hint text en",
@@ -120,18 +120,18 @@ describe("getTranslations", () => {
   test("should return correct environment varialbes", async () => {
     const translations = getTranslations("production", "cy");
     expect(translations).toStrictEqual({
-      cyClient: {
+      welshClient: {
         header: "header cy",
         link_text: "link text cy",
         link_href: "link url cy production",
       },
-      enClient: {
+      englishClient: {
         header: "header en",
         link_text: "link text en",
         link_href: "link url en",
         description: "description en",
       },
-      hmrcClient: {
+      englishClientHmrc: {
         description: "description en",
         header: "header en",
         hint_text: "hint text en",

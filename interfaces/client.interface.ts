@@ -22,7 +22,7 @@ interface BaseClient {
     en: Translations;
   };
   isAllowed: boolean;
-  clientType: "service" | "account";
+  clientType: "service" | "account" | "home";
   isHmrc: boolean;
   isReportSuspiciousActivityEnabled: boolean;
   showInClientSearch: EnvironmentValue<boolean>;

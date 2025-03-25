@@ -8,7 +8,7 @@ const oneLoginHome: Client = {
   },
   isAvailableInWelsh: true,
   isAllowed: true,
-  clientType: "service",
+  clientType: "home",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
   showInClientSearch: { production: false, nonProduction: false },

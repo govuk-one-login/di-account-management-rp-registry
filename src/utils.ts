@@ -61,6 +61,7 @@ const transformClientObject = (
       environment,
       client.showInClientSearch
     ),
+    isActivityLogEnabled: !!client.isActivityLogEnabled,
   };
 };
 

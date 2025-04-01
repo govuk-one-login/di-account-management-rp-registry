@@ -11,6 +11,7 @@ const hmpoCancelPassport: Client = {
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
+  isActivityLogEnabled: false,
   showInClientSearch: { production: true, nonProduction: true },
   translations: {
     en: {

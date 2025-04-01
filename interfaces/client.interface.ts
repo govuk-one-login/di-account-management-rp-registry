@@ -25,6 +25,7 @@ interface BaseClient {
   clientType: "service" | "account" | "home";
   isHmrc: boolean;
   isReportSuspiciousActivityEnabled: boolean;
+  isActivityLogEnabled: boolean;
   showInClientSearch: EnvironmentValue<boolean>;
   isAvailableInWelsh: boolean;
 }

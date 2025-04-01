@@ -11,6 +11,7 @@ const checkFamilyEligibility: Client = {
   clientType: "service",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
+  isActivityLogEnabled: false,
   showInClientSearch: { production: false, nonProduction: false },
   translations: {
     en: {

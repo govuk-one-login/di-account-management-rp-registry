@@ -11,6 +11,7 @@ const vehicleOperatorLicense: Client = {
   clientType: "service",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
+  isActivityLogEnabled: true,
   showInClientSearch: { production: true, nonProduction: true },
   translations: {
     en: {

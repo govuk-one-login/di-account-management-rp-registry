@@ -11,6 +11,7 @@ const homeOfficeSEAS: Client = {
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
+  isActivityLogEnabled: false,
   showInClientSearch: { production: false, nonProduction: false },
   translations: {
     en: {

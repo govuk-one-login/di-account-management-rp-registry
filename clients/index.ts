@@ -49,6 +49,7 @@ import dbTrade from "./dbTrade";
 import intellectualPropertyOffice from "./intellectualPropertyOffice";
 import heatNetworkZoning from "./heatNetworkZoning";
 import ruralPaymentWales from "./ruralPaymentWales";
+import firs from "./firs";
 
 export {
   govuk,
@@ -102,4 +103,5 @@ export {
   intellectualPropertyOffice,
   heatNetworkZoning,
   ruralPaymentWales,
+  firs,
 };

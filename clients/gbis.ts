@@ -11,6 +11,7 @@ const gbis: Client = {
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
+  isActivityLogEnabled: true,
   showInClientSearch: { production: false, nonProduction: false },
   translations: {
     en: {

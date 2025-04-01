@@ -11,6 +11,7 @@ const childDevelopmentTraining: Client = {
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
+  isActivityLogEnabled: true,
   showInClientSearch: { production: true, nonProduction: true },
   translations: {
     en: {

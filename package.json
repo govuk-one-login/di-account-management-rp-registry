@@ -18,7 +18,8 @@
     "prepare": "tsc && husky install",
     "precommit": "pre-commit run",
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "checklinks": "npx ts-node scripts/check-links.ts"
   },
   "type": "commonjs",
   "author": "",

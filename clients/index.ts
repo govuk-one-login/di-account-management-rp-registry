@@ -50,6 +50,7 @@ import intellectualPropertyOffice from "./intellectualPropertyOffice";
 import heatNetworkZoning from "./heatNetworkZoning";
 import ruralPaymentWales from "./ruralPaymentWales";
 import firs from "./firs";
+import icsDesnz from "./icsDesnz";
 
 export {
   govuk,
@@ -104,4 +105,5 @@ export {
   heatNetworkZoning,
   ruralPaymentWales,
   firs,
+  icsDesnz,
 };

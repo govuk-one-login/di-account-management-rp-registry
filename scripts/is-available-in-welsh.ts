@@ -1,13 +1,5 @@
-import { writeFileSync } from "fs";
-import * as clients from "../clients";
-import { Client } from "../interfaces/client.interface";
 import { getValueForEnvironment } from "../src/utils";
-
-const template = `import { Client } from "../interfaces/client.interface";
-
-const {{name}}: Client = {{data}} 
-
-export default {{name}}`;
+import { BulkClientModifier } from "./utils/bulk-modify";
 
 const isAvailableInWelsh = [
   "mQDXGO7gWdK7V28v82nVcEGuacY",
@@ -20,9 +12,8 @@ const isAvailableInWelsh = [
   "KcKmx2g1GH6ersWFvzMi1bhehq4",
 ];
 
-Object.entries(clients).forEach(([clientId, data]) => {
-  const clientData = data as Client;
-
+BulkClientModifier((clientId, clientData) => {
+  // make any changes to the client data here
   const productionId = getValueForEnvironment(
     "production",
     clientData.clientId
@@ -34,8 +25,5 @@ Object.entries(clients).forEach(([clientId, data]) => {
     delete clientData.translations.cy;
   }
 
-  const file = template
-    .replace(/{{name}}/g, clientId)
-    .replace("{{data}}", JSON.stringify(clientData));
-  writeFileSync(`./clients/${clientId}.ts`, file);
+  return clientData;
 });

@@ -51,6 +51,7 @@ import heatNetworkZoning from "./heatNetworkZoning";
 import ruralPaymentWales from "./ruralPaymentWales";
 import firs from "./firs";
 import icsDesnz from "./icsDesnz";
+import coClientServiceJobs from "./coClientServiceJobs";
 
 export {
   govuk,
@@ -106,4 +107,5 @@ export {
   ruralPaymentWales,
   firs,
   icsDesnz,
+  coClientServiceJobs,
 };

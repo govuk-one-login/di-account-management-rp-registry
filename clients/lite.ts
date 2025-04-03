@@ -6,7 +6,7 @@ const lite: Client = {
     integration: "JO3ET6EtFN3FzjGC3yRP2qpuoHQ",
     nonProduction: "lite",
   },
-  isAvailableInWelsh: true,
+  isAvailableInWelsh: false,
   isAllowed: true,
   clientType: "account",
   isHmrc: false,
@@ -19,13 +19,6 @@ const lite: Client = {
       description:
         "Apply for or manage export control licences for controlled goods.",
       linkText: "Go to your LITE account",
-      linkUrl: "https://exporter.lite.private-beta.service.trade.gov.uk/",
-    },
-    cy: {
-      header: "LITE (Trwyddedu ar gyfer Masnach a Menter Ryngwladol)",
-      description:
-        "Gwneud cais am neu reoli trwyddedau rheoli allforio ar gyfer nwyddau a reolir.",
-      linkText: "Ewch i’ch cyfrif LITE",
       linkUrl: "https://exporter.lite.private-beta.service.trade.gov.uk/",
     },
   },

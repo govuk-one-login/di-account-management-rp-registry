@@ -18,7 +18,8 @@
     "prepare": "tsc && husky install",
     "precommit": "pre-commit run",
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "bulk-modify": "ts-node scripts/bulk-modify.ts && npx prettier ./clients -write"
   },
   "type": "commonjs",
   "author": "",

@@ -6,7 +6,7 @@ const vehicleOperatorLicense: Client = {
     integration: "oLciSn5b6-cqcJjzgMMwCw1moD8",
     nonProduction: "vehicleOperatorLicense",
   },
-  isAvailableInWelsh: true,
+  isAvailableInWelsh: false,
   isAllowed: true,
   clientType: "service",
   isHmrc: false,
@@ -17,11 +17,6 @@ const vehicleOperatorLicense: Client = {
     en: {
       header: "Apply for a vehicle operator licence",
       linkText: "Apply for a vehicle operator licence",
-      linkUrl: "https://www.gov.uk/apply-vehicle-operator-licence",
-    },
-    cy: {
-      header: "Gwneud cais am drwydded gweithredwr cerbyd",
-      linkText: "Gwneud cais am drwydded gweithredwr cerbyd",
       linkUrl: "https://www.gov.uk/apply-vehicle-operator-licence",
     },
   },

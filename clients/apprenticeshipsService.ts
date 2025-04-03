@@ -6,7 +6,7 @@ const apprenticeshipsService: Client = {
     integration: "x3F_Iu0LgqJpegY5ni0QSB0uezw",
     nonProduction: "apprenticeshipsService",
   },
-  isAvailableInWelsh: true,
+  isAvailableInWelsh: false,
   isAllowed: true,
   clientType: "account",
   isHmrc: false,
@@ -19,13 +19,6 @@ const apprenticeshipsService: Client = {
       description:
         "Manage your apprentices, training providers, recruitment and funding.",
       linkText: "Go to your apprenticeship service account",
-      linkUrl: "https://accounts.manage-apprenticeships.service.gov.uk/service",
-    },
-    cy: {
-      header: "Rheoli prentisiaethau",
-      description:
-        "Rheoli eich prentisiaid, darparwyr hyfforddiant, recriwtio a chyllid.",
-      linkText: "Ewch i'ch cyfrif gwasanaeth prentisiaeth",
       linkUrl: "https://accounts.manage-apprenticeships.service.gov.uk/service",
     },
   },

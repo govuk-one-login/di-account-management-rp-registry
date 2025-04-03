@@ -6,7 +6,7 @@ const checkFamilyEligibility: Client = {
     integration: "CKHfr_Kz84LYFnsP7m6YJBXqBzw",
     nonProduction: "checkFamilyEligibility",
   },
-  isAvailableInWelsh: true,
+  isAvailableInWelsh: false,
   isAllowed: true,
   clientType: "service",
   isHmrc: false,
@@ -17,11 +17,6 @@ const checkFamilyEligibility: Client = {
     en: {
       header: "Check a family’s eligibility for free school meals",
       linkText: "Check a family’s eligibility for free school meals",
-      linkUrl: "https://check-free-school-meals.education.gov.uk/",
-    },
-    cy: {
-      header: "Gwiriwch gymhwysedd teulu i gael prydau ysgol am ddim",
-      linkText: "Gwiriwch gymhwysedd teulu i gael prydau ysgol am ddim",
       linkUrl: "https://check-free-school-meals.education.gov.uk/",
     },
   },

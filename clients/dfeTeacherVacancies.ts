@@ -6,7 +6,7 @@ const dfeTeacherVacancies: Client = {
     integration: "CVZjwDf4DJROtdPH2vStPXUALrM",
     nonProduction: "dfeTeacherVacancies",
   },
-  isAvailableInWelsh: true,
+  isAvailableInWelsh: false,
   isAllowed: true,
   clientType: "account",
   isHmrc: false,
@@ -19,13 +19,6 @@ const dfeTeacherVacancies: Client = {
       description:
         "Search and apply for teaching, leadership and education support vacancies.",
       linkText: "Go to your Teaching vacancies account",
-      linkUrl: "https://teaching-vacancies.service.gov.uk/jobseekers/account",
-    },
-    cy: {
-      header: "Swyddi dysgu yn Lloegr",
-      description:
-        "Chwilio am a gwneud cais am swyddi dysgu, arweinyddiaeth a chymorth addysg.",
-      linkText: "Ewch i'ch cyfrif Swyddi dysgu",
       linkUrl: "https://teaching-vacancies.service.gov.uk/jobseekers/account",
     },
   },

@@ -12,7 +12,7 @@ const icsDesnz: Client = {
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
   isActivityLogEnabled: false,
-  showInClientSearch: { production: false, nonProduction: false },
+  showInClientSearch: { production: true, nonProduction: true },
   translations: {
     en: {
       header: "Manage the Clean Heat Market Mechanism",

@@ -6,7 +6,7 @@ const defraDangerousDogsIndex: Client = {
     integration: "u6cETcTbDeT5PZaRRvUskHQeZq8",
     nonProduction: "defraDangerousDogsIndex",
   },
-  isAvailableInWelsh: true,
+  isAvailableInWelsh: false,
   isAllowed: true,
   clientType: "account",
   isHmrc: false,
@@ -19,13 +19,6 @@ const defraDangerousDogsIndex: Client = {
       description:
         "Search the Dangerous dogs index for dogs or owners to view their details and exemption status.",
       linkText: "Go to your Dangerous dogs index account",
-      linkUrl: "https://dogsindex.defra.gov.uk",
-    },
-    cy: {
-      header: "Mynegai cŵn peryglus",
-      description:
-        "Chwilio'r Mynegai cŵn peryglus am gŵn neu berchnogion i weld eu manylion a'u statws eithrio.",
-      linkText: "Ewch i'ch cyfrif Mynegai Cŵn Peryglus",
       linkUrl: "https://dogsindex.defra.gov.uk",
     },
   },

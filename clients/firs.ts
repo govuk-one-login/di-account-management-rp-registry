@@ -6,7 +6,7 @@ const firs: Client = {
     integration: "sXr5F6w5QytPPJN-Dtsgbl6hegQ",
     nonProduction: "firs",
   },
-  isAvailableInWelsh: true,
+  isAvailableInWelsh: false,
   isAllowed: true,
   clientType: "account",
   isHmrc: false,
@@ -19,13 +19,6 @@ const firs: Client = {
       description:
         "Register an arrangement of foreign power influence in UK politics.",
       linkText: "Go to your Foreign influence registration scheme account",
-      linkUrl: "http://foreign-influence-registration-scheme.service.gov.uk/",
-    },
-    cy: {
-      header: "Cynllun cofrestru dylanwad tramor",
-      description:
-        "Cofrestrwch drefniant o ddylanwad pŵer tramor yng ngwleidyddiaeth y DU.",
-      linkText: "Ewch i'ch cyfrif Cynllun Cofrestru Dylanwad Tramor",
       linkUrl: "http://foreign-influence-registration-scheme.service.gov.uk/",
     },
   },

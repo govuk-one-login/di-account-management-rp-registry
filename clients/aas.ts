@@ -6,7 +6,7 @@ const aas: Client = {
     integration: "dVrdJ7aemrvR0YlX7lDRaXnz0mE",
     nonProduction: "aas",
   },
-  isAvailableInWelsh: true,
+  isAvailableInWelsh: false,
   isAllowed: true,
   clientType: "account",
   isHmrc: false,
@@ -18,13 +18,6 @@ const aas: Client = {
       header: "Apprenticeship assessment service (AAS)",
       description: "See or record your apprenticeship assessments.",
       linkText: "Go to your apprenticeship assessments account",
-      linkUrl:
-        "https://assessors.apprenticeships.education.gov.uk/account/signin",
-    },
-    cy: {
-      header: "Gwasanaeth asesu prentisiaeth (AAS)",
-      description: "Gweld neu gofnodi eich asesiadau prentisiaeth.",
-      linkText: "Ewch i'ch cyfrif asesiadau prentisiaeth",
       linkUrl:
         "https://assessors.apprenticeships.education.gov.uk/account/signin",
     },

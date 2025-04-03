@@ -6,7 +6,7 @@ const mortgageDeed: Client = {
     integration: "VsAkrtMBzAosSveAv4xsuUDyiSs",
     nonProduction: "mortgageDeed",
   },
-  isAvailableInWelsh: true,
+  isAvailableInWelsh: false,
   isAllowed: true,
   clientType: "service",
   isHmrc: false,
@@ -17,11 +17,6 @@ const mortgageDeed: Client = {
     en: {
       header: "Sign your mortgage deed",
       linkText: "Sign your mortgage deed",
-      linkUrl: "https://sign-your-mortgage-deed.landregistry.gov.uk",
-    },
-    cy: {
-      header: "Llofnodwch eich gweithred morgais",
-      linkText: "Llofnodwch eich gweithred morgais",
       linkUrl: "https://sign-your-mortgage-deed.landregistry.gov.uk",
     },
   },

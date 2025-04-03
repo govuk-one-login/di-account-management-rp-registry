@@ -6,7 +6,7 @@ const apar: Client = {
     integration: "2nAxHa72OqhE6eKymHZIx-sV3vI",
     nonProduction: "apar",
   },
-  isAvailableInWelsh: true,
+  isAvailableInWelsh: false,
   isAllowed: true,
   clientType: "account",
   isHmrc: false,
@@ -20,13 +20,6 @@ const apar: Client = {
         "Start or continue an application to join the apprenticeship provider and assessment register.",
       linkText:
         "Go to your apprenticeship provider and assessment register account",
-      linkUrl: "https://apply.apprenticeships.education.gov.uk/signIn",
-    },
-    cy: {
-      header: "Cofrestr darparwr prentisiaeth ac asesiad",
-      description:
-        "Dechrau neu barhau â chais i ymuno â'r darparwr prentisiaeth a'r gofrestr asesiadau.",
-      linkText: "Ewch i'ch cyfrif cofrestr darparwr prentisiaeth ac asesiad",
       linkUrl: "https://apply.apprenticeships.education.gov.uk/signIn",
     },
   },

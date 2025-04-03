@@ -6,7 +6,7 @@ const companyHouseAccounts: Client = {
     integration: "VdmfAXiINT9wpUsGO_vVnPEbsAE",
     nonProduction: "companyHouseAccounts",
   },
-  isAvailableInWelsh: true,
+  isAvailableInWelsh: false,
   isAllowed: true,
   clientType: "account",
   isHmrc: false,
@@ -19,13 +19,6 @@ const companyHouseAccounts: Client = {
       description:
         "View and update your company information, for example, filing history and registered office address.",
       linkText: "Go to Companies House",
-      linkUrl: "https://find-and-update.company-information.service.gov.uk/",
-    },
-    cy: {
-      header: "Dod o hyd i a diweddaru gwybodaeth cwmni",
-      description:
-        "Gweld a diweddaru gwybodaeth eich cwmni, er enghraifft, hanes ffeilio a chyfeiriad swyddfa gofrestredig.",
-      linkText: "Ewch i Dŷ'r Cwmnïau",
       linkUrl: "https://find-and-update.company-information.service.gov.uk/",
     },
   },

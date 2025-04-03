@@ -6,7 +6,7 @@ const drivingMedicalCondition: Client = {
     integration: "iJNgycwBNEWGQvkuiLxOdVmVzG9",
     nonProduction: "drivingMedicalCondition",
   },
-  isAvailableInWelsh: true,
+  isAvailableInWelsh: false,
   isAllowed: true,
   clientType: "service",
   isHmrc: false,
@@ -17,11 +17,6 @@ const drivingMedicalCondition: Client = {
     en: {
       header: "Driving with a medical condition",
       linkText: "Driving with a medical condition",
-      linkUrl: "https://www.gov.uk/browse/driving/disability-health-condition",
-    },
-    cy: {
-      header: "Gyrru gyda chyflwr iechyd",
-      linkText: "Gyrru gyda chyflwr iechyd",
       linkUrl: "https://www.gov.uk/browse/driving/disability-health-condition",
     },
   },

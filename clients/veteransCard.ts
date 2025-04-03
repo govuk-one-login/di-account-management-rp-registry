@@ -6,7 +6,7 @@ const veteransCard: Client = {
     integration: "zFeCxrwpLCUHFm-C4_CztwWtLfQ",
     nonProduction: "veteransCard",
   },
-  isAvailableInWelsh: true,
+  isAvailableInWelsh: false,
   isAllowed: true,
   clientType: "service",
   isHmrc: false,
@@ -17,11 +17,6 @@ const veteransCard: Client = {
     en: {
       header: "Apply for an HM Armed Forces Veteran Card",
       linkText: "Apply for an HM Armed Forces Veteran Card",
-      linkUrl: "https://www.gov.uk/veteran-card",
-    },
-    cy: {
-      header: "Gwneud cais am Gerdyn Cyn-filwyr Lluoedd Arfog EF",
-      linkText: "Gwneud cais am Gerdyn Cyn-filwyr Lluoedd Arfog EF",
       linkUrl: "https://www.gov.uk/veteran-card",
     },
   },

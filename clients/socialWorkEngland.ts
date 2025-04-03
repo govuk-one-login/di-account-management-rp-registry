@@ -6,7 +6,7 @@ const socialWorkEngland: Client = {
     integration: "LUIZbIuJ_xVZxwhkNAApcO4O_6o",
     nonProduction: "socialWorkEngland",
   },
-  isAvailableInWelsh: true,
+  isAvailableInWelsh: false,
   isAllowed: true,
   clientType: "service",
   isHmrc: false,
@@ -17,14 +17,6 @@ const socialWorkEngland: Client = {
     en: {
       header: "Apply to become a registered social worker in England",
       linkText: "Apply to become a registered social worker in England",
-      linkUrl:
-        "https://www.socialworkengland.org.uk/registration/apply-for-registration",
-    },
-    cy: {
-      header:
-        "Gwneud cais i ddod yn weithiwr cymdeithasol cofrestredig yn Lloegr",
-      linkText:
-        "Gwneud cais i ddod yn weithiwr cymdeithasol cofrestredig yn Lloegr",
       linkUrl:
         "https://www.socialworkengland.org.uk/registration/apply-for-registration",
     },

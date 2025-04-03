@@ -6,7 +6,7 @@ const dfeClaimAdditionalPayments: Client = {
     integration: "IJ_TuVEgIqAWT2mCe9b5uocMyNs",
     nonProduction: "dfeClaimAdditionalPayments",
   },
-  isAvailableInWelsh: true,
+  isAvailableInWelsh: false,
   isAllowed: true,
   clientType: "service",
   isHmrc: false,
@@ -17,12 +17,6 @@ const dfeClaimAdditionalPayments: Client = {
     en: {
       header: "Claim additional payments for teaching",
       linkText: "Claim additional payments for teaching",
-      linkUrl:
-        "https://www.gov.uk/government/collections/additional-payments-for-teaching-eligibility-and-payment-details",
-    },
-    cy: {
-      header: "Hawlio taliadau ychwanegol ar gyfer dysgu",
-      linkText: "Hawlio taliadau ychwanegol ar gyfer dysgu",
       linkUrl:
         "https://www.gov.uk/government/collections/additional-payments-for-teaching-eligibility-and-payment-details",
     },

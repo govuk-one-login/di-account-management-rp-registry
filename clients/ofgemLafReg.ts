@@ -6,7 +6,7 @@ const ofgemLafReg: Client = {
     integration: "eywumu-XiJCz7RHyw4Zv8iTgsuc",
     nonProduction: "ofgemLafReg",
   },
-  isAvailableInWelsh: true,
+  isAvailableInWelsh: false,
   isAllowed: true,
   clientType: "account",
   isHmrc: false,
@@ -19,13 +19,6 @@ const ofgemLafReg: Client = {
       description:
         "Upload declaration notification templates to Ofgem and manage your users' accounts.",
       linkText: "Go to your flexible register account",
-      linkUrl: "https://laf.ofgem.gov.uk/",
-    },
-    cy: {
-      header: "Cofrestr hyblyg awdurdod Lleol",
-      description:
-        "Llwytho templedi hysbysu datganiad i Ofgem a rheoli eich cyfrifon defnyddwyr.",
-      linkText: "Ewch i'ch cyfrif cofrestr hyblyg",
       linkUrl: "https://laf.ofgem.gov.uk/",
     },
   },

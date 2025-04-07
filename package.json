@@ -18,7 +18,8 @@
     "prepare": "tsc && husky install",
     "precommit": "pre-commit run",
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "bulk-edit": "find ./scripts -maxdepth 1 -type f | nfzf | xargs ts-node"
   },
   "type": "commonjs",
   "author": "",

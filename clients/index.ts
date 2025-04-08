@@ -53,6 +53,7 @@ import firs from "./firs";
 import icsDesnz from "./icsDesnz";
 import coClientServiceJobs from "./coClientServiceJobs";
 import dvlaDriverAndVehiclesAccount from "./dvlaDriverAndVehiclesAccount";
+import dbsSubmitABarringReferral from "./dbsSubmitABarringReferral";
 
 export {
   govuk,
@@ -110,4 +111,5 @@ export {
   icsDesnz,
   coClientServiceJobs,
   dvlaDriverAndVehiclesAccount,
+  dbsSubmitABarringReferral,
 };

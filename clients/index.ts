@@ -52,6 +52,8 @@ import ruralPaymentWales from "./ruralPaymentWales";
 import firs from "./firs";
 import icsDesnz from "./icsDesnz";
 import coClientServiceJobs from "./coClientServiceJobs";
+import dvlaDriverAndVehiclesAccount from "./dvlaDriverAndVehiclesAccount";
+import dbsSubmitABarringReferral from "./dbsSubmitABarringReferral";
 
 export {
   govuk,
@@ -108,4 +110,6 @@ export {
   firs,
   icsDesnz,
   coClientServiceJobs,
+  dvlaDriverAndVehiclesAccount,
+  dbsSubmitABarringReferral,
 };

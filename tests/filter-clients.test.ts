@@ -76,6 +76,7 @@ describe("filterClient", () => {
       {
         clientId: "hmrcClient",
         clientType: "account",
+        isActivityLogEnabled: false,
         isAllowed: true,
         isAvailableInWelsh: false,
         isHmrc: true,
@@ -91,6 +92,7 @@ describe("filterClient", () => {
       {
         clientId: "welshClientNonProd",
         clientType: "account",
+        isActivityLogEnabled: false,
         isAllowed: true,
         isAvailableInWelsh: true,
         isHmrc: false,
@@ -124,6 +126,7 @@ describe("filterClient", () => {
       {
         clientId: "welshClientProd",
         clientType: "account",
+        isActivityLogEnabled: false,
         isAllowed: true,
         isAvailableInWelsh: true,
         isHmrc: false,
@@ -139,6 +142,7 @@ describe("filterClient", () => {
       {
         clientId: "welshClientNonProd",
         clientType: "account",
+        isActivityLogEnabled: false,
         isAllowed: true,
         isAvailableInWelsh: true,
         isHmrc: false,

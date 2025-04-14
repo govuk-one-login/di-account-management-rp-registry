@@ -27,9 +27,8 @@ const getTranslations = (
 ): TranslationsObject => {
   const translations: TranslationsObject = {};
 
-  Object.keys(clients)
-    .filter((key) => key !== "__esModule") //this is required for the tests to work
-    .forEach((client) => {
+  Object.keys(clients).forEach((client) => {
+    if (client !== "__esModule") {
       const clientData = clients[client as keyof typeof clients];
       const clientTranslations =
         clientData.isAvailableInWelsh && language === "cy"
@@ -41,7 +40,8 @@ const getTranslations = (
         clientTranslations,
         environment
       );
-    });
+    }
+  });
 
   return translations;
 };

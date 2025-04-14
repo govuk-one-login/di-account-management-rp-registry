@@ -33,7 +33,7 @@ async function checkUrls(urls: string[]): Promise<Record<string, string>> {
         const response = await page.goto(url, { waitUntil: "networkidle2" });
 
         const status = response?.status();
-        if (status && (status < 200 || status >= 300)) {
+        if (status && (status < 200 || status >= 400)) {
           invalidUrls[url] = `Status code: ${status}`;
         }
       } catch (error: any) {

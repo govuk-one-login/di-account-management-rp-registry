@@ -11,7 +11,7 @@ const oneLoginHome: Client = {
   clientType: "home",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: false,
+  isActivityLogEnabled: true,
   showInClientSearch: { production: false, nonProduction: false },
   translations: {
     en: {

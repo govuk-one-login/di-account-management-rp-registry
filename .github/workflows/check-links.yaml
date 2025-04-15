@@ -14,4 +14,24 @@ jobs:
         uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3 # pin@v3
 
       - name: Build and Run
-        run: docker build -t check-links .
+        run: |
+          docker build -t check-links .
+          export LINK_CHECK_RESULTS=$(docker run check-links) 
+          echo "link-check-results<<EOF" >> $GITHUB_OUTPUT
+          echo "$LINK_CHECK_RESULTS" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Notify on failure
+        if: ${{ failure() }}
+        id: slack
+        uses: slackapi/slack-github-action@485a9d42d3a73031f12ec201c457e2162c45d02d # pin@v2
+        with:
+          webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
+          webhook-type: webhook-trigger
+          payload: |
+            {
+              "channel_id": "${{ secrets.NOTIFICATION_CHANNEL_ID }}",
+              "github_repo": "${{ github.repository }}",
+              "github_actor": "${{ github.actor }}",
+              "github_workflow": "${{ github.workflow }}"
+            }

@@ -53,7 +53,7 @@ async function main() {
   if (Object.values(invalidLinks).length > 0) {
     console.error("Invalid URLs:", invalidLinks);
     console.log("Number of Invalid URLs:", Object.values(invalidLinks).length);
-    process.exit(1);
+    return invalidLinks;
   } else {
     console.log("All links are OK!");
   }

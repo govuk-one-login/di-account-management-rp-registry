@@ -1,8 +1,6 @@
 import getTranslations from "../src/get-translations";
 import puppeteer from "puppeteer";
 
-const AXIOS_TIMEOUT = 10000;
-
 function getUniqueLinks(): Set<string> {
   const enClients = Object.values(getTranslations("production", "en"));
   console.log("Number of RPs:", Object.values(enClients).length);
@@ -19,7 +17,7 @@ async function checkUrls(urls: string[]): Promise<Record<string, string>> {
   const invalidUrls: Record<string, string> = {};
   const browser = await puppeteer.launch({
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
-    headless: false,
+    headless: true,
   });
 
   await Promise.all(

@@ -54,8 +54,6 @@ import icsDesnz from "./icsDesnz";
 import coClientServiceJobs from "./coClientServiceJobs";
 import dvlaDriverAndVehiclesAccount from "./dvlaDriverAndVehiclesAccount";
 import dbsSubmitABarringReferral from "./dbsSubmitABarringReferral";
-import welshGovChildcareOfferForWalesProviders from "./welshGovChildcareOfferForWalesProviders";
-import welshGovChildcareOfferForWalesParents from "./welshGovChildcareOfferForWalesParents";
 
 export {
   govuk,
@@ -114,6 +112,4 @@ export {
   coClientServiceJobs,
   dvlaDriverAndVehiclesAccount,
   dbsSubmitABarringReferral,
-  welshGovChildcareOfferForWalesProviders,
-  welshGovChildcareOfferForWalesParents,
 };

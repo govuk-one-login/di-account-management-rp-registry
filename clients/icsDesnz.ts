@@ -2,8 +2,8 @@ import { Client } from "../interfaces/client.interface";
 
 const icsDesnz: Client = {
   clientId: {
-    production: "ylIM6FsPzeV5fN09v4cl2aDbpn",
-    integration: "ylIM6FsPzeV5fN09v4cl2aDbpn",
+    production: "ylIM6FsPzeV5fN09v4cl2aDbpnE",
+    integration: "ylIM6FsPzeV5fN09v4cl2aDbpnE",
     nonProduction: "icsDesnz",
   },
   isAvailableInWelsh: false,

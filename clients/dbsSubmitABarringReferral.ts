@@ -20,7 +20,7 @@ const dbsSubmitABarringReferral: Client = {
         "Submit a barring referral if you are concerned that an individual may have harmed, or put at risk, a child or vulnerable adult.",
       linkText: "Go to your Submit a barring referral account",
       linkUrl:
-        "https://www.submit-a-barring-referral.service.gov.uk/save-and-return/dashboard",
+        "https://www.submit-a-barring-referral.service.gov.uk/save-and-return/dashboard?lang=en",
     },
     cy: {
       header: "Cyflwyno atgyfeiriad gwahardd",
@@ -28,7 +28,7 @@ const dbsSubmitABarringReferral: Client = {
         "Cyflwyno atgyfeiriad gwahardd os ydych yn poeni y gallai plentyn, neu oedolyn bregus, fod mewn perygl.",
       linkText: "Ewch i'ch Cyfrif Cyflwyno atgyfeiriad gwahardd",
       linkUrl:
-        "https://www.submit-a-barring-referral.service.gov.uk/save-and-return/dashboard",
+        "https://www.submit-a-barring-referral.service.gov.uk/save-and-return/dashboard?lang=cy",
     },
   },
 };

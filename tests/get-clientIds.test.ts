@@ -1,5 +1,5 @@
 import { expect, test, describe, jest } from "@jest/globals";
-import getClient from "../src/get-client";
+import getClientIds from "../src/get-clientIds";
 
 jest.mock("../clients", () => ({
   __esModule: true,
@@ -20,10 +20,7 @@ jest.mock("../clients", () => ({
         },
       },
     },
-    clientId: {
-      production: "welshClientProd",
-      nonProduction: "welshClientNonProd",
-    },
+    clientId: "welshClient",
     clientType: "account",
     isAllowed: true,
     isHmrc: false,
@@ -60,7 +57,7 @@ jest.mock("../clients", () => ({
         paragraph2: "paragraph 2 en",
       },
     },
-    clientId: "englishClient",
+    clientId: "englishClientHmrc",
     clientType: "account",
     isAllowed: true,
     isHmrc: false,
@@ -69,32 +66,13 @@ jest.mock("../clients", () => ({
   },
 }));
 
-describe("getClient", () => {
-  test("should return the client object for the given clientId", () => {
-    const client = getClient("test", "welshClientNonProd");
-    expect(client).toEqual({
-      clientId: "welshClientNonProd",
-      clientType: "account",
-      isActivityLogEnabled: false,
-      isAllowed: true,
-      isAvailableInWelsh: true,
-      isHmrc: false,
-      isReportSuspiciousActivityEnabled: false,
-      showInClientSearch: true,
-    });
-  });
-
-  test("should return correct environment values", () => {
-    const client = getClient("production", "welshClientProd");
-    expect(client).toEqual({
-      clientId: "welshClientProd",
-      clientType: "account",
-      isActivityLogEnabled: false,
-      isAllowed: true,
-      isAvailableInWelsh: true,
-      isHmrc: false,
-      isReportSuspiciousActivityEnabled: false,
-      showInClientSearch: true,
-    });
+describe("getClientIds", () => {
+  test("should return translations in english", async () => {
+    const clientIds = getClientIds("test");
+    expect(clientIds).toStrictEqual([
+      "welshClient",
+      "englishClient",
+      "englishClientHmrc",
+    ]);
   });
 });

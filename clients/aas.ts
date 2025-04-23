@@ -2,8 +2,8 @@ import { Client } from "../interfaces/client.interface";
 
 const aas: Client = {
   clientId: {
-    production: "dVrdJ7aemrvR0YlX7lDRaXnz0mE",
-    integration: "dVrdJ7aemrvR0YlX7lDRaXnz0mE",
+    production: "MJ8nBsh32LHweUjb6x3p7qf-_TE",
+    integration: "MJ8nBsh32LHweUjb6x3p7qf-_TE",
     nonProduction: "aas",
   },
   isAvailableInWelsh: false,

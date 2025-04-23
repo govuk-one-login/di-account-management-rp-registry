@@ -7,10 +7,10 @@ export type EnvironmentValue<T> =
     };
 
 interface Translations {
-  header: string;
+  header?: string;
   description?: string;
-  linkText: string;
-  linkUrl: EnvironmentValue<string>;
+  linkText?: string;
+  linkUrl?: EnvironmentValue<string>;
   hintText?: string;
   paragraph1?: string;
   paragraph2?: string;
@@ -22,7 +22,7 @@ interface BaseClient {
     en: Translations;
   };
   isAllowed: boolean;
-  clientType: "service" | "account" | "home";
+  clientType: "service" | "account" | "home" | "internal";
   isHmrc: boolean;
   isReportSuspiciousActivityEnabled: boolean;
   isActivityLogEnabled: boolean;

@@ -67,6 +67,15 @@ jest.mock("../clients", () => ({
     isReportSuspiciousActivityEnabled: false,
     showInClientSearch: true,
   },
+  internalClient: {
+    isAvailableInWelsh: false,
+    clientId: "internalClient",
+    clientType: "internal",
+    isAllowed: true,
+    isHmrc: false,
+    isReportSuspiciousActivityEnabled: false,
+    showInClientSearch: false,
+  },
 }));
 
 describe("filterClient", () => {
@@ -117,7 +126,7 @@ describe("filterClient", () => {
 
   test("should return all clients if no filters are provided", () => {
     const result = filterClients("production");
-    expect(result).toHaveLength(3);
+    expect(result).toHaveLength(4);
   });
 
   test("should correctly apply environment transformation for production", () => {
@@ -161,6 +170,13 @@ describe("filterClient", () => {
 
   test("should correctly handle falsy values in filters", () => {
     const result = filterClients("production", { isHmrc: false });
-    expect(result).toHaveLength(2);
+    expect(result).toHaveLength(3);
+  });
+
+  test("should return clients matching internal clientType", () => {
+    const result = filterClients("production", {
+      clientType: "internal",
+    });
+    expect(result).toHaveLength(1);
   });
 });

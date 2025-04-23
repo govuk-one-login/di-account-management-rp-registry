@@ -9,16 +9,20 @@ import * as clients from "../clients";
 const convertToTranslation = (
   translations: Client["translations"]["en"],
   environment: string
-): Translation => {
-  return {
-    header: translations.header,
-    link_text: translations.linkText,
-    link_href: getValueForEnvironment(environment, translations.linkUrl),
-    ...(translations.description && { description: translations.description }),
-    ...(translations.hintText && { hint_text: translations.hintText }),
-    ...(translations.paragraph1 && { paragraph1: translations.paragraph1 }),
-    ...(translations.paragraph2 && { paragraph2: translations.paragraph2 }),
-  };
+): Translation | undefined => {
+  if (translations.header && translations.linkText && translations.linkUrl) {
+    return {
+      header: translations.header,
+      link_text: translations.linkText,
+      link_href: getValueForEnvironment(environment, translations.linkUrl),
+      ...(translations.description && {
+        description: translations.description,
+      }),
+      ...(translations.hintText && { hint_text: translations.hintText }),
+      ...(translations.paragraph1 && { paragraph1: translations.paragraph1 }),
+      ...(translations.paragraph2 && { paragraph2: translations.paragraph2 }),
+    };
+  }
 };
 
 const getTranslations = (
@@ -36,10 +40,13 @@ const getTranslations = (
           : clientData.translations.en;
       const clientId = getValueForEnvironment(environment, clientData.clientId);
 
-      translations[clientId] = convertToTranslation(
+      const convertedTranslation = convertToTranslation(
         clientTranslations,
         environment
       );
+      if (typeof convertedTranslation !== "undefined") {
+        translations[clientId] = convertedTranslation;
+      }
     }
   });
 

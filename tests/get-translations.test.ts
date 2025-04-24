@@ -64,6 +64,18 @@ jest.mock("../clients", () => ({
     isReportSuspiciousActivityEnabled: false,
     showInClientSearch: true,
   },
+  internalClient: {
+    isAvailableInWelsh: false,
+    translations: {
+      en: {},
+    },
+    clientId: "internalClient",
+    clientType: "internal",
+    isAllowed: true,
+    isHmrc: false,
+    isReportSuspiciousActivityEnabled: false,
+    showInClientSearch: false,
+  },
 }));
 
 describe("getTranslations", () => {
@@ -117,7 +129,7 @@ describe("getTranslations", () => {
       },
     });
   });
-  test("should return correct environment varialbes", async () => {
+  test("should return correct environment variables", async () => {
     const translations = getTranslations("production", "cy");
     expect(translations).toStrictEqual({
       welshClient: {

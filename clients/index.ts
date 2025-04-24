@@ -54,6 +54,10 @@ import icsDesnz from "./icsDesnz";
 import coClientServiceJobs from "./coClientServiceJobs";
 import dvlaDriverAndVehiclesAccount from "./dvlaDriverAndVehiclesAccount";
 import dbsSubmitABarringReferral from "./dbsSubmitABarringReferral";
+import ipvReturn from "./ipvReturn";
+import smokeTests from "./smokeTests";
+import relyingPartyStub from "./relyingPartyStub";
+import hmrcGovernmentGateway from "./hmrcGovernmentGateway";
 
 export {
   govuk,
@@ -112,4 +116,8 @@ export {
   coClientServiceJobs,
   dvlaDriverAndVehiclesAccount,
   dbsSubmitABarringReferral,
+  ipvReturn,
+  smokeTests,
+  relyingPartyStub,
+  hmrcGovernmentGateway,
 };

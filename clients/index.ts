@@ -58,6 +58,8 @@ import ipvReturn from "./ipvReturn";
 import smokeTests from "./smokeTests";
 import relyingPartyStub from "./relyingPartyStub";
 import hmrcGovernmentGateway from "./hmrcGovernmentGateway";
+import welshGovChildcareOfferForWalesParents from "./welshGovChildcareOfferForWalesParents";
+import welshGovChildcareOfferForWalesProviders from "./welshGovChildcareOfferForWalesProviders";
 
 export {
   govuk,
@@ -120,4 +122,6 @@ export {
   smokeTests,
   relyingPartyStub,
   hmrcGovernmentGateway,
+  welshGovChildcareOfferForWalesParents,
+  welshGovChildcareOfferForWalesProviders,
 };

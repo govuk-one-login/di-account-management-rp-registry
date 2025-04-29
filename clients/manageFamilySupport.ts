@@ -22,7 +22,7 @@ const manageFamilySupport: Client = {
         "https://manage-family-support-services-and-accounts.education.gov.uk/Welcome",
     },
   },
-  isOffboarded: false,
+  isOffboarded: true,
 };
 
 export default manageFamilySupport;

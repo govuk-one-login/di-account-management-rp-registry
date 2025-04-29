@@ -11,7 +11,7 @@ const connectFamilies: Client = {
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
   isActivityLogEnabled: false,
-  showInClientSearch: { production: true, nonProduction: true },
+  showInClientSearch: { production: false, nonProduction: false },
   translations: {
     en: {
       header: "Connect families to support",

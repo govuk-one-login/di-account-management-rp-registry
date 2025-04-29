@@ -25,10 +25,10 @@ jest.mock("../clients", () => ({
       nonProduction: "welshClientNonProd",
     },
     clientType: "account",
-    isAllowed: true,
     isHmrc: false,
     isReportSuspiciousActivityEnabled: false,
     showInClientSearch: true,
+    isOffboarded: false,
   },
   enClient: {
     isAvailableInWelsh: false,
@@ -42,10 +42,10 @@ jest.mock("../clients", () => ({
     },
     clientId: "englishClient",
     clientType: "account",
-    isAllowed: true,
     isHmrc: false,
     isReportSuspiciousActivityEnabled: false,
     showInClientSearch: true,
+    isOffboarded: false,
   },
   hmrcClient: {
     isAvailableInWelsh: false,
@@ -62,19 +62,38 @@ jest.mock("../clients", () => ({
     },
     clientId: "hmrcClient",
     clientType: "account",
-    isAllowed: true,
     isHmrc: true,
     isReportSuspiciousActivityEnabled: false,
     showInClientSearch: true,
+    isOffboarded: false,
   },
   internalClient: {
     isAvailableInWelsh: false,
     clientId: "internalClient",
     clientType: "internal",
-    isAllowed: true,
     isHmrc: false,
     isReportSuspiciousActivityEnabled: false,
     showInClientSearch: false,
+  },
+  offboardedClient: {
+    isAvailableInWelsh: false,
+    translations: {
+      en: {
+        header: "header en",
+        linkText: "link text en",
+        linkUrl: "link url en",
+        description: "description en",
+        hintText: "hint text en",
+        paragraph1: "paragraph 1 en",
+        paragraph2: "paragraph 2 en",
+      },
+    },
+    clientId: "offboardedClient",
+    clientType: "account",
+    isHmrc: false,
+    isReportSuspiciousActivityEnabled: false,
+    showInClientSearch: false,
+    isOffboarded: true,
   },
 }));
 
@@ -86,11 +105,11 @@ describe("filterClient", () => {
         clientId: "hmrcClient",
         clientType: "account",
         isActivityLogEnabled: false,
-        isAllowed: true,
         isAvailableInWelsh: false,
         isHmrc: true,
         isReportSuspiciousActivityEnabled: false,
         showInClientSearch: true,
+        isOffboarded: false,
       },
     ]);
   });
@@ -102,19 +121,19 @@ describe("filterClient", () => {
         clientId: "welshClientNonProd",
         clientType: "account",
         isActivityLogEnabled: false,
-        isAllowed: true,
         isAvailableInWelsh: true,
         isHmrc: false,
         isReportSuspiciousActivityEnabled: false,
         showInClientSearch: true,
+        isOffboarded: false,
       },
     ]);
   });
 
-  test('should return clients matching multiple filters (clientType: "account", isAllowed: true)', () => {
+  test('should return clients matching multiple filters (clientType: "account", isOffboarded: false)', () => {
     const result = filterClients("production", {
       clientType: "account",
-      isAllowed: true,
+      isOffboarded: false,
     });
     expect(result).toHaveLength(3);
   });
@@ -126,7 +145,7 @@ describe("filterClient", () => {
 
   test("should return all clients if no filters are provided", () => {
     const result = filterClients("production");
-    expect(result).toHaveLength(4);
+    expect(result).toHaveLength(5);
   });
 
   test("should correctly apply environment transformation for production", () => {
@@ -136,11 +155,11 @@ describe("filterClient", () => {
         clientId: "welshClientProd",
         clientType: "account",
         isActivityLogEnabled: false,
-        isAllowed: true,
         isAvailableInWelsh: true,
         isHmrc: false,
         isReportSuspiciousActivityEnabled: false,
         showInClientSearch: true,
+        isOffboarded: false,
       },
     ]);
   });
@@ -152,11 +171,11 @@ describe("filterClient", () => {
         clientId: "welshClientNonProd",
         clientType: "account",
         isActivityLogEnabled: false,
-        isAllowed: true,
         isAvailableInWelsh: true,
         isHmrc: false,
         isReportSuspiciousActivityEnabled: false,
         showInClientSearch: true,
+        isOffboarded: false,
       },
     ]);
   });
@@ -170,7 +189,7 @@ describe("filterClient", () => {
 
   test("should correctly handle falsy values in filters", () => {
     const result = filterClients("production", { isHmrc: false });
-    expect(result).toHaveLength(3);
+    expect(result).toHaveLength(4);
   });
 
   test("should return clients matching internal clientType", () => {

@@ -7,7 +7,6 @@ const ukmcab: Client = {
     nonProduction: "ukmcab",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const ukmcab: Client = {
         "https://find-a-conformity-assessment-body.service.gov.uk/account/login",
     },
   },
+  isOffboarded: false,
 };
 
 export default ukmcab;

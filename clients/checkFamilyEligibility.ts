@@ -7,7 +7,6 @@ const checkFamilyEligibility: Client = {
     nonProduction: "checkFamilyEligibility",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "service",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -20,6 +19,7 @@ const checkFamilyEligibility: Client = {
       linkUrl: "https://check-free-school-meals.education.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default checkFamilyEligibility;

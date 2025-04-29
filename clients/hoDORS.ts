@@ -7,7 +7,6 @@ const hoDORS: Client = {
     nonProduction: "hoDORS",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const hoDORS: Client = {
       linkUrl: "https://www.view-my-disclosure-result.dbsdigital.io/auth/login",
     },
   },
+  isOffboarded: false,
 };
 
 export default hoDORS;

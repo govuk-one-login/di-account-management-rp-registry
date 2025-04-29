@@ -7,7 +7,6 @@ const defraDangerousDogsIndex: Client = {
     nonProduction: "defraDangerousDogsIndex",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const defraDangerousDogsIndex: Client = {
       linkUrl: "https://dogsindex.defra.gov.uk",
     },
   },
+  isOffboarded: false,
 };
 
 export default defraDangerousDogsIndex;

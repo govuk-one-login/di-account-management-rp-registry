@@ -21,13 +21,13 @@ interface BaseClient {
   translations: {
     en: Translations;
   };
-  isAllowed: boolean;
   clientType: "service" | "account" | "home" | "internal";
   isHmrc: boolean;
   isReportSuspiciousActivityEnabled: boolean;
   isActivityLogEnabled: boolean;
   showInClientSearch: EnvironmentValue<boolean>;
   isAvailableInWelsh: boolean;
+  isOffboarded: boolean;
 }
 
 interface WelshClient extends BaseClient {

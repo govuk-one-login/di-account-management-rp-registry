@@ -7,7 +7,6 @@ const ruralPaymentWales: Client = {
     nonProduction: "ruralPaymentWales",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -27,6 +26,7 @@ const ruralPaymentWales: Client = {
       linkUrl: "https://rpwonline.gov.wales",
     },
   },
+  isOffboarded: false,
 };
 
 export default ruralPaymentWales;

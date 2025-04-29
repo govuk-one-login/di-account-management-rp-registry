@@ -7,7 +7,6 @@ const socialWorkEngland: Client = {
     nonProduction: "socialWorkEngland",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "service",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -21,6 +20,7 @@ const socialWorkEngland: Client = {
         "https://www.socialworkengland.org.uk/registration/apply-for-registration",
     },
   },
+  isOffboarded: false,
 };
 
 export default socialWorkEngland;

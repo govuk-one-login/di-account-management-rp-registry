@@ -7,7 +7,6 @@ const mortgageDeed: Client = {
     nonProduction: "mortgageDeed",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "service",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -20,6 +19,7 @@ const mortgageDeed: Client = {
       linkUrl: "https://sign-your-mortgage-deed.landregistry.gov.uk",
     },
   },
+  isOffboarded: false,
 };
 
 export default mortgageDeed;

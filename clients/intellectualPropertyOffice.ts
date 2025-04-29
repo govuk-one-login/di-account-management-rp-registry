@@ -7,7 +7,6 @@ const intellectualPropertyOffice: Client = {
     nonProduction: "intellectualPropertyOffice",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -29,6 +28,7 @@ const intellectualPropertyOffice: Client = {
       linkUrl: "https://www.manage-intellectual-property.service.gov.uk/cy",
     },
   },
+  isOffboarded: false,
 };
 
 export default intellectualPropertyOffice;

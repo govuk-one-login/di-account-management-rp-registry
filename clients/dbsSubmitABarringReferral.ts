@@ -7,7 +7,6 @@ const dbsSubmitABarringReferral: Client = {
     nonProduction: "dbsSubmitABarringReferral",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -31,6 +30,7 @@ const dbsSubmitABarringReferral: Client = {
         "https://www.submit-a-barring-referral.service.gov.uk/save-and-return/dashboard?lang=cy",
     },
   },
+  isOffboarded: false,
 };
 
 export default dbsSubmitABarringReferral;

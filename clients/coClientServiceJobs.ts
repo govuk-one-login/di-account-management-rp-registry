@@ -7,7 +7,6 @@ const coClientServiceJobs: Client = {
     nonProduction: "coClientServiceJobs",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -29,6 +28,7 @@ const coClientServiceJobs: Client = {
       linkUrl: "http://beta.civilservicejobs.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default coClientServiceJobs;

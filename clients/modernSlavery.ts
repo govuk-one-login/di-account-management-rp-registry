@@ -7,7 +7,6 @@ const modernSlavery: Client = {
     nonProduction: "modernSlavery",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -23,6 +22,7 @@ const modernSlavery: Client = {
         "https://modern-slavery-statement-registry.service.gov.uk/manage-organisations",
     },
   },
+  isOffboarded: false,
 };
 
 export default modernSlavery;

@@ -7,7 +7,6 @@ const dfeApplyForTeacherTraining: Client = {
     nonProduction: "dfeApplyForTeacherTraining",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const dfeApplyForTeacherTraining: Client = {
         "https://www.apply-for-teacher-training.service.gov.uk/candidate/account",
     },
   },
+  isOffboarded: false,
 };
 
 export default dfeApplyForTeacherTraining;

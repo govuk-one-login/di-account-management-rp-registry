@@ -7,7 +7,6 @@ const ate: Client = {
     nonProduction: "ate",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const ate: Client = {
         "https://update-your-capital-schemes.activetravelengland.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default ate;

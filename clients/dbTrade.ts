@@ -7,7 +7,6 @@ const dbTrade: Client = {
     nonProduction: "dbTrade",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const dbTrade: Client = {
       linkUrl: "https://apply-sanctioned-services-licence.trade.gov.uk/apply",
     },
   },
+  isOffboarded: false,
 };
 
 export default dbTrade;

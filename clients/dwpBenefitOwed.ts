@@ -7,7 +7,6 @@ const dwpBenefitOwed: Client = {
     nonProduction: "dwpBenefitOwed",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -41,6 +40,7 @@ const dwpBenefitOwed: Client = {
       },
     },
   },
+  isOffboarded: false,
 };
 
 export default dwpBenefitOwed;

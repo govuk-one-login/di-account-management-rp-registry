@@ -7,7 +7,6 @@ const aas: Client = {
     nonProduction: "aas",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const aas: Client = {
         "https://assessors.apprenticeships.education.gov.uk/account/signin",
     },
   },
+  isOffboarded: false,
 };
 
 export default aas;

@@ -7,7 +7,6 @@ const mojPlanYourFuture: Client = {
     nonProduction: "mojPlanYourFuture",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const mojPlanYourFuture: Client = {
       linkUrl: "https://plan-your-future.service.justice.gov.uk/otp",
     },
   },
+  isOffboarded: false,
 };
 
 export default mojPlanYourFuture;

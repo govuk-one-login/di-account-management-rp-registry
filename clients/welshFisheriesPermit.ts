@@ -7,7 +7,6 @@ const welshFisheriesPermit: Client = {
     nonProduction: "welshFisheriesPermit",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -29,6 +28,7 @@ const welshFisheriesPermit: Client = {
       linkUrl: "https://fishingpermitsandcatches.service.gov.wales",
     },
   },
+  isOffboarded: false,
 };
 
 export default welshFisheriesPermit;

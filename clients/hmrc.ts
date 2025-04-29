@@ -7,7 +7,6 @@ const hmrc: Client = {
     nonProduction: "hmrc",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "service",
   isHmrc: true,
   isReportSuspiciousActivityEnabled: false,
@@ -35,6 +34,7 @@ const hmrc: Client = {
       paragraph2: "Rydym yn gweithio i wneud hyn yn bosibl.",
     },
   },
+  isOffboarded: false,
 };
 
 export default hmrc;

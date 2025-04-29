@@ -7,7 +7,6 @@ const ofqual: Client = {
     nonProduction: "ofqual",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -21,6 +20,7 @@ const ofqual: Client = {
       linkUrl: "https://subject-matter-specialists.ofqual.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default ofqual;

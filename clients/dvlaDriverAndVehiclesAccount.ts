@@ -7,7 +7,6 @@ const dvlaDriverAndVehiclesAccount: Client = {
     nonProduction: "dvlaDriverAndVehiclesAccount",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -31,6 +30,7 @@ const dvlaDriverAndVehiclesAccount: Client = {
         "https://driver-and-vehicles-account.service.gov.uk/home?locale=cy",
     },
   },
+  isOffboarded: false,
 };
 
 export default dvlaDriverAndVehiclesAccount;

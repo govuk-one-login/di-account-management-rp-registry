@@ -7,7 +7,6 @@ const companyHouseAccounts: Client = {
     nonProduction: "companyHouseAccounts",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const companyHouseAccounts: Client = {
       linkUrl: "https://find-and-update.company-information.service.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default companyHouseAccounts;

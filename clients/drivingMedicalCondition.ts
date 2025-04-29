@@ -7,7 +7,6 @@ const drivingMedicalCondition: Client = {
     nonProduction: "drivingMedicalCondition",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "service",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -20,6 +19,7 @@ const drivingMedicalCondition: Client = {
       linkUrl: "https://www.gov.uk/browse/driving/disability-health-condition",
     },
   },
+  isOffboarded: false,
 };
 
 export default drivingMedicalCondition;

@@ -7,7 +7,6 @@ const hmpoCancelPassport: Client = {
     nonProduction: "hmpoCancelPassport",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -23,6 +22,7 @@ const hmpoCancelPassport: Client = {
         "https://www.loststolenpassport.service.gov.uk/lost-stolen/passport-holder",
     },
   },
+  isOffboarded: false,
 };
 
 export default hmpoCancelPassport;

@@ -7,7 +7,6 @@ const useLastingPowerOfAttorney: Client = {
     nonProduction: "useLastingPowerOfAttorney",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -29,6 +28,7 @@ const useLastingPowerOfAttorney: Client = {
         "https://use-lasting-power-of-attorney.service.gov.uk/lpa/dashboard",
     },
   },
+  isOffboarded: false,
 };
 
 export default useLastingPowerOfAttorney;

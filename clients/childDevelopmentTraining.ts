@@ -7,7 +7,6 @@ const childDevelopmentTraining: Client = {
     nonProduction: "childDevelopmentTraining",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const childDevelopmentTraining: Client = {
       linkUrl: "https://child-development-training.education.gov.uk/my-modules",
     },
   },
+  isOffboarded: false,
 };
 
 export default childDevelopmentTraining;

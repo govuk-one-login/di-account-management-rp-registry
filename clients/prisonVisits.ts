@@ -7,7 +7,6 @@ const prisonVisits: Client = {
     nonProduction: "prisonVisits",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -21,6 +20,7 @@ const prisonVisits: Client = {
       linkUrl: "https://prison-visits.service.justice.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default prisonVisits;

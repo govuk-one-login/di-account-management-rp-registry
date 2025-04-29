@@ -7,7 +7,6 @@ const dfeQualifiedTeacherStatus: Client = {
     nonProduction: "dfeQualifiedTeacherStatus",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -23,6 +22,7 @@ const dfeQualifiedTeacherStatus: Client = {
         "https://apply-for-qts-in-england.education.gov.uk/teacher/application",
     },
   },
+  isOffboarded: false,
 };
 
 export default dfeQualifiedTeacherStatus;

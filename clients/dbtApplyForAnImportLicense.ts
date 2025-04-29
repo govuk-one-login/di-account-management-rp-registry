@@ -7,7 +7,6 @@ const dbtApplyForAnImportLicense: Client = {
     nonProduction: "dbtApplyForAnImportLicense",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const dbtApplyForAnImportLicense: Client = {
       linkUrl: "https://apply-for-an-import-licence.service.gov.uk/workbasket/",
     },
   },
+  isOffboarded: false,
 };
 
 export default dbtApplyForAnImportLicense;

@@ -7,7 +7,6 @@ const findATender: Client = {
     nonProduction: "findATender",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -29,6 +28,7 @@ const findATender: Client = {
       linkUrl: "https://supplier-information.find-tender.service.gov.uk",
     },
   },
+  isOffboarded: false,
 };
 
 export default findATender;

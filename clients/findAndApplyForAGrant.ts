@@ -7,7 +7,6 @@ const findAndApplyForAGrant: Client = {
     nonProduction: "findAndApplyForAGrant",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const findAndApplyForAGrant: Client = {
         "https://find-government-grants.service.cabinetoffice.gov.uk/apply/applicant",
     },
   },
+  isOffboarded: false,
 };
 
 export default findAndApplyForAGrant;

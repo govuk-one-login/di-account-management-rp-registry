@@ -7,7 +7,6 @@ const gbis: Client = {
     nonProduction: "gbis",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const gbis: Client = {
       linkUrl: "https://gbinsulationscheme.ofgem.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default gbis;

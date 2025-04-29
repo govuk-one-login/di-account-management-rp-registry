@@ -7,7 +7,6 @@ const heatNetworkZoning: Client = {
     nonProduction: "heatNetworkZoning",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const heatNetworkZoning: Client = {
       linkUrl: "https://www.heat-network-zoning.data.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default heatNetworkZoning;

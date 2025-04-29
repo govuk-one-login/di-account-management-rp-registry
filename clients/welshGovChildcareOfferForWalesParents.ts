@@ -7,7 +7,6 @@ const welshGovChildcareOfferForWalesParents: Client = {
     nonProduction: "welshGovChildcareOfferForWalesParents",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -27,6 +26,7 @@ const welshGovChildcareOfferForWalesParents: Client = {
       linkUrl: "https://rhieni.cynniggofalplant.gwasanaeth.llyw.cymru",
     },
   },
+  isOffboarded: false,
 };
 
 export default welshGovChildcareOfferForWalesParents;

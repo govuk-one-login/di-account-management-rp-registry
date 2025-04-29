@@ -7,12 +7,11 @@ const manageFamilySupport: Client = {
     nonProduction: "manageFamilySupport",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
   isActivityLogEnabled: false,
-  showInClientSearch: { production: true, nonProduction: true },
+  showInClientSearch: { production: false, nonProduction: false },
   translations: {
     en: {
       header: "Manage family support services and accounts",
@@ -23,6 +22,7 @@ const manageFamilySupport: Client = {
         "https://manage-family-support-services-and-accounts.education.gov.uk/Welcome",
     },
   },
+  isOffboarded: true,
 };
 
 export default manageFamilySupport;

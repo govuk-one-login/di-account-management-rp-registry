@@ -7,7 +7,6 @@ const dfeTeacherVacancies: Client = {
     nonProduction: "dfeTeacherVacancies",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const dfeTeacherVacancies: Client = {
       linkUrl: "https://teaching-vacancies.service.gov.uk/jobseekers/account",
     },
   },
+  isOffboarded: false,
 };
 
 export default dfeTeacherVacancies;

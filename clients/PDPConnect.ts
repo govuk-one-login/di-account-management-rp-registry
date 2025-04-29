@@ -7,7 +7,6 @@ const PDPConnect: Client = {
     nonProduction: "PDPConnect",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -21,6 +20,7 @@ const PDPConnect: Client = {
       linkUrl: "https://www.pensionsdashboard-service.org.uk/s/",
     },
   },
+  isOffboarded: false,
 };
 
 export default PDPConnect;

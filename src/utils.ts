@@ -53,7 +53,7 @@ const transformClientObject = (
   return {
     clientId,
     clientType: client.clientType,
-    isAllowed: client.isAllowed,
+    isOffboarded: client.isOffboarded,
     isHmrc: client.isHmrc,
     isReportSuspiciousActivityEnabled: client.isReportSuspiciousActivityEnabled,
     isAvailableInWelsh: client.isAvailableInWelsh,

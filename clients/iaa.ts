@@ -7,7 +7,6 @@ const iaa: Client = {
     nonProduction: "iaa",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const iaa: Client = {
       linkUrl: "https://portal.immigrationadviceauthority.gov.uk/s/",
     },
   },
+  isOffboarded: false,
 };
 
 export default iaa;

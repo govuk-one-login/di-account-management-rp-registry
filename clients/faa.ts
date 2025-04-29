@@ -7,7 +7,6 @@ const faa: Client = {
     nonProduction: "faa",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const faa: Client = {
         "https://www.findapprenticeship.service.gov.uk/apprenticeshipsearch",
     },
   },
+  isOffboarded: false,
 };
 
 export default faa;

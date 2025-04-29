@@ -7,7 +7,6 @@ const lite: Client = {
     nonProduction: "lite",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const lite: Client = {
       linkUrl: "https://exporter.lite.private-beta.service.trade.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default lite;

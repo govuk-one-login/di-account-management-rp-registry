@@ -7,7 +7,6 @@ const dfeFindAndUseAnApi: Client = {
     nonProduction: "dfeFindAndUseAnApi",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -23,6 +22,7 @@ const dfeFindAndUseAnApi: Client = {
         "https://beta-find-and-use-an-api.education.gov.uk/identity/signin",
     },
   },
+  isOffboarded: false,
 };
 
 export default dfeFindAndUseAnApi;

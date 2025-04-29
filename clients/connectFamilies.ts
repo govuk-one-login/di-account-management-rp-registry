@@ -7,12 +7,11 @@ const connectFamilies: Client = {
     nonProduction: "connectFamilies",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
   isActivityLogEnabled: false,
-  showInClientSearch: { production: true, nonProduction: true },
+  showInClientSearch: { production: false, nonProduction: false },
   translations: {
     en: {
       header: "Connect families to support",
@@ -23,6 +22,7 @@ const connectFamilies: Client = {
         "https://connect-families-to-support.education.gov.uk/ProfessionalReferral/Search",
     },
   },
+  isOffboarded: true,
 };
 
 export default connectFamilies;

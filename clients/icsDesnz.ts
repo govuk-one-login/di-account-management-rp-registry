@@ -7,7 +7,6 @@ const icsDesnz: Client = {
     nonProduction: "icsDesnz",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const icsDesnz: Client = {
         "https://manage-clean-heat-market-mechanism.service.gov.uk/scheme-year",
     },
   },
+  isOffboarded: false,
 };
 
 export default icsDesnz;

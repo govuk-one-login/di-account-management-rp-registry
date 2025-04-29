@@ -7,7 +7,6 @@ const CMAD: Client = {
     nonProduction: "CMAD",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -21,6 +20,7 @@ const CMAD: Client = {
       linkUrl: "https://confirm.my.apprenticeships.education.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default CMAD;

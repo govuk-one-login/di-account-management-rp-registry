@@ -7,7 +7,6 @@ const criminalInjuriesCompensation: Client = {
     nonProduction: "criminalInjuriesCompensation",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -23,6 +22,7 @@ const criminalInjuriesCompensation: Client = {
         "https://claim-criminal-injuries-compensation.service.justice.gov.uk/account",
     },
   },
+  isOffboarded: false,
 };
 
 export default criminalInjuriesCompensation;

@@ -7,7 +7,6 @@ const firs: Client = {
     nonProduction: "firs",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const firs: Client = {
       linkUrl: "http://foreign-influence-registration-scheme.service.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default firs;

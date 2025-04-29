@@ -7,7 +7,6 @@ const apprenticeshipsService: Client = {
     nonProduction: "apprenticeshipsService",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -22,6 +21,7 @@ const apprenticeshipsService: Client = {
       linkUrl: "https://accounts.manage-apprenticeships.service.gov.uk/service",
     },
   },
+  isOffboarded: false,
 };
 
 export default apprenticeshipsService;

@@ -7,7 +7,6 @@ const vehicleOperatorLicense: Client = {
     nonProduction: "vehicleOperatorLicense",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "service",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -20,6 +19,7 @@ const vehicleOperatorLicense: Client = {
       linkUrl: "https://www.gov.uk/apply-vehicle-operator-licence",
     },
   },
+  isOffboarded: false,
 };
 
 export default vehicleOperatorLicense;

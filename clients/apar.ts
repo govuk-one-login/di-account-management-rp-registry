@@ -7,7 +7,6 @@ const apar: Client = {
     nonProduction: "apar",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -23,6 +22,7 @@ const apar: Client = {
       linkUrl: "https://apply.apprenticeships.education.gov.uk/signIn",
     },
   },
+  isOffboarded: false,
 };
 
 export default apar;

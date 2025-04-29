@@ -7,7 +7,6 @@ const dbtApplyForAnExportCertificate: Client = {
     nonProduction: "dbtApplyForAnExportCertificate",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
@@ -23,6 +22,7 @@ const dbtApplyForAnExportCertificate: Client = {
         "https://apply-for-an-export-certificate.service.gov.uk/workbasket/",
     },
   },
+  isOffboarded: false,
 };
 
 export default dbtApplyForAnExportCertificate;

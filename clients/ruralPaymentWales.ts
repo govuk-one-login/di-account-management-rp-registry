@@ -7,7 +7,6 @@ const ruralPaymentWales: Client = {
     nonProduction: "ruralPaymentWales",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

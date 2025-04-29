@@ -7,7 +7,6 @@ const findATender: Client = {
     nonProduction: "findATender",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

@@ -7,7 +7,6 @@ const drivingMedicalCondition: Client = {
     nonProduction: "drivingMedicalCondition",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "service",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

@@ -7,7 +7,6 @@ const useLastingPowerOfAttorney: Client = {
     nonProduction: "useLastingPowerOfAttorney",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

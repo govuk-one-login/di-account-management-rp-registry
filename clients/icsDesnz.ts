@@ -7,7 +7,6 @@ const icsDesnz: Client = {
     nonProduction: "icsDesnz",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

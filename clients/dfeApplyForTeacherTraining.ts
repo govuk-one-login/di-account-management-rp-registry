@@ -7,7 +7,6 @@ const dfeApplyForTeacherTraining: Client = {
     nonProduction: "dfeApplyForTeacherTraining",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

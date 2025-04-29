@@ -7,7 +7,6 @@ const dfeClaimAdditionalPayments: Client = {
     nonProduction: "dfeClaimAdditionalPayments",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "service",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

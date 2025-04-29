@@ -7,7 +7,6 @@ const dbs: Client = {
     nonProduction: "dbs",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "service",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

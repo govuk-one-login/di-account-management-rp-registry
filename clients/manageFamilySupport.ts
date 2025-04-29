@@ -7,7 +7,6 @@ const manageFamilySupport: Client = {
     nonProduction: "manageFamilySupport",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

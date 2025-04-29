@@ -7,7 +7,6 @@ const heatNetworkZoning: Client = {
     nonProduction: "heatNetworkZoning",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

@@ -7,7 +7,6 @@ const aas: Client = {
     nonProduction: "aas",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

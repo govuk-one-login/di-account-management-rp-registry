@@ -7,7 +7,6 @@ const faa: Client = {
     nonProduction: "faa",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

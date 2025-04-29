@@ -25,7 +25,6 @@ jest.mock("../clients", () => ({
       nonProduction: "welshClientNonProd",
     },
     clientType: "account",
-    isAllowed: true,
     isHmrc: false,
     isReportSuspiciousActivityEnabled: false,
     showInClientSearch: true,
@@ -42,7 +41,6 @@ jest.mock("../clients", () => ({
     },
     clientId: "englishClient",
     clientType: "account",
-    isAllowed: true,
     isHmrc: false,
     isReportSuspiciousActivityEnabled: false,
     showInClientSearch: true,
@@ -62,7 +60,6 @@ jest.mock("../clients", () => ({
     },
     clientId: "hmrcClient",
     clientType: "account",
-    isAllowed: true,
     isHmrc: true,
     isReportSuspiciousActivityEnabled: false,
     showInClientSearch: true,
@@ -71,7 +68,6 @@ jest.mock("../clients", () => ({
     isAvailableInWelsh: false,
     clientId: "internalClient",
     clientType: "internal",
-    isAllowed: true,
     isHmrc: false,
     isReportSuspiciousActivityEnabled: false,
     showInClientSearch: false,
@@ -86,7 +82,6 @@ describe("filterClient", () => {
         clientId: "hmrcClient",
         clientType: "account",
         isActivityLogEnabled: false,
-        isAllowed: true,
         isAvailableInWelsh: false,
         isHmrc: true,
         isReportSuspiciousActivityEnabled: false,
@@ -102,7 +97,6 @@ describe("filterClient", () => {
         clientId: "welshClientNonProd",
         clientType: "account",
         isActivityLogEnabled: false,
-        isAllowed: true,
         isAvailableInWelsh: true,
         isHmrc: false,
         isReportSuspiciousActivityEnabled: false,
@@ -114,7 +108,6 @@ describe("filterClient", () => {
   test('should return clients matching multiple filters (clientType: "account", isAllowed: true)', () => {
     const result = filterClients("production", {
       clientType: "account",
-      isAllowed: true,
     });
     expect(result).toHaveLength(3);
   });
@@ -136,7 +129,6 @@ describe("filterClient", () => {
         clientId: "welshClientProd",
         clientType: "account",
         isActivityLogEnabled: false,
-        isAllowed: true,
         isAvailableInWelsh: true,
         isHmrc: false,
         isReportSuspiciousActivityEnabled: false,
@@ -152,7 +144,6 @@ describe("filterClient", () => {
         clientId: "welshClientNonProd",
         clientType: "account",
         isActivityLogEnabled: false,
-        isAllowed: true,
         isAvailableInWelsh: true,
         isHmrc: false,
         isReportSuspiciousActivityEnabled: false,

@@ -7,7 +7,6 @@ const smokeTests: Client = {
     nonProduction: "smokeTests",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "internal",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

@@ -7,7 +7,6 @@ const welshGovChildcareOfferForWalesParents: Client = {
     nonProduction: "welshGovChildcareOfferForWalesParents",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

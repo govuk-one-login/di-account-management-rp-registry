@@ -7,7 +7,6 @@ const veteransCard: Client = {
     nonProduction: "veteransCard",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "service",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

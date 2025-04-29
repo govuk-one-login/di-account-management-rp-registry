@@ -7,7 +7,6 @@ const CMAD: Client = {
     nonProduction: "CMAD",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

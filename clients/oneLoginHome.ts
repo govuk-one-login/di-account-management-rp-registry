@@ -7,7 +7,6 @@ const oneLoginHome: Client = {
     nonProduction: "EMGmY82k-92QSakDl_9keKDFmZY",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "home",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

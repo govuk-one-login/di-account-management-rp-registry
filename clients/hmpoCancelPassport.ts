@@ -7,7 +7,6 @@ const hmpoCancelPassport: Client = {
     nonProduction: "hmpoCancelPassport",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

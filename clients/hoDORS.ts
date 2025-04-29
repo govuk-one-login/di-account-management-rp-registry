@@ -7,7 +7,6 @@ const hoDORS: Client = {
     nonProduction: "hoDORS",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

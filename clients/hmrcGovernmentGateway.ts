@@ -7,7 +7,6 @@ const hmrcGovernmentGateway: Client = {
     nonProduction: "hmrcGovernmentGateway",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "internal",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

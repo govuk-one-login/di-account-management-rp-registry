@@ -7,7 +7,6 @@ const hmrc: Client = {
     nonProduction: "hmrc",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "service",
   isHmrc: true,
   isReportSuspiciousActivityEnabled: false,

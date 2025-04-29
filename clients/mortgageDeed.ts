@@ -7,7 +7,6 @@ const mortgageDeed: Client = {
     nonProduction: "mortgageDeed",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "service",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

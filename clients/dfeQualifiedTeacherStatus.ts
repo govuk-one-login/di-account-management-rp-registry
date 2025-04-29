@@ -7,7 +7,6 @@ const dfeQualifiedTeacherStatus: Client = {
     nonProduction: "dfeQualifiedTeacherStatus",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

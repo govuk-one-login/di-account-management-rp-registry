@@ -7,7 +7,6 @@ const relyingPartyStub: Client = {
     nonProduction: "relyingPartyStub",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "internal",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

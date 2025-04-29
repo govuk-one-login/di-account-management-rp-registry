@@ -7,7 +7,6 @@ const dbtApplyForAnImportLicense: Client = {
     nonProduction: "dbtApplyForAnImportLicense",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

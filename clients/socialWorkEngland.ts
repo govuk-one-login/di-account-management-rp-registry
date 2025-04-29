@@ -7,7 +7,6 @@ const socialWorkEngland: Client = {
     nonProduction: "socialWorkEngland",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "service",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

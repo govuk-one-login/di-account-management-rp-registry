@@ -7,7 +7,6 @@ const dbtApplyForAnExportCertificate: Client = {
     nonProduction: "dbtApplyForAnExportCertificate",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

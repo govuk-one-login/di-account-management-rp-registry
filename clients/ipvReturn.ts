@@ -7,7 +7,6 @@ const ipvReturn: Client = {
     nonProduction: "ipvReturn",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "internal",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

@@ -7,7 +7,6 @@ const ofgemLafReg: Client = {
     nonProduction: "ofgemLafReg",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

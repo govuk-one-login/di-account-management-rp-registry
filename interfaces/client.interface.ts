@@ -21,7 +21,6 @@ interface BaseClient {
   translations: {
     en: Translations;
   };
-  isAllowed: boolean;
   clientType: "service" | "account" | "home" | "internal";
   isHmrc: boolean;
   isReportSuspiciousActivityEnabled: boolean;

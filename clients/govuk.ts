@@ -7,7 +7,6 @@ const govuk: Client = {
     nonProduction: "gov-uk",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

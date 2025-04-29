@@ -7,7 +7,6 @@ const gbis: Client = {
     nonProduction: "gbis",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

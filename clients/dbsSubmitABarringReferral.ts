@@ -7,7 +7,6 @@ const dbsSubmitABarringReferral: Client = {
     nonProduction: "dbsSubmitABarringReferral",
   },
   isAvailableInWelsh: true,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

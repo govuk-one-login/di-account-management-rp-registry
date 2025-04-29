@@ -7,7 +7,6 @@ const ukmcab: Client = {
     nonProduction: "ukmcab",
   },
   isAvailableInWelsh: false,
-  isAllowed: true,
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,

@@ -21,6 +21,7 @@ const defraDangerousDogsIndex: Client = {
       linkUrl: "https://dogsindex.defra.gov.uk",
     },
   },
+  isOffboarded: false,
 };
 
 export default defraDangerousDogsIndex;

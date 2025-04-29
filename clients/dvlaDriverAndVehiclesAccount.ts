@@ -30,6 +30,7 @@ const dvlaDriverAndVehiclesAccount: Client = {
         "https://driver-and-vehicles-account.service.gov.uk/home?locale=cy",
     },
   },
+  isOffboarded: false,
 };
 
 export default dvlaDriverAndVehiclesAccount;

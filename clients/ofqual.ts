@@ -20,6 +20,7 @@ const ofqual: Client = {
       linkUrl: "https://subject-matter-specialists.ofqual.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default ofqual;

@@ -21,6 +21,7 @@ const mojPlanYourFuture: Client = {
       linkUrl: "https://plan-your-future.service.justice.gov.uk/otp",
     },
   },
+  isOffboarded: false,
 };
 
 export default mojPlanYourFuture;

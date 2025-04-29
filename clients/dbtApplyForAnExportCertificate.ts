@@ -22,6 +22,7 @@ const dbtApplyForAnExportCertificate: Client = {
         "https://apply-for-an-export-certificate.service.gov.uk/workbasket/",
     },
   },
+  isOffboarded: false,
 };
 
 export default dbtApplyForAnExportCertificate;

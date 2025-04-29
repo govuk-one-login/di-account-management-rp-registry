@@ -27,6 +27,7 @@ const govuk: Client = {
       },
     },
   },
+  isOffboarded: false,
 };
 
 export default govuk;

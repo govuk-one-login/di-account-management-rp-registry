@@ -1,6 +1,6 @@
 export interface RegistryEntry {
   clientId: string;
-  isAllowed: boolean;
+  isOffboarded: boolean;
   clientType: "service" | "account" | "home" | "internal";
   isHmrc: boolean;
   isReportSuspiciousActivityEnabled: boolean;

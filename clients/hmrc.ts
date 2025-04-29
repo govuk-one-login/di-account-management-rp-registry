@@ -34,6 +34,7 @@ const hmrc: Client = {
       paragraph2: "Rydym yn gweithio i wneud hyn yn bosibl.",
     },
   },
+  isOffboarded: false,
 };
 
 export default hmrc;

@@ -21,6 +21,7 @@ const gbis: Client = {
       linkUrl: "https://gbinsulationscheme.ofgem.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default gbis;

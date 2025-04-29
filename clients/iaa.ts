@@ -21,6 +21,7 @@ const iaa: Client = {
       linkUrl: "https://portal.immigrationadviceauthority.gov.uk/s/",
     },
   },
+  isOffboarded: false,
 };
 
 export default iaa;

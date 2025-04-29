@@ -21,6 +21,7 @@ const hoDORS: Client = {
       linkUrl: "https://www.view-my-disclosure-result.dbsdigital.io/auth/login",
     },
   },
+  isOffboarded: false,
 };
 
 export default hoDORS;

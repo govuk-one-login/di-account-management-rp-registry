@@ -22,6 +22,7 @@ const apar: Client = {
       linkUrl: "https://apply.apprenticeships.education.gov.uk/signIn",
     },
   },
+  isOffboarded: false,
 };
 
 export default apar;

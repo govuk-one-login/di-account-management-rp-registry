@@ -19,6 +19,7 @@ const checkFamilyEligibility: Client = {
       linkUrl: "https://check-free-school-meals.education.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default checkFamilyEligibility;

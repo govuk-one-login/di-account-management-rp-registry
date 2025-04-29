@@ -26,6 +26,7 @@ const ruralPaymentWales: Client = {
       linkUrl: "https://rpwonline.gov.wales",
     },
   },
+  isOffboarded: false,
 };
 
 export default ruralPaymentWales;

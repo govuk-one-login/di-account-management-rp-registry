@@ -21,6 +21,7 @@ const aas: Client = {
         "https://assessors.apprenticeships.education.gov.uk/account/signin",
     },
   },
+  isOffboarded: false,
 };
 
 export default aas;

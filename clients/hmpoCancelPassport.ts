@@ -22,6 +22,7 @@ const hmpoCancelPassport: Client = {
         "https://www.loststolenpassport.service.gov.uk/lost-stolen/passport-holder",
     },
   },
+  isOffboarded: false,
 };
 
 export default hmpoCancelPassport;

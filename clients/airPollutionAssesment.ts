@@ -27,6 +27,7 @@ const airPollutionAssesment: Client = {
       },
     },
   },
+  isOffboarded: false,
 };
 
 export default airPollutionAssesment;

@@ -21,6 +21,7 @@ const icsDesnz: Client = {
         "https://manage-clean-heat-market-mechanism.service.gov.uk/scheme-year",
     },
   },
+  isOffboarded: false,
 };
 
 export default icsDesnz;

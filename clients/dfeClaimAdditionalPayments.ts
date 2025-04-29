@@ -20,6 +20,7 @@ const dfeClaimAdditionalPayments: Client = {
         "https://www.gov.uk/government/collections/additional-payments-for-teaching-eligibility-and-payment-details",
     },
   },
+  isOffboarded: false,
 };
 
 export default dfeClaimAdditionalPayments;

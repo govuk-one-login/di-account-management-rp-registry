@@ -20,6 +20,7 @@ const homeOfficeSEAS: Client = {
       linkUrl: "https://www.request-standard-enchanced-dbs-check.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default homeOfficeSEAS;

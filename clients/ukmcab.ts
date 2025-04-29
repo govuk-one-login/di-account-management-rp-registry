@@ -21,6 +21,7 @@ const ukmcab: Client = {
         "https://find-a-conformity-assessment-body.service.gov.uk/account/login",
     },
   },
+  isOffboarded: false,
 };
 
 export default ukmcab;

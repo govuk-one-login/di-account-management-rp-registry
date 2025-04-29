@@ -22,6 +22,7 @@ const dfeQualifiedTeacherStatus: Client = {
         "https://apply-for-qts-in-england.education.gov.uk/teacher/application",
     },
   },
+  isOffboarded: false,
 };
 
 export default dfeQualifiedTeacherStatus;

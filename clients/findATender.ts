@@ -28,6 +28,7 @@ const findATender: Client = {
       linkUrl: "https://supplier-information.find-tender.service.gov.uk",
     },
   },
+  isOffboarded: false,
 };
 
 export default findATender;

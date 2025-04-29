@@ -21,6 +21,7 @@ const dfeTeacherVacancies: Client = {
       linkUrl: "https://teaching-vacancies.service.gov.uk/jobseekers/account",
     },
   },
+  isOffboarded: false,
 };
 
 export default dfeTeacherVacancies;

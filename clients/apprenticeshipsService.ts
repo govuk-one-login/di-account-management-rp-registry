@@ -21,6 +21,7 @@ const apprenticeshipsService: Client = {
       linkUrl: "https://accounts.manage-apprenticeships.service.gov.uk/service",
     },
   },
+  isOffboarded: false,
 };
 
 export default apprenticeshipsService;

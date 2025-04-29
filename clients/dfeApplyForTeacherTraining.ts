@@ -21,6 +21,7 @@ const dfeApplyForTeacherTraining: Client = {
         "https://www.apply-for-teacher-training.service.gov.uk/candidate/account",
     },
   },
+  isOffboarded: false,
 };
 
 export default dfeApplyForTeacherTraining;

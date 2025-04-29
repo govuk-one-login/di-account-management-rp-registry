@@ -21,6 +21,7 @@ const firs: Client = {
       linkUrl: "http://foreign-influence-registration-scheme.service.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default firs;

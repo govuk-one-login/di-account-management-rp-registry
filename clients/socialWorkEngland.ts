@@ -20,6 +20,7 @@ const socialWorkEngland: Client = {
         "https://www.socialworkengland.org.uk/registration/apply-for-registration",
     },
   },
+  isOffboarded: false,
 };
 
 export default socialWorkEngland;

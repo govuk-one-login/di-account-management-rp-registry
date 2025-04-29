@@ -21,6 +21,7 @@ const ofgemLafReg: Client = {
       linkUrl: "https://laf.ofgem.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default ofgemLafReg;

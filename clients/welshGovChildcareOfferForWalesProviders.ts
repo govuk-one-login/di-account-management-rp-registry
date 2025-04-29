@@ -26,6 +26,7 @@ const welshGovChildcareOfferForWalesProviders: Client = {
       linkUrl: "https://darparwr.cynniggofalplant.gwasanaeth.llyw.cymru",
     },
   },
+  isOffboarded: false,
 };
 
 export default welshGovChildcareOfferForWalesProviders;

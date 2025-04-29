@@ -12,9 +12,8 @@ const ipvReturn: Client = {
   isReportSuspiciousActivityEnabled: false,
   isActivityLogEnabled: false,
   showInClientSearch: { production: false, nonProduction: false },
-  translations: {
-    en: {},
-  },
+  translations: { en: {} },
+  isOffboarded: false,
 };
 
 export default ipvReturn;

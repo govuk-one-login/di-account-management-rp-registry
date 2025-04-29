@@ -27,6 +27,7 @@ interface BaseClient {
   isActivityLogEnabled: boolean;
   showInClientSearch: EnvironmentValue<boolean>;
   isAvailableInWelsh: boolean;
+  isOffboarded: boolean;
 }
 
 interface WelshClient extends BaseClient {

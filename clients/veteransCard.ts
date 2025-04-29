@@ -19,6 +19,7 @@ const veteransCard: Client = {
       linkUrl: "https://www.gov.uk/veteran-card",
     },
   },
+  isOffboarded: false,
 };
 
 export default veteransCard;

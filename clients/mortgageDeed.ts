@@ -19,6 +19,7 @@ const mortgageDeed: Client = {
       linkUrl: "https://sign-your-mortgage-deed.landregistry.gov.uk",
     },
   },
+  isOffboarded: false,
 };
 
 export default mortgageDeed;

@@ -20,6 +20,7 @@ const prisonVisits: Client = {
       linkUrl: "https://prison-visits.service.justice.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default prisonVisits;

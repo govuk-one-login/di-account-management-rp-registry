@@ -21,6 +21,7 @@ const ate: Client = {
         "https://update-your-capital-schemes.activetravelengland.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default ate;

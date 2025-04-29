@@ -34,6 +34,7 @@ const oneLoginHome: Client = {
       },
     },
   },
+  isOffboarded: false,
 };
 
 export default oneLoginHome;

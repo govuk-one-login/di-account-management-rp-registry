@@ -28,6 +28,7 @@ const welshFisheriesPermit: Client = {
       linkUrl: "https://fishingpermitsandcatches.service.gov.wales",
     },
   },
+  isOffboarded: false,
 };
 
 export default welshFisheriesPermit;

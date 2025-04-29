@@ -21,6 +21,7 @@ const dbTrade: Client = {
       linkUrl: "https://apply-sanctioned-services-licence.trade.gov.uk/apply",
     },
   },
+  isOffboarded: false,
 };
 
 export default dbTrade;

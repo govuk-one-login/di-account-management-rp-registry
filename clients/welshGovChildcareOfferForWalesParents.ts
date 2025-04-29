@@ -26,6 +26,7 @@ const welshGovChildcareOfferForWalesParents: Client = {
       linkUrl: "https://rhieni.cynniggofalplant.gwasanaeth.llyw.cymru",
     },
   },
+  isOffboarded: false,
 };
 
 export default welshGovChildcareOfferForWalesParents;

@@ -21,6 +21,7 @@ const companyHouseAccounts: Client = {
       linkUrl: "https://find-and-update.company-information.service.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default companyHouseAccounts;

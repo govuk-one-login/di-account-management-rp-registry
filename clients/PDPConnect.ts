@@ -20,6 +20,7 @@ const PDPConnect: Client = {
       linkUrl: "https://www.pensionsdashboard-service.org.uk/s/",
     },
   },
+  isOffboarded: false,
 };
 
 export default PDPConnect;

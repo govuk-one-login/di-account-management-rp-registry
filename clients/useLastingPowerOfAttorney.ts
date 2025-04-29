@@ -28,6 +28,7 @@ const useLastingPowerOfAttorney: Client = {
         "https://use-lasting-power-of-attorney.service.gov.uk/lpa/dashboard",
     },
   },
+  isOffboarded: false,
 };
 
 export default useLastingPowerOfAttorney;

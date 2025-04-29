@@ -19,6 +19,7 @@ const vehicleOperatorLicense: Client = {
       linkUrl: "https://www.gov.uk/apply-vehicle-operator-licence",
     },
   },
+  isOffboarded: false,
 };
 
 export default vehicleOperatorLicense;

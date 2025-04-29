@@ -21,6 +21,7 @@ const heatNetworkZoning: Client = {
       linkUrl: "https://www.heat-network-zoning.data.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default heatNetworkZoning;

@@ -21,6 +21,7 @@ const lite: Client = {
       linkUrl: "https://exporter.lite.private-beta.service.trade.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default lite;

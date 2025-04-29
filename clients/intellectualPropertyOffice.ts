@@ -28,6 +28,7 @@ const intellectualPropertyOffice: Client = {
       linkUrl: "https://www.manage-intellectual-property.service.gov.uk/cy",
     },
   },
+  isOffboarded: false,
 };
 
 export default intellectualPropertyOffice;

@@ -20,6 +20,7 @@ const CMAD: Client = {
       linkUrl: "https://confirm.my.apprenticeships.education.gov.uk/",
     },
   },
+  isOffboarded: false,
 };
 
 export default CMAD;

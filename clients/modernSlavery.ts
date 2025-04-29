@@ -22,6 +22,7 @@ const modernSlavery: Client = {
         "https://modern-slavery-statement-registry.service.gov.uk/manage-organisations",
     },
   },
+  isOffboarded: false,
 };
 
 export default modernSlavery;

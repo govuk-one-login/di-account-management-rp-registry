@@ -24,6 +24,7 @@ const dbs: Client = {
       linkUrl: "https://www.gov.uk/gwneud-cais-copi-cofnod-troseddol",
     },
   },
+  isOffboarded: false,
 };
 
 export default dbs;

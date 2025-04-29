@@ -21,6 +21,7 @@ const faa: Client = {
         "https://www.findapprenticeship.service.gov.uk/apprenticeshipsearch",
     },
   },
+  isOffboarded: false,
 };
 
 export default faa;

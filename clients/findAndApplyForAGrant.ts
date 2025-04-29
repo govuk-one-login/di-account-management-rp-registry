@@ -21,6 +21,7 @@ const findAndApplyForAGrant: Client = {
         "https://find-government-grants.service.cabinetoffice.gov.uk/apply/applicant",
     },
   },
+  isOffboarded: false,
 };
 
 export default findAndApplyForAGrant;

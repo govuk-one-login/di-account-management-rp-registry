@@ -22,6 +22,7 @@ const criminalInjuriesCompensation: Client = {
         "https://claim-criminal-injuries-compensation.service.justice.gov.uk/account",
     },
   },
+  isOffboarded: false,
 };
 
 export default criminalInjuriesCompensation;

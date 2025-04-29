@@ -22,6 +22,7 @@ const connectFamilies: Client = {
         "https://connect-families-to-support.education.gov.uk/ProfessionalReferral/Search",
     },
   },
+  isOffboarded: false,
 };
 
 export default connectFamilies;

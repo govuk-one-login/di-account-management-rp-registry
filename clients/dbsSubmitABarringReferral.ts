@@ -30,6 +30,7 @@ const dbsSubmitABarringReferral: Client = {
         "https://www.submit-a-barring-referral.service.gov.uk/save-and-return/dashboard?lang=cy",
     },
   },
+  isOffboarded: false,
 };
 
 export default dbsSubmitABarringReferral;

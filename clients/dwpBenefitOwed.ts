@@ -40,6 +40,7 @@ const dwpBenefitOwed: Client = {
       },
     },
   },
+  isOffboarded: false,
 };
 
 export default dwpBenefitOwed;

@@ -60,6 +60,7 @@ import relyingPartyStub from "./relyingPartyStub";
 import hmrcGovernmentGateway from "./hmrcGovernmentGateway";
 import welshGovChildcareOfferForWalesParents from "./welshGovChildcareOfferForWalesParents";
 import welshGovChildcareOfferForWalesProviders from "./welshGovChildcareOfferForWalesProviders";
+import hoDORS from "./hoDORS";
 
 export {
   govuk,
@@ -124,4 +125,5 @@ export {
   hmrcGovernmentGateway,
   welshGovChildcareOfferForWalesParents,
   welshGovChildcareOfferForWalesProviders,
+  hoDORS,
 };

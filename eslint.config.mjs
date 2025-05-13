@@ -14,7 +14,7 @@ export default [
     },
   },
   pluginJs.configs.recommended,
-  mochaPlugin.configs.flat.recommended,
+  mochaPlugin.configs.recommended,
   ...tsEslint.configs.recommended,
   ...tsEslint.configs.stylistic,
   {

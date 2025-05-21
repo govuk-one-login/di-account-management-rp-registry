@@ -61,6 +61,7 @@ import hmrcGovernmentGateway from "./hmrcGovernmentGateway";
 import welshGovChildcareOfferForWalesParents from "./welshGovChildcareOfferForWalesParents";
 import welshGovChildcareOfferForWalesProviders from "./welshGovChildcareOfferForWalesProviders";
 import hoDORS from "./hoDORS";
+import securityTokenService from "./securityTokenService";
 
 export {
   govuk,
@@ -126,4 +127,5 @@ export {
   welshGovChildcareOfferForWalesParents,
   welshGovChildcareOfferForWalesProviders,
   hoDORS,
+  securityTokenService,
 };

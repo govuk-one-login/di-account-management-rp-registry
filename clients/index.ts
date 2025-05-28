@@ -62,6 +62,7 @@ import welshGovChildcareOfferForWalesParents from "./welshGovChildcareOfferForWa
 import welshGovChildcareOfferForWalesProviders from "./welshGovChildcareOfferForWalesProviders";
 import hoDORS from "./hoDORS";
 import securityTokenService from "./securityTokenService";
+import hoOnlineApis from "./hoOnlineApis";
 
 export {
   govuk,
@@ -128,4 +129,5 @@ export {
   welshGovChildcareOfferForWalesProviders,
   hoDORS,
   securityTokenService,
+  hoOnlineApis,
 };

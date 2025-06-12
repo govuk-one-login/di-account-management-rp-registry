@@ -25,7 +25,7 @@ const getEnvironmentType = (
   return "nonProduction";
 };
 
-export const getValueForEnvironment = <T>(
+const getValueForEnvironment = <T>(
   environment: string,
   value: EnvironmentValue<T>
 ): T => {

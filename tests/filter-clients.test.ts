@@ -27,7 +27,7 @@ jest.mock("../clients", () => ({
     clientType: "account",
     isHmrc: false,
     isReportSuspiciousActivityEnabled: false,
-    showInClientSearch: true,
+    showInClientSearch: { production: true, nonProduction: true },
     isOffboarded: false,
   },
   enClient: {
@@ -44,7 +44,7 @@ jest.mock("../clients", () => ({
     clientType: "account",
     isHmrc: false,
     isReportSuspiciousActivityEnabled: false,
-    showInClientSearch: true,
+    showInClientSearch: { production: true, nonProduction: false },
     isOffboarded: false,
   },
   hmrcClient: {
@@ -64,7 +64,7 @@ jest.mock("../clients", () => ({
     clientType: "account",
     isHmrc: true,
     isReportSuspiciousActivityEnabled: false,
-    showInClientSearch: true,
+    showInClientSearch: { production: true, nonProduction: false },
     isOffboarded: false,
   },
   internalClient: {
@@ -73,7 +73,7 @@ jest.mock("../clients", () => ({
     clientType: "internal",
     isHmrc: false,
     isReportSuspiciousActivityEnabled: false,
-    showInClientSearch: false,
+    showInClientSearch: { production: false, nonProduction: true },
   },
   offboardedClient: {
     isAvailableInWelsh: false,
@@ -128,6 +128,29 @@ describe("filterClient", () => {
         isOffboarded: false,
       },
     ]);
+  });
+
+  test("should work with boolean filters", () => {
+    const result = filterClients("nonProduction", { isHmrc: true });
+    expect(result).toHaveLength(1);
+  });
+
+  test("should work with filters that have environment-specific values", () => {
+    const result = filterClients("production", { showInClientSearch: true });
+    expect(result).toHaveLength(3);
+
+    const result2 = filterClients("nonProduction", {
+      showInClientSearch: true,
+    });
+    expect(result2).toHaveLength(2);
+
+    const result3 = filterClients("production", { showInClientSearch: false });
+    expect(result3).toHaveLength(2);
+
+    const result4 = filterClients("nonProduction", {
+      showInClientSearch: false,
+    });
+    expect(result4).toHaveLength(3);
   });
 
   test('should return clients matching multiple filters (clientType: "account", isOffboarded: false)', () => {

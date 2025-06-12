@@ -108,7 +108,7 @@ describe("filterClient", () => {
         isAvailableInWelsh: false,
         isHmrc: true,
         isReportSuspiciousActivityEnabled: false,
-        showInClientSearch: true,
+        showInClientSearch: false,
         isOffboarded: false,
       },
     ]);

@@ -7,7 +7,7 @@ const ukSBS: Client = {
     nonProduction: "UKSBS",
   },
   isAvailableInWelsh: false,
-  clientType: "service",
+  clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
   isActivityLogEnabled: false,
@@ -15,9 +15,10 @@ const ukSBS: Client = {
   translations: {
     en: {
       header:
-        "SHARP -  Shared Services for HR, Accounting, Reporting and Procurement",
-      linkText:
-        "SHARP -  Shared Services for HR, Accounting, Reporting and Procurement",
+        "Oracle Fusion - used by UKRI (UK Research and Innovation) and UKSBS (UK Shared Business Services)",
+      description:
+        "Sign in to Oracle Fusion to complete tasks such as onboarding (for job applicants) or using the iSupplier portal (for suppliers).",
+      linkText: "Go to your Oracle Fusion account",
       linkUrl: "https://fa-evzn-saasfaukgovprod1.fa.ocs.oraclecloud.com",
     },
   },

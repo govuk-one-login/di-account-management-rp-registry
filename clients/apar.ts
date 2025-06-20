@@ -20,6 +20,9 @@ const apar: Client = {
       linkText:
         "Go to your apprenticeship provider and assessment register account",
       linkUrl: "https://apply.apprenticeships.education.gov.uk/signIn",
+      startUrl:
+        "https://www.gov.uk/guidance/apply-to-the-apar-as-an-apprenticeship-training-provider",
+      startText: "apprenticeship provider and assessment register (APAR)",
     },
   },
   isOffboarded: false,

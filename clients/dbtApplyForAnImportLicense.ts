@@ -19,6 +19,8 @@ const dbtApplyForAnImportLicense: Client = {
         "Apply for an import licence for anti-personnel mines, torture equipment for display, firearms and ammunition.",
       linkText: "Go to your import licence account",
       linkUrl: "https://apply-for-an-import-licence.service.gov.uk/workbasket/",
+      startUrl: "https://www.gov.uk/guidance/import-controls",
+      startText: "apply for an import licence",
     },
   },
   isOffboarded: false,

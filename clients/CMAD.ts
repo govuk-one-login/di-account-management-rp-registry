@@ -18,6 +18,8 @@ const CMAD: Client = {
       description: "Check and confirm your apprenticeship details.",
       linkText: "Go to your account to confirm your apprenticeship",
       linkUrl: "https://confirm.my.apprenticeships.education.gov.uk/",
+      startText: "confirm my apprenticeship details",
+      startUrl: "https://my.apprenticeships.education.gov.uk/",
     },
   },
   isOffboarded: false,

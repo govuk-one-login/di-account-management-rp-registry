@@ -18,6 +18,9 @@ const dfeClaimAdditionalPayments: Client = {
       linkText: "Claim additional payments for teaching",
       linkUrl:
         "https://www.gov.uk/government/collections/additional-payments-for-teaching-eligibility-and-payment-details",
+      startUrl:
+        "https://www.gov.uk/government/collections/additional-payments-for-teaching-eligibility-and-payment-details",
+      startText: "claim additional payments for teaching",
     },
   },
   isOffboarded: false,

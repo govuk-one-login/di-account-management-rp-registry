@@ -19,6 +19,8 @@ const dfeApplyForTeacherTraining: Client = {
       linkText: "Go to your Apply for teacher training account",
       linkUrl:
         "https://www.apply-for-teacher-training.service.gov.uk/candidate/account",
+      startUrl: "https://www.gov.uk/apply-for-teacher-training",
+      startText: "apply for teacher training in England",
     },
   },
   isOffboarded: false,

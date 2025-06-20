@@ -19,6 +19,8 @@ const dfeTeacherVacancies: Client = {
         "Search and apply for teaching, leadership and education support vacancies.",
       linkText: "Go to your Teaching vacancies account",
       linkUrl: "https://teaching-vacancies.service.gov.uk/jobseekers/account",
+      startUrl: "https://www.gov.uk/find-teaching-job",
+      startText: "find a job in teaching or education in England",
     },
   },
   isOffboarded: false,

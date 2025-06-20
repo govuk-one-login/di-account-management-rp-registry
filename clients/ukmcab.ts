@@ -19,6 +19,8 @@ const ukmcab: Client = {
       linkText: "Go to your conformity assessment body account",
       linkUrl:
         "https://find-a-conformity-assessment-body.service.gov.uk/account/login",
+      startUrl: "https://find-a-conformity-assessment-body.service.gov.uk/",
+      startText: "find a UK market conformity assessment body",
     },
   },
   isOffboarded: false,

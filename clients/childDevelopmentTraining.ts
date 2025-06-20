@@ -19,6 +19,8 @@ const childDevelopmentTraining: Client = {
         "Training on child development, including advice on supporting child development in your early years setting.",
       linkText: "Go to your early years child development training account",
       linkUrl: "https://child-development-training.education.gov.uk/my-modules",
+      startUrl: "https://child-development-training.education.gov.uk/",
+      startText: "early years child development training",
     },
   },
   isOffboarded: false,

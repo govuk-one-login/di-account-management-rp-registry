@@ -20,6 +20,8 @@ const dfeFindAndUseAnApi: Client = {
       linkText: "Go to your DfE find and use an API account",
       linkUrl:
         "https://beta-find-and-use-an-api.education.gov.uk/identity/signin",
+      startUrl: "https://beta-find-and-use-an-api.education.gov.uk/",
+      startText: "find and use an API from the Department for Education",
     },
   },
   isOffboarded: false,

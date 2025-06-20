@@ -20,6 +20,9 @@ const modernSlavery: Client = {
       linkText: "Go to your modern slavery statement registry account",
       linkUrl:
         "https://modern-slavery-statement-registry.service.gov.uk/manage-organisations",
+      startUrl:
+        "https://www.gov.uk/guidance/add-your-modern-slavery-statement-to-the-statement-registry",
+      startText: "modern slavery statement registry",
     },
   },
   isOffboarded: false,

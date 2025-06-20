@@ -19,6 +19,8 @@ const findAndApplyForAGrant: Client = {
       linkText: "Go to your grants account",
       linkUrl:
         "https://find-government-grants.service.cabinetoffice.gov.uk/apply/applicant",
+      startUrl: "https://www.gov.uk/guidance/find-government-grants",
+      startText: "find and apply for a grant",
     },
   },
   isOffboarded: false,

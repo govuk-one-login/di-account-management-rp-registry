@@ -20,6 +20,8 @@ const hmpoCancelPassport: Client = {
       linkText: "Go to your cancel a lost or stolen passport account",
       linkUrl:
         "https://www.loststolenpassport.service.gov.uk/lost-stolen/passport-holder",
+      startUrl: "https://www.gov.uk/report-a-lost-or-stolen-passport",
+      startText: "Cancel a lost or stolen passport",
     },
   },
   isOffboarded: false,

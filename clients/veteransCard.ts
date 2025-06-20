@@ -17,6 +17,8 @@ const veteransCard: Client = {
       header: "Apply for an HM Armed Forces Veteran Card",
       linkText: "Apply for an HM Armed Forces Veteran Card",
       linkUrl: "https://www.gov.uk/veteran-card",
+      startUrl: "https://www.gov.uk/veteran-card",
+      startText: "Apply for an HM Armed Forces Veteran Card",
     },
   },
   isOffboarded: false,

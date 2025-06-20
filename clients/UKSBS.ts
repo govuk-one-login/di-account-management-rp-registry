@@ -14,8 +14,7 @@ const ukSBS: Client = {
   showInClientSearch: { production: false, nonProduction: false },
   translations: {
     en: {
-      header:
-        "Oracle Fusion - used by UKRI (UK Research and Innovation) and UKSBS (UK Shared Business Services)",
+      header: "Oracle Fusion - used by UKRI and UKSBS",
       description:
         "Sign in to Oracle Fusion to complete tasks such as onboarding (for job applicants) or using the iSupplier portal (for suppliers).",
       linkText: "Go to your Oracle Fusion account",

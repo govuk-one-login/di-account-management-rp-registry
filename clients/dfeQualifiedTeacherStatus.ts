@@ -20,6 +20,9 @@ const dfeQualifiedTeacherStatus: Client = {
       linkText: "Go to the apply for qualified teacher status (QTS) service",
       linkUrl:
         "https://apply-for-qts-in-england.education.gov.uk/teacher/application",
+      startUrl:
+        "https://apply-for-qts-in-england.education.gov.uk/eligibility/start",
+      startText: "Apply for qualified teacher status in England",
     },
   },
   isOffboarded: false,

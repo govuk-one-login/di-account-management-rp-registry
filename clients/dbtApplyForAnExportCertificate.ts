@@ -20,6 +20,8 @@ const dbtApplyForAnExportCertificate: Client = {
       linkText: "Go to your export certificate account",
       linkUrl:
         "https://apply-for-an-export-certificate.service.gov.uk/workbasket/",
+      startUrl: "https://www.gov.uk/guidance/apply-for-an-export-certificate",
+      startText: "Apply for an export certificate",
     },
   },
   isOffboarded: false,

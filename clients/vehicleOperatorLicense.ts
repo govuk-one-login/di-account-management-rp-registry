@@ -17,6 +17,8 @@ const vehicleOperatorLicense: Client = {
       header: "Apply for a vehicle operator licence",
       linkText: "Apply for a vehicle operator licence",
       linkUrl: "https://www.gov.uk/apply-vehicle-operator-licence",
+      startUrl: "https://www.gov.uk/apply-vehicle-operator-licence",
+      startText: "Apply for a vehicle operator licence",
     },
   },
   isOffboarded: false,

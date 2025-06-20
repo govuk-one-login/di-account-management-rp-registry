@@ -19,6 +19,8 @@ const companyHouseAccounts: Client = {
         "View and update your company information, for example, filing history and registered office address.",
       linkText: "Go to Companies House",
       linkUrl: "https://find-and-update.company-information.service.gov.uk/",
+      startUrl: "https://find-and-update.company-information.service.gov.uk/",
+      startText: "Find and update company information",
     },
   },
   isOffboarded: false,

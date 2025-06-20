@@ -18,6 +18,9 @@ const ofqual: Client = {
       description: "Apply to give specialist advice to Ofqual.",
       linkText: "Go to your Ofqual subject matter specialist account",
       linkUrl: "https://subject-matter-specialists.ofqual.gov.uk/",
+      startUrl:
+        "https://www.gov.uk/guidance/subject-matter-specialists-for-ofqual",
+      startText: "Ofqual subject matter specialist account",
     },
   },
   isOffboarded: false,

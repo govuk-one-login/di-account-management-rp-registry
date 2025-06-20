@@ -20,6 +20,9 @@ const criminalInjuriesCompensation: Client = {
       linkText: "Go to your criminal injuries compensation account",
       linkUrl:
         "https://claim-criminal-injuries-compensation.service.justice.gov.uk/account",
+      startUrl:
+        "https://www.gov.uk/claim-compensation-criminal-injury/make-claim",
+      startText: "Claim compensation if you were the victim of a violent crime",
     },
   },
   isOffboarded: false,

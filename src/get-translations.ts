@@ -21,6 +21,8 @@ const convertToTranslation = (
       ...(translations.hintText && { hint_text: translations.hintText }),
       ...(translations.paragraph1 && { paragraph1: translations.paragraph1 }),
       ...(translations.paragraph2 && { paragraph2: translations.paragraph2 }),
+      ...(translations.startText && { start_text: translations.startText }),
+      ...(translations.startUrl && { start_href: translations.startUrl }),
     };
   }
 };

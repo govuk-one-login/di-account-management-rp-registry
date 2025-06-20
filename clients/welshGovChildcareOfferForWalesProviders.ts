@@ -18,12 +18,18 @@ const welshGovChildcareOfferForWalesProviders: Client = {
       description: "Childcare Offer for Wales providers.",
       linkText: "Sign in to your Childcare Offer for Wales account",
       linkUrl: "https://provider.childcareoffer.service.gov.wales",
+      startUrl:
+        "https://www.gov.wales/register-your-childcare-setting-get-childcare-offer-wales",
+      startText: "Childcare Offer for Wales: providers",
     },
     cy: {
       header: "Cynnig Gofal Plant Cymru: Darparwyr/Lleoliadau",
       description: "Cynnig Gofal Plant Cymru i ddarparwyr.",
       linkText: "Mewngofnodi i’ch cyfrif Cynnig Gofal Plant Cymru",
       linkUrl: "https://darparwr.cynniggofalplant.gwasanaeth.llyw.cymru",
+      startUrl:
+        "https://www.llyw.cymru/cofrestrwch-eich-lleoliad-gofal-plant-i-gael-cynnig-gofal-plant-cymru",
+      startText: "Cynnig Gofal Plant Cymru: darparwyr",
     },
   },
   isOffboarded: false,

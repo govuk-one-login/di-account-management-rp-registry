@@ -14,6 +14,8 @@ interface Translations {
   hintText?: string;
   paragraph1?: string;
   paragraph2?: string;
+  startUrl?: string;
+  startText?: string;
 }
 
 interface BaseClient {

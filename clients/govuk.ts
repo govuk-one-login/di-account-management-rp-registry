@@ -25,6 +25,8 @@ const govuk: Client = {
           "https://www.staging.publishing.service.gov.uk/email/manage?from=your-services",
         production: "https://www.gov.uk/email/manage?from=your-services",
       },
+      startUrl: "https://www.gov.uk/email/manage/authenticate",
+      startText: "GOV.UK email subscriptions",
     },
   },
   isOffboarded: false,

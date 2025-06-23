@@ -6,6 +6,8 @@ export interface Translation {
   hint_text?: string;
   paragraph1?: string;
   paragraph2?: string;
+  start_text?: string;
+  start_href?: string;
 }
 
 export type TranslationsObject = Record<string, Translation>;

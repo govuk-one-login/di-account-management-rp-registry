@@ -20,6 +20,8 @@ const dvlaDriverAndVehiclesAccount: Client = {
       linkText: "Go to your Driver and vehicles account",
       linkUrl:
         "https://driver-and-vehicles-account.service.gov.uk/home?locale=en",
+      startText: "Driver and vehicles account",
+      startUrl: "https://www.gov.uk/driver-vehicles-account",
     },
     cy: {
       header: "Cyfrif gyrwyr a cherbydau",
@@ -28,6 +30,8 @@ const dvlaDriverAndVehiclesAccount: Client = {
       linkText: "Ewch i'ch Cyfrif gyrwyr a cherbydau",
       linkUrl:
         "https://driver-and-vehicles-account.service.gov.uk/home?locale=cy",
+      startText: "Cyfrif gyrwyr a cherbydau",
+      startUrl: "https://www.gov.uk/cyfrif-gyrwyr-cerbydau",
     },
   },
   isOffboarded: false,

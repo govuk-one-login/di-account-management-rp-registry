@@ -19,6 +19,8 @@ const faa: Client = {
       linkText: "Go to your account to search for an apprenticeship",
       linkUrl:
         "https://www.findapprenticeship.service.gov.uk/apprenticeshipsearch",
+      startUrl: "https://www.gov.uk/apply-apprenticeship",
+      startText: "Find an apprenticeship in England",
     },
   },
   isOffboarded: false,

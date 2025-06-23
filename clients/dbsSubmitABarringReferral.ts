@@ -20,6 +20,8 @@ const dbsSubmitABarringReferral: Client = {
       linkText: "Go to your Submit a barring referral account",
       linkUrl:
         "https://www.submit-a-barring-referral.service.gov.uk/save-and-return/dashboard?lang=en",
+      startUrl: "https://www.submit-a-barring-referral.service.gov.uk/start",
+      startText: "Submit a barring referral",
     },
     cy: {
       header: "Cyflwyno atgyfeiriad gwahardd",
@@ -28,6 +30,9 @@ const dbsSubmitABarringReferral: Client = {
       linkText: "Ewch i'ch Cyfrif Cyflwyno atgyfeiriad gwahardd",
       linkUrl:
         "https://www.submit-a-barring-referral.service.gov.uk/save-and-return/dashboard?lang=cy",
+      startUrl:
+        "https://www.submit-a-barring-referral.service.gov.uk/start?lang=cy",
+      startText: "Cyflwyno atgyfeiriad gwahardd",
     },
   },
   isOffboarded: false,

@@ -19,6 +19,8 @@ const apprenticeshipsService: Client = {
         "Manage your apprentices, training providers, recruitment and funding.",
       linkText: "Go to your apprenticeship service account",
       linkUrl: "https://accounts.manage-apprenticeships.service.gov.uk/service",
+      startUrl: "https://www.gov.uk/sign-in-apprenticeship-service-account",
+      startText: "Manage apprenticeships",
     },
   },
   isOffboarded: false,

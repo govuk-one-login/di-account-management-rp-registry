@@ -19,6 +19,8 @@ const welshFisheriesPermit: Client = {
         "Apply for a fishing permit and submit your catch returns in Wales.",
       linkText: "Go to your fishing permits and catch returns account",
       linkUrl: "https://fishingpermitsandcatches.service.gov.wales",
+      startUrl: "https://www.gov.wales/apply-fishing-permit",
+      startText: "Manage fishing permits and catch returns in Wales",
     },
     cy: {
       header: "Rheoli trwyddedau pysgota a datganiadau dalfeydd yng Nghymru",
@@ -26,6 +28,8 @@ const welshFisheriesPermit: Client = {
         "Gwneud cais am drwydded bysgota a chyflwyno eich datganiadau dalfeydd yng Nghymru.",
       linkText: "Ewch i’ch cyfrif trwyddedau pysgota a datganiadau dalfeydd",
       linkUrl: "https://fishingpermitsandcatches.service.gov.wales",
+      startUrl: "https://www.llyw.cymru/cais-am-drwydded-bysgota",
+      startText: "Rheoli trwyddedau pysgota a datganiadau dalfeydd yng Nghymru",
     },
   },
   isOffboarded: false,

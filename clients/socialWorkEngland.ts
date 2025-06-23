@@ -18,6 +18,9 @@ const socialWorkEngland: Client = {
       linkText: "Apply to become a registered social worker in England",
       linkUrl:
         "https://www.socialworkengland.org.uk/registration/apply-for-registration",
+      startUrl:
+        "https://www.socialworkengland.org.uk/registration/apply-for-registration/",
+      startText: "Apply to become a registered social worker in England",
     },
   },
   isOffboarded: false,

@@ -11,7 +11,7 @@ const hoOnlineApis: Client = {
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
   isActivityLogEnabled: false,
-  showInClientSearch: { production: true, nonProduction: true },
+  showInClientSearch: { production: false, nonProduction: false },
   translations: {
     en: {
       header: "Online APIS",
@@ -26,6 +26,10 @@ const hoOnlineApis: Client = {
         production:
           "https://www.submit-an-online-apis-report.service.gov.uk/dashboard",
       },
+      startText:
+        "Submit an online APIS (advance passenger information submission)",
+      startUrl:
+        "https://www.gov.uk/government/publications/providing-information-about-scheduled-aviation-flights",
     },
   },
   isOffboarded: false,

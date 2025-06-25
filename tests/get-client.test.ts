@@ -27,6 +27,7 @@ jest.mock("../clients", () => ({
     clientType: "account",
     isHmrc: false,
     isReportSuspiciousActivityEnabled: false,
+    isActivityLogEnabled: true,
     showInClientSearch: true,
   },
   enClient: {
@@ -43,6 +44,7 @@ jest.mock("../clients", () => ({
     clientType: "account",
     isHmrc: false,
     isReportSuspiciousActivityEnabled: false,
+    isActivityLogEnabled: true,
     showInClientSearch: true,
   },
   hmrcClient: {
@@ -62,6 +64,7 @@ jest.mock("../clients", () => ({
     clientType: "account",
     isHmrc: false,
     isReportSuspiciousActivityEnabled: false,
+    isActivityLogEnabled: true,
     showInClientSearch: true,
   },
 }));

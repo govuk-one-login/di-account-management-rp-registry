@@ -64,6 +64,7 @@ import hoDORS from "./hoDORS";
 import securityTokenService from "./securityTokenService";
 import hoOnlineApis from "./hoOnlineApis";
 import ukSBS from "./UKSBS";
+import govukApp from "./govukApp";
 
 export {
   govuk,
@@ -132,4 +133,5 @@ export {
   securityTokenService,
   hoOnlineApis,
   ukSBS,
+  govukApp,
 };

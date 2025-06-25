@@ -65,6 +65,7 @@ import securityTokenService from "./securityTokenService";
 import hoOnlineApis from "./hoOnlineApis";
 import ukSBS from "./UKSBS";
 import dftConnectivityTool from "./dftConnectivityTool";
+import govukApp from "./govukApp";
 
 export {
   govuk,
@@ -134,4 +135,5 @@ export {
   hoOnlineApis,
   ukSBS,
   dftConnectivityTool
+  govukApp,
 };

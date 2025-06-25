@@ -11,7 +11,7 @@ const dwpBenefitOwed: Client = {
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
   isActivityLogEnabled: true,
-  showInClientSearch: { production: true, nonProduction: true },
+  showInClientSearch: { production: false, nonProduction: false },
   translations: {
     en: {
       header: "Repay and manage benefit money you owe",

@@ -19,6 +19,8 @@ const useLastingPowerOfAttorney: Client = {
       linkText: "Go to your lasting power of attorney dashboard",
       linkUrl:
         "https://use-lasting-power-of-attorney.service.gov.uk/lpa/dashboard",
+      startUrl: "https://www.gov.uk/use-lasting-power-of-attorney",
+      startText: "Use a lasting power of attorney",
     },
     cy: {
       header: "Defnyddio pwer atwrnai parhaus",
@@ -26,6 +28,8 @@ const useLastingPowerOfAttorney: Client = {
       linkText: "Ewch i'ch dangosfwrdd pwer atwrnai parhaus",
       linkUrl:
         "https://use-lasting-power-of-attorney.service.gov.uk/lpa/dashboard",
+      startUrl: "https://www.gov.uk/defnyddio-atwrneiaeth-arhosol",
+      startText: "Defnyddio pwer atwrnai parhaus",
     },
   },
   isOffboarded: false,

@@ -10,8 +10,8 @@ const dftConnectivityTool: Client = {
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: true,
-  showInClientSearch: { production: true, nonProduction: true },
+  isActivityLogEnabled: false,
+  showInClientSearch: { production: false, nonProduction: false },
   translations: {
     en: {
       header: "Connectivity Tool",

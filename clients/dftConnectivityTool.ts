@@ -10,8 +10,8 @@ const dftConnectivityTool: Client = {
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: false,
-  showInClientSearch: { production: false, nonProduction: false },
+  isActivityLogEnabled: true,
+  showInClientSearch: { production: true, nonProduction: true },
   translations: {
     en: {
       header: "Connectivity Tool",
@@ -19,6 +19,7 @@ const dftConnectivityTool: Client = {
         "Tool to help built environment professionals to understand how sustainably located a place is and the transport interventions needed to support it.",
       linkText: "Go to your Connectivity Tool",
       linkUrl: "https://connectivity-tool.dft.gov.uk/",
+      startUrl: "https://www.gov.uk/guidance/connectivity-tool",
     },
   },
   isOffboarded: false,

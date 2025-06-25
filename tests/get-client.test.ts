@@ -72,7 +72,7 @@ describe("getClient", () => {
     expect(client).toEqual({
       clientId: "welshClientNonProd",
       clientType: "account",
-      isActivityLogEnabled: false,
+      isActivityLogEnabled: true,
       isAvailableInWelsh: true,
       isHmrc: false,
       isReportSuspiciousActivityEnabled: false,
@@ -85,7 +85,7 @@ describe("getClient", () => {
     expect(client).toEqual({
       clientId: "welshClientProd",
       clientType: "account",
-      isActivityLogEnabled: false,
+      isActivityLogEnabled: true,
       isAvailableInWelsh: true,
       isHmrc: false,
       isReportSuspiciousActivityEnabled: false,

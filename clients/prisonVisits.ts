@@ -10,7 +10,7 @@ const prisonVisits: Client = {
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: false,
+  isActivityLogEnabled: true,
   showInClientSearch: { production: false, nonProduction: false },
   translations: {
     en: {

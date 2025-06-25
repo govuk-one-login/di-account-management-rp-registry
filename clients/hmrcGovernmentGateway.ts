@@ -10,7 +10,7 @@ const hmrcGovernmentGateway: Client = {
   clientType: "internal",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: false,
+  isActivityLogEnabled: true,
   showInClientSearch: { production: false, nonProduction: false },
   translations: { en: {} },
   isOffboarded: false,

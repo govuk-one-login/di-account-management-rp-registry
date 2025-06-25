@@ -27,6 +27,7 @@ jest.mock("../clients", () => ({
     clientType: "account",
     isHmrc: false,
     isReportSuspiciousActivityEnabled: false,
+    isActivityLogEnabled: true,
     showInClientSearch: true,
   },
   enClient: {
@@ -43,6 +44,7 @@ jest.mock("../clients", () => ({
     clientType: "account",
     isHmrc: false,
     isReportSuspiciousActivityEnabled: false,
+    isActivityLogEnabled: true,
     showInClientSearch: true,
   },
   hmrcClient: {
@@ -62,6 +64,7 @@ jest.mock("../clients", () => ({
     clientType: "account",
     isHmrc: false,
     isReportSuspiciousActivityEnabled: false,
+    isActivityLogEnabled: true,
     showInClientSearch: true,
   },
 }));
@@ -72,7 +75,7 @@ describe("getClient", () => {
     expect(client).toEqual({
       clientId: "welshClientNonProd",
       clientType: "account",
-      isActivityLogEnabled: false,
+      isActivityLogEnabled: true,
       isAvailableInWelsh: true,
       isHmrc: false,
       isReportSuspiciousActivityEnabled: false,
@@ -85,7 +88,7 @@ describe("getClient", () => {
     expect(client).toEqual({
       clientId: "welshClientProd",
       clientType: "account",
-      isActivityLogEnabled: false,
+      isActivityLogEnabled: true,
       isAvailableInWelsh: true,
       isHmrc: false,
       isReportSuspiciousActivityEnabled: false,

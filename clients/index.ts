@@ -134,6 +134,6 @@ export {
   securityTokenService,
   hoOnlineApis,
   ukSBS,
-  dftConnectivityTool
+  dftConnectivityTool,
   govukApp,
 };

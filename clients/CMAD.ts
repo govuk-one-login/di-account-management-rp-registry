@@ -10,7 +10,7 @@ const CMAD: Client = {
   clientType: "account",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: false,
+  isActivityLogEnabled: true,
   showInClientSearch: { production: true, nonProduction: true },
   translations: {
     en: {

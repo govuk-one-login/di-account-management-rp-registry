@@ -7,7 +7,7 @@ const govukApp: Client = {
     nonProduction: "govukApp",
   },
   isAvailableInWelsh: false,
-  clientType: "internal",
+  clientType: "govukApp",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
   isActivityLogEnabled: true,

@@ -10,7 +10,7 @@ const hmrc: Client = {
   clientType: "service",
   isHmrc: true,
   isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: false,
+  isActivityLogEnabled: true,
   showInClientSearch: { production: false, nonProduction: false },
   translations: {
     en: {

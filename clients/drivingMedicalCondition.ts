@@ -10,7 +10,7 @@ const drivingMedicalCondition: Client = {
   clientType: "service",
   isHmrc: false,
   isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: false,
+  isActivityLogEnabled: true,
   showInClientSearch: { production: true, nonProduction: true },
   translations: {
     en: {

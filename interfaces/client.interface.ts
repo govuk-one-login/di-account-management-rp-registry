@@ -23,7 +23,7 @@ interface BaseClient {
   translations: {
     en: Translations;
   };
-  clientType: "service" | "account" | "home" | "internal";
+  clientType: "service" | "account" | "home" | "internal" | "govukApp";
   isHmrc: boolean;
   isReportSuspiciousActivityEnabled: boolean;
   isActivityLogEnabled: boolean;

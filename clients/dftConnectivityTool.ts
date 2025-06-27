@@ -20,7 +20,7 @@ const dftConnectivityTool: Client = {
       linkText: "Go to your Connectivity Tool",
       linkUrl: "https://connectivity-tool.dft.gov.uk/",
       startUrl: "https://www.gov.uk/guidance/connectivity-tool",
-      startText: "Department for Transport Connectivity Tool",
+      startText: "Connectivity Tool from the Department for Transport",
     },
   },
   isOffboarded: false,

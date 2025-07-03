@@ -7,6 +7,7 @@ describe("Client data validation", () => {
   const clientFiles = fs
     .readdirSync(clientsDir)
     .filter((file: string) => file.endsWith(".ts") && file !== "index.ts");
+  const indexFile = path.join(clientsDir, "index.ts");
 
   clientFiles.forEach((file: string) => {
     const client = require(path.join(clientsDir, file)).default;
@@ -99,6 +100,16 @@ describe("Client data validation", () => {
           if (client.showInDeleteAccount) {
             expect(client.translations.en.header).toBeDefined();
           }
+        });
+      });
+
+      describe("clients/index.ts exports", () => {
+        test("should export all client files in index.ts", () => {
+          const indexContent = fs.readFileSync(indexFile, "utf8");
+          clientFiles.forEach((file: string) => {
+            const baseName = file.replace(/\.ts$/, "");
+            expect(indexContent).toMatch(new RegExp(baseName));
+          });
         });
       });
     });

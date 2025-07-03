@@ -1,12 +1,11 @@
 import * as clients from "../clients";
 import { Client } from "../interfaces/client.interface";
-import { RegistryEntry } from "../interfaces/registry.interface";
 import { getValueForEnvironment, transformClientObject } from "./utils";
 
 const filterClients = (
   environment: string,
   filters: Partial<Client> = {}
-): RegistryEntry[] => {
+): Client[] => {
   return Object.values(clients)
     .filter((client) => {
       return (

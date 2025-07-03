@@ -7,11 +7,12 @@ const homeOfficeSEAS: Client = {
     nonProduction: "homeOfficeSEAS",
   },
   isAvailableInWelsh: false,
-  clientType: "account",
-  isHmrc: false,
-  isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: true,
-  showInClientSearch: { production: false, nonProduction: false },
+  showInAccounts: true,
+  showInServices: false,
+  showDetailedCard: false,
+  showInActivityHistory: true,
+  showInDeleteAccount: true,
+  showInSearchableList: false,
   translations: {
     en: {
       header: "Request a standard or enhanced DBS check",

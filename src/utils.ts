@@ -1,5 +1,4 @@
 import { Client, EnvironmentValue } from "../interfaces/client.interface";
-import { RegistryEntry } from "../interfaces/registry.interface";
 
 const isEnvironmentObject = <T>(
   value: EnvironmentValue<T>
@@ -45,23 +44,18 @@ const getValueForEnvironment = <T>(
   return value.nonProduction;
 };
 
-const transformClientObject = (
-  client: Client,
-  environment: string
-): RegistryEntry => {
+const transformClientObject = (client: Client, environment: string): Client => {
   const clientId = getValueForEnvironment(environment, client.clientId);
   return {
     clientId,
-    clientType: client.clientType,
+    showInAccounts: client.showInAccounts,
+    showInServices: client.showInServices,
     isOffboarded: client.isOffboarded,
-    isHmrc: client.isHmrc,
-    isReportSuspiciousActivityEnabled: client.isReportSuspiciousActivityEnabled,
+    showDetailedCard: client.showDetailedCard,
     isAvailableInWelsh: client.isAvailableInWelsh,
-    showInClientSearch: getValueForEnvironment(
-      environment,
-      client.showInClientSearch
-    ),
-    isActivityLogEnabled: !!client.isActivityLogEnabled,
+    showInSearchableList: client.showInSearchableList,
+    showInActivityHistory: client.showInActivityHistory,
+    showInDeleteAccount: client.showInDeleteAccount,
   };
 };
 

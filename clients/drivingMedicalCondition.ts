@@ -7,11 +7,12 @@ const drivingMedicalCondition: Client = {
     nonProduction: "drivingMedicalCondition",
   },
   isAvailableInWelsh: false,
-  clientType: "service",
-  isHmrc: false,
-  isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: true,
-  showInClientSearch: { production: true, nonProduction: true },
+  showInAccounts: false,
+  showInServices: true,
+  showDetailedCard: false,
+  showInActivityHistory: true,
+  showInDeleteAccount: true,
+  showInSearchableList: true,
   translations: {
     en: {
       header: "Driving with a medical condition",

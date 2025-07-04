@@ -10,7 +10,7 @@ const hmrcGovernmentGateway: Client = {
   showInAccounts: false,
   showInServices: false,
   showDetailedCard: false,
-  showInActivityHistory: true,
+  showInActivityHistory: false,
   showInDeleteAccount: true,
   showInSearchableList: false,
   isOffboarded: false,

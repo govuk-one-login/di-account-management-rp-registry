@@ -25,12 +25,12 @@ jest.mock("../clients", () => ({
       nonProduction: "welshClientNonProd",
     },
     showInAccounts: true,
-    showInServices: false,
     showDetailedCard: false,
     showInActivityHistory: true,
-    showInDeleteAccount: true,
-    showInSearchableList: true,
+    showInSearchableList: { production: true, nonProduction: true },
     isOffboarded: false,
+    showInDeleteAccount: true,
+    showInServices: false,
   },
   enClient: {
     isAvailableInWelsh: false,
@@ -44,12 +44,12 @@ jest.mock("../clients", () => ({
     },
     clientId: "englishClient",
     showInAccounts: true,
-    showInServices: false,
     showDetailedCard: false,
     showInActivityHistory: true,
-    showInDeleteAccount: true,
-    showInSearchableList: true,
+    showInSearchableList: { production: true, nonProduction: false },
     isOffboarded: false,
+    showInDeleteAccount: false,
+    showInServices: false,
   },
   hmrcClient: {
     isAvailableInWelsh: false,
@@ -66,20 +66,22 @@ jest.mock("../clients", () => ({
     },
     clientId: "hmrcClient",
     showInAccounts: true,
-    showInServices: false,
     showDetailedCard: true,
     showInActivityHistory: true,
-    showInDeleteAccount: true,
-    showInSearchableList: true,
+    showInSearchableList: { production: true, nonProduction: false },
     isOffboarded: false,
+    showInDeleteAccount: true,
+    showInServices: false,
   },
   internalClient: {
     isAvailableInWelsh: false,
     clientId: "internalClient",
+    clientType: "internal",
     showDetailedCard: false,
     showInActivityHistory: true,
-    showInDeleteAccount: true,
-    showInSearchableList: false,
+    showInSearchableList: { production: false, nonProduction: true },
+    showInDeleteAccount: false,
+    showInServices: false,
   },
   offboardedClient: {
     isAvailableInWelsh: false,
@@ -96,12 +98,12 @@ jest.mock("../clients", () => ({
     },
     clientId: "offboardedClient",
     showInAccounts: true,
-    showInServices: false,
     showDetailedCard: false,
     showInActivityHistory: true,
-    showInDeleteAccount: true,
     showInSearchableList: false,
     isOffboarded: true,
+    showInDeleteAccount: false,
+    showInServices: false,
   },
 }));
 
@@ -138,6 +140,26 @@ describe("filterClient", () => {
         isOffboarded: false,
       },
     ]);
+  });
+
+  test("should work with filters that have environment-specific values", () => {
+    const result = filterClients("production", { showInSearchableList: true });
+    expect(result).toHaveLength(3);
+
+    const result2 = filterClients("nonProduction", {
+      showInSearchableList: true,
+    });
+    expect(result2).toHaveLength(2);
+
+    const result3 = filterClients("production", {
+      showInSearchableList: false,
+    });
+    expect(result3).toHaveLength(2);
+
+    const result4 = filterClients("nonProduction", {
+      showInSearchableList: false,
+    });
+    expect(result4).toHaveLength(3);
   });
 
   test("should work with boolean filters", () => {
@@ -193,7 +215,6 @@ describe("filterClient", () => {
         showInDeleteAccount: true,
         isAvailableInWelsh: true,
         showDetailedCard: false,
-
         showInSearchableList: true,
         isOffboarded: false,
       },

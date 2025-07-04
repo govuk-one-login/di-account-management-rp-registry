@@ -6,12 +6,13 @@ const aas: Client = {
     integration: "MJ8nBsh32LHweUjb6x3p7qf-_TE",
     nonProduction: "aas",
   },
+  showInAccounts: true,
+  showInServices: false,
+  showDetailedCard: false,
+  showInActivityHistory: true,
+  showInDeleteAccount: true,
+  showInSearchableList: true,
   isAvailableInWelsh: false,
-  clientType: "account",
-  isHmrc: false,
-  isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: true,
-  showInClientSearch: { production: true, nonProduction: true },
   translations: {
     en: {
       header: "Apprenticeship assessment service (AAS)",

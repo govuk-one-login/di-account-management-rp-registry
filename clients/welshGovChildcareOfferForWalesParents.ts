@@ -7,11 +7,12 @@ const welshGovChildcareOfferForWalesParents: Client = {
     nonProduction: "welshGovChildcareOfferForWalesParents",
   },
   isAvailableInWelsh: true,
-  clientType: "account",
-  isHmrc: false,
-  isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: true,
-  showInClientSearch: { production: false, nonProduction: false },
+  showInAccounts: true,
+  showInServices: false,
+  showDetailedCard: false,
+  showInActivityHistory: true,
+  showInDeleteAccount: true,
+  showInSearchableList: false,
   translations: {
     en: {
       header: "Childcare Offer for Wales: Parents and Guardians",

@@ -6,8 +6,8 @@ export type EnvironmentValue<T> =
       nonProduction: T;
     };
 
-interface Translations {
-  header?: string;
+export interface Translation {
+  header: string;
   description?: string;
   linkText?: string;
   linkUrl?: EnvironmentValue<string>;
@@ -18,33 +18,19 @@ interface Translations {
   startText?: string;
 }
 
-interface BaseClient {
+export type TranslationsObject = Record<string, Translation>;
+export interface Client {
   clientId: EnvironmentValue<string>;
-  translations: {
-    en: Translations;
+  translations?: {
+    en: Translation;
+    cy?: Translation;
   };
-  clientType: "service" | "account" | "home" | "internal" | "govukApp";
-  isHmrc: boolean;
-  isReportSuspiciousActivityEnabled: boolean;
-  isActivityLogEnabled: boolean;
-  showInClientSearch: EnvironmentValue<boolean>;
   isAvailableInWelsh: boolean;
+  showInAccounts: boolean;
+  showInServices: boolean;
+  showDetailedCard: boolean;
+  showInActivityHistory: boolean;
+  showInSearchableList: boolean;
+  showInDeleteAccount: boolean;
   isOffboarded: boolean;
 }
-
-interface WelshClient extends BaseClient {
-  isAvailableInWelsh: true;
-  translations: {
-    en: Translations;
-    cy: Translations;
-  };
-}
-
-interface NonWelshClient extends BaseClient {
-  isAvailableInWelsh: false;
-  translations: {
-    en: Translations;
-  };
-}
-
-export type Client = NonWelshClient | WelshClient;

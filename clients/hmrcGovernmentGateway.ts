@@ -7,12 +7,12 @@ const hmrcGovernmentGateway: Client = {
     nonProduction: "hmrcGovernmentGateway",
   },
   isAvailableInWelsh: false,
-  clientType: "internal",
-  isHmrc: false,
-  isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: true,
-  showInClientSearch: { production: false, nonProduction: false },
-  translations: { en: {} },
+  showInAccounts: false,
+  showInServices: false,
+  showDetailedCard: false,
+  showInActivityHistory: false,
+  showInDeleteAccount: false,
+  showInSearchableList: false,
   isOffboarded: false,
 };
 

@@ -7,11 +7,12 @@ const ukmcab: Client = {
     nonProduction: "ukmcab",
   },
   isAvailableInWelsh: false,
-  clientType: "account",
-  isHmrc: false,
-  isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: true,
-  showInClientSearch: { production: true, nonProduction: true },
+  showInAccounts: true,
+  showInServices: false,
+  showDetailedCard: false,
+  showInActivityHistory: true,
+  showInDeleteAccount: true,
+  showInSearchableList: true,
   translations: {
     en: {
       header: "Find a UK market conformity assessment body",

@@ -19,14 +19,6 @@ describe("Client data validation", () => {
             expect(client.translations.cy).toBeDefined();
           }
         });
-
-        test("should have welsh header, linkText and linkUrl if isAvailableInWelsh is true", () => {
-          if (client.isAvailableInWelsh) {
-            expect(client.translations.cy.header).toBeDefined();
-            expect(client.translations.cy.linkText).toBeDefined();
-            expect(client.translations.cy.linkUrl).toBeDefined();
-          }
-        });
       });
 
       describe("showInAccounts", () => {
@@ -35,12 +27,38 @@ describe("Client data validation", () => {
             expect(client.translations.en.header).toBeDefined();
             expect(client.translations.en.linkText).toBeDefined();
             expect(client.translations.en.linkUrl).toBeDefined();
+            expect(client.translations.en.description).toBeDefined();
           }
         });
 
         test("should have showInServices false and showInAccounts is true", () => {
           if (client.showInAccounts) {
             expect(client.showInServices).toBeFalsy();
+          }
+        });
+
+        test("should end description with a full stop", () => {
+          if (client.showInAccounts) {
+            const description = client.translations.en.description;
+            expect(typeof description).toBe("string");
+            expect(description.trim().endsWith(".")).toBe(true);
+          }
+        });
+
+        test("should have welsh translation if available in welsh and showInAccounts is true", () => {
+          if (client.showInAccounts && client.isAvailableInWelsh) {
+            expect(client.translations.cy.header).toBeDefined();
+            expect(client.translations.cy.linkText).toBeDefined();
+            expect(client.translations.cy.linkUrl).toBeDefined();
+            expect(client.translations.cy.description).toBeDefined();
+          }
+        });
+
+        test("should end welsh description with a full stop", () => {
+          if (client.showInAccounts && client.isAvailableInWelsh) {
+            const description = client.translations.cy.description;
+            expect(typeof description).toBe("string");
+            expect(description.trim().endsWith(".")).toBe(true);
           }
         });
       });
@@ -57,6 +75,14 @@ describe("Client data validation", () => {
         test("should have showInAccounts false and showInServices is true", () => {
           if (client.showInServices) {
             expect(client.showInAccounts).toBeFalsy();
+          }
+        });
+
+        test("should have welsh translation if available in welsh and showInServices is true", () => {
+          if (client.showInServices && client.isAvailableInWelsh) {
+            expect(client.translations.cy.header).toBeDefined();
+            expect(client.translations.cy.linkText).toBeDefined();
+            expect(client.translations.cy.linkUrl).toBeDefined();
           }
         });
       });

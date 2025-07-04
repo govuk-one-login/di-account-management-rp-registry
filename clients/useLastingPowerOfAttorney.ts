@@ -16,7 +16,7 @@ const useLastingPowerOfAttorney: Client = {
   translations: {
     en: {
       header: "Use a lasting power of attorney",
-      description: "Share details of a lasting power of attorney",
+      description: "Share details of a lasting power of attorney.",
       linkText: "Go to your lasting power of attorney dashboard",
       linkUrl:
         "https://use-lasting-power-of-attorney.service.gov.uk/lpa/dashboard",

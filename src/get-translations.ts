@@ -2,15 +2,14 @@ import {
   Translation,
   TranslationsObject,
 } from "../interfaces/translations.interface";
-import { Client } from "../interfaces/client.interface";
 import { getValueForEnvironment } from "./utils";
 import * as clients from "../clients";
 
 const convertToTranslation = (
-  translations: Client["translations"]["en"],
+  translations: Translation | undefined,
   environment: string
 ): Translation | undefined => {
-  if (translations.header && translations.linkText && translations.linkUrl) {
+  if (translations?.header) {
     return {
       header: translations.header,
       ...(translations.linkText && { linkText: translations.linkText }),
@@ -39,16 +38,18 @@ const getTranslations = (
       const clientData = clients[client as keyof typeof clients];
       const clientTranslations =
         clientData.isAvailableInWelsh && language === "cy"
-          ? clientData.translations.cy
-          : clientData.translations.en;
+          ? clientData.translations?.cy
+          : clientData.translations?.en;
       const clientId = getValueForEnvironment(environment, clientData.clientId);
 
-      const convertedTranslation = convertToTranslation(
-        clientTranslations,
-        environment
-      );
-      if (typeof convertedTranslation !== "undefined") {
-        translations[clientId] = convertedTranslation;
+      if (clientTranslations) {
+        const convertedTranslation = convertToTranslation(
+          clientTranslations as Translation,
+          environment
+        );
+        if (typeof convertedTranslation !== "undefined") {
+          translations[clientId] = convertedTranslation;
+        }
       }
     }
   });

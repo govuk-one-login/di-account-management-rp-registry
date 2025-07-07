@@ -20,8 +20,9 @@ interface Translations {
 
 interface BaseClient {
   clientId: EnvironmentValue<string>;
-  translations: {
+  translations?: {
     en: Translations;
+    cy?: Translations;
   };
   isAvailableInWelsh: boolean;
   showInAccounts: boolean;
@@ -33,19 +34,4 @@ interface BaseClient {
   isOffboarded: boolean;
 }
 
-interface WelshClient extends BaseClient {
-  isAvailableInWelsh: true;
-  translations: {
-    en: Translations;
-    cy: Translations;
-  };
-}
-
-interface NonWelshClient extends BaseClient {
-  isAvailableInWelsh: false;
-  translations: {
-    en: Translations;
-  };
-}
-
-export type Client = NonWelshClient | WelshClient;
+export type Client = BaseClient;

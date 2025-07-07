@@ -1,13 +1,13 @@
 export interface Translation {
   header: string;
   description?: string;
-  link_text: string;
-  link_href: string;
-  hint_text?: string;
+  linkText?: string;
+  linkUrl?: string;
+  hintText?: string;
   paragraph1?: string;
   paragraph2?: string;
-  start_text?: string;
-  start_href?: string;
+  startText?: string;
+  startUrl?: string;
 }
 
 export type TranslationsObject = Record<string, Translation>;

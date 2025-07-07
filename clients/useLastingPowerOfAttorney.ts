@@ -7,15 +7,16 @@ const useLastingPowerOfAttorney: Client = {
     nonProduction: "useLastingPowerOfAttorney",
   },
   isAvailableInWelsh: true,
-  clientType: "account",
-  isHmrc: false,
-  isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: true,
-  showInClientSearch: { production: true, nonProduction: true },
+  showInAccounts: true,
+  showInServices: false,
+  showDetailedCard: false,
+  showInActivityHistory: true,
+  showInDeleteAccount: true,
+  showInSearchableList: true,
   translations: {
     en: {
       header: "Use a lasting power of attorney",
-      description: "Share details of a lasting power of attorney",
+      description: "Share details of a lasting power of attorney.",
       linkText: "Go to your lasting power of attorney dashboard",
       linkUrl:
         "https://use-lasting-power-of-attorney.service.gov.uk/lpa/dashboard",

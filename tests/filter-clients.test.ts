@@ -24,12 +24,13 @@ jest.mock("../clients", () => ({
       production: "welshClientProd",
       nonProduction: "welshClientNonProd",
     },
-    clientType: "account",
-    isHmrc: false,
-    isReportSuspiciousActivityEnabled: false,
-    isActivityLogEnabled: true,
-    showInClientSearch: { production: true, nonProduction: true },
+    showInAccounts: true,
+    showDetailedCard: false,
+    showInActivityHistory: true,
+    showInSearchableList: { production: true, nonProduction: true },
     isOffboarded: false,
+    showInDeleteAccount: true,
+    showInServices: false,
   },
   enClient: {
     isAvailableInWelsh: false,
@@ -42,12 +43,13 @@ jest.mock("../clients", () => ({
       },
     },
     clientId: "englishClient",
-    clientType: "account",
-    isHmrc: false,
-    isReportSuspiciousActivityEnabled: false,
-    isActivityLogEnabled: true,
-    showInClientSearch: { production: true, nonProduction: false },
+    showInAccounts: true,
+    showDetailedCard: false,
+    showInActivityHistory: true,
+    showInSearchableList: { production: true, nonProduction: false },
     isOffboarded: false,
+    showInDeleteAccount: false,
+    showInServices: false,
   },
   hmrcClient: {
     isAvailableInWelsh: false,
@@ -63,21 +65,23 @@ jest.mock("../clients", () => ({
       },
     },
     clientId: "hmrcClient",
-    clientType: "account",
-    isHmrc: true,
-    isReportSuspiciousActivityEnabled: false,
-    isActivityLogEnabled: true,
-    showInClientSearch: { production: true, nonProduction: false },
+    showInAccounts: true,
+    showDetailedCard: true,
+    showInActivityHistory: true,
+    showInSearchableList: { production: true, nonProduction: false },
     isOffboarded: false,
+    showInDeleteAccount: true,
+    showInServices: false,
   },
   internalClient: {
     isAvailableInWelsh: false,
     clientId: "internalClient",
     clientType: "internal",
-    isHmrc: false,
-    isReportSuspiciousActivityEnabled: false,
-    isActivityLogEnabled: true,
-    showInClientSearch: { production: false, nonProduction: true },
+    showDetailedCard: false,
+    showInActivityHistory: true,
+    showInSearchableList: { production: false, nonProduction: true },
+    showInDeleteAccount: false,
+    showInServices: false,
   },
   offboardedClient: {
     isAvailableInWelsh: false,
@@ -93,27 +97,29 @@ jest.mock("../clients", () => ({
       },
     },
     clientId: "offboardedClient",
-    clientType: "account",
-    isHmrc: false,
-    isReportSuspiciousActivityEnabled: false,
-    isActivityLogEnabled: true,
-    showInClientSearch: false,
+    showInAccounts: true,
+    showDetailedCard: false,
+    showInActivityHistory: true,
+    showInSearchableList: false,
     isOffboarded: true,
+    showInDeleteAccount: false,
+    showInServices: false,
   },
 }));
 
 describe("filterClient", () => {
   test("should return the client objects that match the given criteria", () => {
-    const client = filterClients("test", { isHmrc: true });
+    const client = filterClients("test", { showDetailedCard: true });
     expect(client).toEqual([
       {
         clientId: "hmrcClient",
-        clientType: "account",
-        isActivityLogEnabled: true,
+        showInAccounts: true,
+        showInServices: false,
+        showInActivityHistory: true,
+        showInDeleteAccount: true,
         isAvailableInWelsh: false,
-        isHmrc: true,
-        isReportSuspiciousActivityEnabled: false,
-        showInClientSearch: false,
+        showDetailedCard: true,
+        showInSearchableList: false,
         isOffboarded: false,
       },
     ]);
@@ -124,43 +130,47 @@ describe("filterClient", () => {
     expect(client).toEqual([
       {
         clientId: "welshClientNonProd",
-        clientType: "account",
-        isActivityLogEnabled: true,
+        showInAccounts: true,
+        showInServices: false,
+        showInActivityHistory: true,
+        showInDeleteAccount: true,
         isAvailableInWelsh: true,
-        isHmrc: false,
-        isReportSuspiciousActivityEnabled: false,
-        showInClientSearch: true,
+        showDetailedCard: false,
+        showInSearchableList: true,
         isOffboarded: false,
       },
     ]);
   });
 
-  test("should work with boolean filters", () => {
-    const result = filterClients("nonProduction", { isHmrc: true });
-    expect(result).toHaveLength(1);
-  });
-
   test("should work with filters that have environment-specific values", () => {
-    const result = filterClients("production", { showInClientSearch: true });
+    const result = filterClients("production", { showInSearchableList: true });
     expect(result).toHaveLength(3);
 
     const result2 = filterClients("nonProduction", {
-      showInClientSearch: true,
+      showInSearchableList: true,
     });
     expect(result2).toHaveLength(2);
 
-    const result3 = filterClients("production", { showInClientSearch: false });
+    const result3 = filterClients("production", {
+      showInSearchableList: false,
+    });
     expect(result3).toHaveLength(2);
 
     const result4 = filterClients("nonProduction", {
-      showInClientSearch: false,
+      showInSearchableList: false,
     });
     expect(result4).toHaveLength(3);
   });
 
-  test('should return clients matching multiple filters (clientType: "account", isOffboarded: false)', () => {
+  test("should work with boolean filters", () => {
+    const result = filterClients("nonProduction", { showDetailedCard: true });
+    expect(result).toHaveLength(1);
+  });
+
+  test("should return clients matching multiple filters (showInAccounts: true, isOffboarded: false)", () => {
     const result = filterClients("production", {
-      clientType: "account",
+      showInAccounts: true,
+      showInServices: false,
       isOffboarded: false,
     });
     expect(result).toHaveLength(3);
@@ -181,12 +191,14 @@ describe("filterClient", () => {
     expect(result).toEqual([
       {
         clientId: "welshClientProd",
-        clientType: "account",
-        isActivityLogEnabled: true,
+        showInAccounts: true,
+        showInServices: false,
+        showInActivityHistory: true,
+        showInDeleteAccount: true,
         isAvailableInWelsh: true,
-        isHmrc: false,
-        isReportSuspiciousActivityEnabled: false,
-        showInClientSearch: true,
+        showDetailedCard: false,
+
+        showInSearchableList: true,
         isOffboarded: false,
       },
     ]);
@@ -197,12 +209,13 @@ describe("filterClient", () => {
     expect(result).toEqual([
       {
         clientId: "welshClientNonProd",
-        clientType: "account",
-        isActivityLogEnabled: true,
+        showInAccounts: true,
+        showInServices: false,
+        showInActivityHistory: true,
+        showInDeleteAccount: true,
         isAvailableInWelsh: true,
-        isHmrc: false,
-        isReportSuspiciousActivityEnabled: false,
-        showInClientSearch: true,
+        showDetailedCard: false,
+        showInSearchableList: true,
         isOffboarded: false,
       },
     ]);
@@ -216,14 +229,7 @@ describe("filterClient", () => {
   });
 
   test("should correctly handle falsy values in filters", () => {
-    const result = filterClients("production", { isHmrc: false });
+    const result = filterClients("production", { showDetailedCard: false });
     expect(result).toHaveLength(4);
-  });
-
-  test("should return clients matching internal clientType", () => {
-    const result = filterClients("production", {
-      clientType: "internal",
-    });
-    expect(result).toHaveLength(1);
   });
 });

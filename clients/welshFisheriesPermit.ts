@@ -7,11 +7,12 @@ const welshFisheriesPermit: Client = {
     nonProduction: "welshFisheriesPermit",
   },
   isAvailableInWelsh: true,
-  clientType: "account",
-  isHmrc: false,
-  isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: true,
-  showInClientSearch: { production: true, nonProduction: true },
+  showInAccounts: true,
+  showInServices: false,
+  showDetailedCard: false,
+  showInActivityHistory: true,
+  showInDeleteAccount: true,
+  showInSearchableList: true,
   translations: {
     en: {
       header: "Manage fishing permits and catch returns in Wales",

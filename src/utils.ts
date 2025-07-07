@@ -49,19 +49,31 @@ const transformClientObject = (
   client: Client,
   environment: string
 ): RegistryEntry => {
-  const clientId = getValueForEnvironment(environment, client.clientId);
   return {
-    clientId,
-    clientType: client.clientType,
-    isOffboarded: client.isOffboarded,
-    isHmrc: client.isHmrc,
-    isReportSuspiciousActivityEnabled: client.isReportSuspiciousActivityEnabled,
-    isAvailableInWelsh: client.isAvailableInWelsh,
-    showInClientSearch: getValueForEnvironment(
+    clientId: getValueForEnvironment(environment, client.clientId),
+    showInAccounts: getValueForEnvironment(environment, client.showInAccounts),
+    showInServices: getValueForEnvironment(environment, client.showInServices),
+    isOffboarded: getValueForEnvironment(environment, client.isOffboarded),
+    showDetailedCard: getValueForEnvironment(
       environment,
-      client.showInClientSearch
+      client.showDetailedCard
     ),
-    isActivityLogEnabled: !!client.isActivityLogEnabled,
+    isAvailableInWelsh: getValueForEnvironment(
+      environment,
+      client.isAvailableInWelsh
+    ),
+    showInSearchableList: getValueForEnvironment(
+      environment,
+      client.showInSearchableList
+    ),
+    showInActivityHistory: getValueForEnvironment(
+      environment,
+      client.showInActivityHistory
+    ),
+    showInDeleteAccount: getValueForEnvironment(
+      environment,
+      client.showInDeleteAccount
+    ),
   };
 };
 

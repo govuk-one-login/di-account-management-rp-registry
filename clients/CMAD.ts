@@ -7,11 +7,12 @@ const CMAD: Client = {
     nonProduction: "CMAD",
   },
   isAvailableInWelsh: false,
-  clientType: "account",
-  isHmrc: false,
-  isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: true,
-  showInClientSearch: { production: true, nonProduction: true },
+  showInAccounts: true,
+  showInServices: false,
+  showDetailedCard: false,
+  showInActivityHistory: true,
+  showInDeleteAccount: true,
+  showInSearchableList: true,
   translations: {
     en: {
       header: "Confirm my apprenticeship details (CMAD)",

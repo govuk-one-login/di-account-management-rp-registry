@@ -21,10 +21,11 @@ jest.mock("../clients", () => ({
       },
     },
     clientId: "welshClient",
-    clientType: "account",
-    isHmrc: false,
-    isReportSuspiciousActivityEnabled: false,
-    showInClientSearch: true,
+    showInAccounts: true,
+    showInServices: false,
+    showDetailedCard: false,
+
+    showInSearchableList: true,
   },
   enClient: {
     isAvailableInWelsh: false,
@@ -37,10 +38,11 @@ jest.mock("../clients", () => ({
       },
     },
     clientId: "englishClient",
-    clientType: "account",
-    isHmrc: false,
-    isReportSuspiciousActivityEnabled: false,
-    showInClientSearch: true,
+    showInAccounts: true,
+    showInServices: false,
+    showDetailedCard: false,
+
+    showInSearchableList: true,
   },
   hmrcClient: {
     isAvailableInWelsh: false,
@@ -56,10 +58,11 @@ jest.mock("../clients", () => ({
       },
     },
     clientId: "englishClientHmrc",
-    clientType: "account",
-    isHmrc: false,
-    isReportSuspiciousActivityEnabled: false,
-    showInClientSearch: true,
+    showInAccounts: true,
+    showInServices: false,
+    showDetailedCard: false,
+
+    showInSearchableList: true,
   },
 }));
 

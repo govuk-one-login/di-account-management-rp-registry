@@ -13,20 +13,21 @@ const convertToTranslation = (
   if (translations.header && translations.linkText && translations.linkUrl) {
     return {
       header: translations.header,
-      link_text: translations.linkText,
-      link_href: getValueForEnvironment(environment, translations.linkUrl),
+      ...(translations.linkText && { linkText: translations.linkText }),
+      ...(translations.linkUrl && {
+        linkUrl: getValueForEnvironment(environment, translations.linkUrl),
+      }),
       ...(translations.description && {
         description: translations.description,
       }),
-      ...(translations.hintText && { hint_text: translations.hintText }),
+      ...(translations.hintText && { hintText: translations.hintText }),
       ...(translations.paragraph1 && { paragraph1: translations.paragraph1 }),
       ...(translations.paragraph2 && { paragraph2: translations.paragraph2 }),
-      ...(translations.startText && { start_text: translations.startText }),
-      ...(translations.startUrl && { start_href: translations.startUrl }),
+      ...(translations.startText && { startText: translations.startText }),
+      ...(translations.startUrl && { startUrl: translations.startUrl }),
     };
   }
 };
-
 const getTranslations = (
   environment: string,
   language: "en" | "cy"
@@ -51,8 +52,6 @@ const getTranslations = (
       }
     }
   });
-
   return translations;
 };
-
 export default getTranslations;

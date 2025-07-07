@@ -7,11 +7,12 @@ const govukApp: Client = {
     nonProduction: "govukApp",
   },
   isAvailableInWelsh: false,
-  clientType: "govukApp",
-  isHmrc: false,
-  isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: true,
-  showInClientSearch: { production: false, nonProduction: false },
+  showInAccounts: false,
+  showInServices: false,
+  showDetailedCard: false,
+  showInActivityHistory: true,
+  showInDeleteAccount: true,
+  showInSearchableList: false,
   translations: {
     en: {
       header: "Your GOV.UK app",

@@ -7,11 +7,12 @@ const socialWorkEngland: Client = {
     nonProduction: "socialWorkEngland",
   },
   isAvailableInWelsh: false,
-  clientType: "service",
-  isHmrc: false,
-  isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: true,
-  showInClientSearch: { production: true, nonProduction: true },
+  showInAccounts: false,
+  showInServices: true,
+  showDetailedCard: false,
+  showInActivityHistory: true,
+  showInDeleteAccount: true,
+  showInSearchableList: true,
   translations: {
     en: {
       header: "Apply to become a registered social worker in England",

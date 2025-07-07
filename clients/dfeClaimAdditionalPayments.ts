@@ -7,11 +7,12 @@ const dfeClaimAdditionalPayments: Client = {
     nonProduction: "dfeClaimAdditionalPayments",
   },
   isAvailableInWelsh: false,
-  clientType: "service",
-  isHmrc: false,
-  isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: true,
-  showInClientSearch: { production: false, nonProduction: false },
+  showInAccounts: false,
+  showInServices: true,
+  showDetailedCard: false,
+  showInActivityHistory: true,
+  showInDeleteAccount: true,
+  showInSearchableList: false,
   translations: {
     en: {
       header: "Claim additional payments for teaching",

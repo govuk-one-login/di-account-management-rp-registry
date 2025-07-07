@@ -7,11 +7,12 @@ const oneLoginHome: Client = {
     nonProduction: "EMGmY82k-92QSakDl_9keKDFmZY",
   },
   isAvailableInWelsh: true,
-  clientType: "home",
-  isHmrc: false,
-  isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: true,
-  showInClientSearch: { production: false, nonProduction: false },
+  showInAccounts: false,
+  showInServices: false,
+  showDetailedCard: false,
+  showInActivityHistory: true,
+  showInDeleteAccount: true,
+  showInSearchableList: false,
   translations: {
     en: {
       header: "Your GOV.UK One Login",

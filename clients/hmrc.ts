@@ -7,11 +7,12 @@ const hmrc: Client = {
     nonProduction: "hmrc",
   },
   isAvailableInWelsh: true,
-  clientType: "service",
-  isHmrc: true,
-  isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: true,
-  showInClientSearch: { production: false, nonProduction: false },
+  showInAccounts: false,
+  showInServices: true,
+  showDetailedCard: true,
+  showInActivityHistory: true,
+  showInDeleteAccount: true,
+  showInSearchableList: false,
   translations: {
     en: {
       header: "A service run by HM Revenue and Customs (HMRC)",

@@ -23,12 +23,13 @@ interface BaseClient {
   translations: {
     en: Translations;
   };
-  clientType: "service" | "account" | "home" | "internal" | "govukApp";
-  isHmrc: boolean;
-  isReportSuspiciousActivityEnabled: boolean;
-  isActivityLogEnabled: boolean;
-  showInClientSearch: EnvironmentValue<boolean>;
   isAvailableInWelsh: boolean;
+  showInAccounts: boolean;
+  showInServices: boolean;
+  showDetailedCard: boolean;
+  showInActivityHistory: boolean;
+  showInSearchableList: EnvironmentValue<boolean>;
+  showInDeleteAccount: boolean;
   isOffboarded: boolean;
 }
 

@@ -7,11 +7,12 @@ const checkFamilyEligibility: Client = {
     nonProduction: "checkFamilyEligibility",
   },
   isAvailableInWelsh: false,
-  clientType: "service",
-  isHmrc: false,
-  isReportSuspiciousActivityEnabled: false,
-  isActivityLogEnabled: true,
-  showInClientSearch: { production: false, nonProduction: false },
+  showInAccounts: false,
+  showInServices: true,
+  showDetailedCard: false,
+  showInActivityHistory: true,
+  showInDeleteAccount: true,
+  showInSearchableList: false,
   translations: {
     en: {
       header: "Check a family’s eligibility for free school meals",

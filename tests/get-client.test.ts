@@ -24,11 +24,13 @@ jest.mock("../clients", () => ({
       production: "welshClientProd",
       nonProduction: "welshClientNonProd",
     },
-    clientType: "account",
-    isHmrc: false,
-    isReportSuspiciousActivityEnabled: false,
-    isActivityLogEnabled: true,
-    showInClientSearch: true,
+    showInAccounts: true,
+    showInServices: false,
+    showDetailedCard: false,
+
+    showInActivityHistory: true,
+    showInDeleteAccount: true,
+    showInSearchableList: true,
   },
   enClient: {
     isAvailableInWelsh: false,
@@ -41,11 +43,13 @@ jest.mock("../clients", () => ({
       },
     },
     clientId: "englishClient",
-    clientType: "account",
-    isHmrc: false,
-    isReportSuspiciousActivityEnabled: false,
-    isActivityLogEnabled: true,
-    showInClientSearch: true,
+    showInAccounts: true,
+    showInServices: false,
+    showDetailedCard: false,
+
+    showInActivityHistory: true,
+    showInDeleteAccount: true,
+    showInSearchableList: true,
   },
   hmrcClient: {
     isAvailableInWelsh: false,
@@ -61,11 +65,13 @@ jest.mock("../clients", () => ({
       },
     },
     clientId: "englishClient",
-    clientType: "account",
-    isHmrc: false,
-    isReportSuspiciousActivityEnabled: false,
-    isActivityLogEnabled: true,
-    showInClientSearch: true,
+    showInAccounts: true,
+    showInServices: false,
+    showDetailedCard: false,
+
+    showInActivityHistory: true,
+    showInDeleteAccount: true,
+    showInSearchableList: true,
   },
 }));
 
@@ -74,12 +80,14 @@ describe("getClient", () => {
     const client = getClient("test", "welshClientNonProd");
     expect(client).toEqual({
       clientId: "welshClientNonProd",
-      clientType: "account",
-      isActivityLogEnabled: true,
+      showInAccounts: true,
+      showInServices: false,
+      showInActivityHistory: true,
+      showInDeleteAccount: true,
       isAvailableInWelsh: true,
-      isHmrc: false,
-      isReportSuspiciousActivityEnabled: false,
-      showInClientSearch: true,
+      showDetailedCard: false,
+
+      showInSearchableList: true,
     });
   });
 
@@ -87,12 +95,14 @@ describe("getClient", () => {
     const client = getClient("production", "welshClientProd");
     expect(client).toEqual({
       clientId: "welshClientProd",
-      clientType: "account",
-      isActivityLogEnabled: true,
+      showInAccounts: true,
+      showInServices: false,
+      showInActivityHistory: true,
+      showInDeleteAccount: true,
       isAvailableInWelsh: true,
-      isHmrc: false,
-      isReportSuspiciousActivityEnabled: false,
-      showInClientSearch: true,
+      showDetailedCard: false,
+
+      showInSearchableList: true,
     });
   });
 });

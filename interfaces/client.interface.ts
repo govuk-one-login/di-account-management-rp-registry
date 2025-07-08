@@ -20,31 +20,18 @@ interface Translations {
 
 interface BaseClient {
   clientId: EnvironmentValue<string>;
-  translations: {
+  translations?: {
     en: Translations;
+    cy?: Translations;
   };
-  clientType: "service" | "account" | "home" | "internal" | "govukApp";
-  isHmrc: boolean;
-  isReportSuspiciousActivityEnabled: boolean;
-  isActivityLogEnabled: boolean;
-  showInClientSearch: EnvironmentValue<boolean>;
   isAvailableInWelsh: boolean;
+  showInAccounts: boolean;
+  showInServices: boolean;
+  showDetailedCard: boolean;
+  showInActivityHistory: boolean;
+  showInSearchableList: EnvironmentValue<boolean>;
+  showInDeleteAccount: boolean;
   isOffboarded: boolean;
 }
 
-interface WelshClient extends BaseClient {
-  isAvailableInWelsh: true;
-  translations: {
-    en: Translations;
-    cy: Translations;
-  };
-}
-
-interface NonWelshClient extends BaseClient {
-  isAvailableInWelsh: false;
-  translations: {
-    en: Translations;
-  };
-}
-
-export type Client = NonWelshClient | WelshClient;
+export type Client = BaseClient;

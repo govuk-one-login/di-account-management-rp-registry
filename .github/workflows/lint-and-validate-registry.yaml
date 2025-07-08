@@ -1,4 +1,4 @@
-name: Lint
+name: Lint & Test
 
 on:
   workflow_call:
@@ -16,16 +16,17 @@ on:
 
 jobs:
   lint_and_test:
-    name: Lint
+    name: Lint & Test
     runs-on: ubuntu-latest
     timeout-minutes: 15
     defaults:
       run:
         working-directory: ./
     steps:
-      - uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3 # pin@v3
+      - name: Checkout repository
+        uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3 # pin@v3
 
-      - name: Install Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # pin@v3
         with:
           node-version-file: ".nvmrc"

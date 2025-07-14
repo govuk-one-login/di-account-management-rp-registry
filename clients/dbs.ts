@@ -20,6 +20,7 @@ const dbs: Client = {
       linkUrl: "https://www.gov.uk/request-copy-criminal-record",
       startUrl: "https://www.gov.uk/request-copy-criminal-record",
       startText: "Request a basic DBS check",
+      additionalSearchTerms: ["disclosure", "barring", "service"],
     },
     cy: {
       header: "Gwneud cais am wiriad DBS sylfaenol",
@@ -27,6 +28,7 @@ const dbs: Client = {
       linkUrl: "https://www.gov.uk/gwneud-cais-copi-cofnod-troseddol",
       startUrl: "https://www.gov.uk/gwneud-cais-copi-cofnod-troseddol",
       startText: "Gwneud cais am wiriad DBS sylfaenol",
+      keywords: ["disclosure", "barring", "service"],
     },
   },
   isOffboarded: false,

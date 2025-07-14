@@ -8,6 +8,7 @@ export interface Translation {
   paragraph2?: string;
   startText?: string;
   startUrl?: string;
+  additionalSearchTerms?: string;
 }
 
 export type TranslationsObject = Record<string, Translation>;

@@ -16,7 +16,7 @@ interface Translations {
   paragraph2?: string;
   startUrl?: string;
   startText?: string;
-  additionalSearchTerms?: string[];
+  additionalSearchTerms?: string;
 }
 
 interface BaseClient {

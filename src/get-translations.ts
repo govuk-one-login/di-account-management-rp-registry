@@ -24,6 +24,9 @@ const convertToTranslation = (
       ...(translations.paragraph2 && { paragraph2: translations.paragraph2 }),
       ...(translations.startText && { startText: translations.startText }),
       ...(translations.startUrl && { startUrl: translations.startUrl }),
+      ...(translations.additionalSearchTerms && {
+        additionalSearchTerms: translations.additionalSearchTerms,
+      }),
     };
   }
 };

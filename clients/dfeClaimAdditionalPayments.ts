@@ -12,7 +12,7 @@ const dfeClaimAdditionalPayments: Client = {
   showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
-  showInSearchableList: false,
+  showInSearchableList: true,
   translations: {
     en: {
       header: "Claim additional payments for teaching",

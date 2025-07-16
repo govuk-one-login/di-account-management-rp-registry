@@ -12,7 +12,7 @@ const hoOnlineApis: Client = {
   showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
-  showInSearchableList: false,
+  showInSearchableList: true,
   translations: {
     en: {
       header: "Online APIS",
@@ -28,7 +28,7 @@ const hoOnlineApis: Client = {
           "https://www.submit-an-online-apis-report.service.gov.uk/dashboard",
       },
       startText:
-        "Submit an online APIS (advance passenger information submission)",
+        "Submit an online APIS (advance passenger information submission) report",
       startUrl:
         "https://www.gov.uk/government/publications/providing-information-about-scheduled-aviation-flights",
     },

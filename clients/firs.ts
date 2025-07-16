@@ -12,7 +12,7 @@ const firs: Client = {
   showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
-  showInSearchableList: false,
+  showInSearchableList: true,
   translations: {
     en: {
       header: "Foreign influence registration scheme",
@@ -20,6 +20,9 @@ const firs: Client = {
         "Register an arrangement of foreign power influence in UK politics.",
       linkText: "Go to your Foreign influence registration scheme account",
       linkUrl: "http://foreign-influence-registration-scheme.service.gov.uk/",
+      startText: "Foreign Influence Registration Scheme (FIRS)",
+      startUrl:
+        "https://www.gov.uk/government/collections/foreign-influence-registration-scheme",
     },
   },
   isOffboarded: false,

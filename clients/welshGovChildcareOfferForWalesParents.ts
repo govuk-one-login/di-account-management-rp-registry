@@ -12,7 +12,7 @@ const welshGovChildcareOfferForWalesParents: Client = {
   showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
-  showInSearchableList: false,
+  showInSearchableList: true,
   translations: {
     en: {
       header: "Childcare Offer for Wales: Parents and Guardians",

@@ -12,7 +12,7 @@ const ruralPaymentWales: Client = {
   showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
-  showInSearchableList: false,
+  showInSearchableList: true,
   translations: {
     en: {
       header: "Rural Payment Wales",

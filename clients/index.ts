@@ -66,6 +66,7 @@ import hoOnlineApis from "./hoOnlineApis";
 import ukSBS from "./UKSBS";
 import dftConnectivityTool from "./dftConnectivityTool";
 import govukApp from "./govukApp";
+import hoSubmitGeneralAviationReport from "./hoSubmitGeneralAviationReport";
 
 export {
   govuk,
@@ -136,4 +137,5 @@ export {
   ukSBS,
   dftConnectivityTool,
   govukApp,
+  hoSubmitGeneralAviationReport,
 };

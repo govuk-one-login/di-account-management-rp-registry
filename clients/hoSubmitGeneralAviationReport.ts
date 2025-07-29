@@ -21,7 +21,7 @@ const hoSubmitGeneralAviationReport: Client = {
       linkText: "Go to your General Aviation Report account",
       linkUrl: "https://www.submit-general-aviation-report.service.gov.uk/home",
       startUrl:
-        "https://www.submit-general-aviation-report.service.gov.uk/welcome/index",
+        "https://www.gov.uk/government/publications/general-aviation-operators-and-pilots-notification-of-flights",
       startText: "Submit a General Aviation Report (GAR)",
     },
   },

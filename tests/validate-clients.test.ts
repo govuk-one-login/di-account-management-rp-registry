@@ -85,6 +85,12 @@ describe("Client data validation", () => {
             expect(client.translations.cy.linkUrl).toBeDefined();
           }
         });
+
+        test("should not have description populated as it is a service, description is only used in accounts", () => {
+          if (client.showInServices) {
+            expect(client.translations.en.describe).toBeUndefined();
+          }
+        });
       });
 
       describe("showDetailedCard", () => {

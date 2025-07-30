@@ -67,6 +67,7 @@ import ukSBS from "./UKSBS";
 import dftConnectivityTool from "./dftConnectivityTool";
 import govukApp from "./govukApp";
 import hoSubmitGeneralAviationReport from "./hoSubmitGeneralAviationReport";
+import dbtSubmitCosmeticProductNotification from "./dbtSubmitCosmeticProductNotification";
 
 export {
   govuk,
@@ -138,4 +139,5 @@ export {
   dftConnectivityTool,
   govukApp,
   hoSubmitGeneralAviationReport,
+  dbtSubmitCosmeticProductNotification,
 };

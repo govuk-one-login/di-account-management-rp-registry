@@ -1,10 +1,10 @@
 import { Client } from "../interfaces/client.interface";
 
-const dfeClaimAdditionalPayments: Client = {
+const dfeRetentionIncentives: Client = {
   clientId: {
     production: "IJ_TuVEgIqAWT2mCe9b5uocMyNs",
     integration: "IJ_TuVEgIqAWT2mCe9b5uocMyNs",
-    nonProduction: "dfeClaimAdditionalPayments",
+    nonProduction: "dfeRetentionIncentives",
   },
   isAvailableInWelsh: false,
   showInAccounts: false,
@@ -15,16 +15,16 @@ const dfeClaimAdditionalPayments: Client = {
   showInSearchableList: true,
   translations: {
     en: {
-      header: "Claim additional payments for teaching",
-      linkText: "Claim additional payments for teaching",
+      header: "Targeted retention incentives for further education teachers",
+      linkText: "Targeted retention incentives for further education teachers",
       linkUrl:
         "https://www.gov.uk/government/collections/additional-payments-for-teaching-eligibility-and-payment-details",
       startUrl:
         "https://www.gov.uk/government/collections/additional-payments-for-teaching-eligibility-and-payment-details",
-      startText: "Claim additional payments for teaching",
+      startText: "Targeted retention incentives for further education teachers",
     },
   },
   isOffboarded: false,
 };
 
-export default dfeClaimAdditionalPayments;
+export default dfeRetentionIncentives;

@@ -1,10 +1,10 @@
 import { Client } from "../interfaces/client.interface";
 
-const dfeClaimAdditionalPayments: Client = {
+const dfeRetentionIncentives: Client = {
   clientId: {
     production: "IJ_TuVEgIqAWT2mCe9b5uocMyNs",
     integration: "IJ_TuVEgIqAWT2mCe9b5uocMyNs",
-    nonProduction: "dfeClaimAdditionalPayments",
+    nonProduction: "dfeRetentionIncentives",
   },
   isAvailableInWelsh: false,
   showInAccounts: false,
@@ -27,4 +27,4 @@ const dfeClaimAdditionalPayments: Client = {
   isOffboarded: false,
 };
 
-export default dfeClaimAdditionalPayments;
+export default dfeRetentionIncentives;

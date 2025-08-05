@@ -30,7 +30,7 @@ import PDPConnect from "./PDPConnect";
 import drivingMedicalCondition from "./drivingMedicalCondition";
 import useLastingPowerOfAttorney from "./useLastingPowerOfAttorney";
 import CMAD from "./CMAD";
-import dfeClaimAdditionalPayments from "./dfeClaimAdditionalPayments";
+import dfeRetentionIncentives from "./dfeRetentionIncentives";
 import companyHouseAccounts from "./companyHouseAccounts";
 import dbtApplyForAnExportCertificate from "./dbtApplyForAnExportCertificate";
 import hmpoCancelPassport from "./hmpoCancelPassport";
@@ -68,6 +68,7 @@ import dftConnectivityTool from "./dftConnectivityTool";
 import govukApp from "./govukApp";
 import hoSubmitGeneralAviationReport from "./hoSubmitGeneralAviationReport";
 import dfeClaimAdditionalPaymentsEarlyYears from "./dfeClaimAdditionalPaymentsEarlyYears";
+import dbtSubmitCosmeticProductNotification from "./dbtSubmitCosmeticProductNotification";
 
 export {
   govuk,
@@ -102,7 +103,7 @@ export {
   drivingMedicalCondition,
   useLastingPowerOfAttorney,
   CMAD,
-  dfeClaimAdditionalPayments,
+  dfeRetentionIncentives,
   companyHouseAccounts,
   dbtApplyForAnExportCertificate,
   hmpoCancelPassport,
@@ -140,4 +141,5 @@ export {
   govukApp,
   hoSubmitGeneralAviationReport,
   dfeClaimAdditionalPaymentsEarlyYears,
+  dbtSubmitCosmeticProductNotification,
 };

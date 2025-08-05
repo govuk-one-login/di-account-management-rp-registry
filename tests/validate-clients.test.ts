@@ -19,6 +19,11 @@ describe("Client data validation", () => {
             expect(client.translations.cy).toBeDefined();
           }
         });
+        test("should have isAvailableInWelsh true as Welsh content is available", () => {
+          if (client.translations?.cy) {
+            expect(client.isAvailableInWelsh).toBeTruthy();
+          }
+        });
       });
 
       describe("showInAccounts", () => {
@@ -85,6 +90,12 @@ describe("Client data validation", () => {
             expect(client.translations.cy.linkUrl).toBeDefined();
           }
         });
+
+        test("should not have description populated as it is a service, description is only used in accounts", () => {
+          if (client.showInServices) {
+            expect(client.translations.en.describe).toBeUndefined();
+          }
+        });
       });
 
       describe("showDetailedCard", () => {
@@ -137,6 +148,34 @@ describe("Client data validation", () => {
         });
 
         expect(missingExports).toEqual([]);
+      });
+
+      describe("URL validation", () => {
+        test("linkUrl should start with http:// or https:// if defined", () => {
+          if (client.translations?.en?.linkUrl) {
+            const linkUrl = client.translations.en.linkUrl;
+            if (typeof linkUrl === "string") {
+              expect(linkUrl).toMatch(/^https?:\/\//);
+            } else if (typeof linkUrl === "object") {
+              Object.values(linkUrl).forEach((url) => {
+                expect(url).toMatch(/^https?:\/\//);
+              });
+            }
+          }
+        });
+
+        test("startUrl should start with http:// or https:// if defined", () => {
+          if (client.translations?.en?.startUrl) {
+            const startUrl = client.translations.en.startUrl;
+            if (typeof startUrl === "string") {
+              expect(startUrl).toMatch(/^https?:\/\//);
+            } else if (typeof startUrl === "object") {
+              Object.values(startUrl).forEach((url) => {
+                expect(url).toMatch(/^https?:\/\//);
+              });
+            }
+          }
+        });
       });
     });
   });

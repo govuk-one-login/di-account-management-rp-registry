@@ -16,8 +16,6 @@ const govukApp: Client = {
   translations: {
     en: {
       header: "Your GOV.UK app",
-      linkText: " ",
-      linkUrl: " ",
     },
   },
   isOffboarded: false,

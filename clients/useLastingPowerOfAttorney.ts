@@ -17,7 +17,7 @@ const useLastingPowerOfAttorney: Client = {
     en: {
       header: "Use a lasting power of attorney",
       description: "Share details of a lasting power of attorney.",
-      linkText: "Go to your lasting power of attorney dashboard",
+      linkText: "Go to the Use a Lasting Power of Attorney service",
       linkUrl:
         "https://use-lasting-power-of-attorney.service.gov.uk/lpa/dashboard",
       startUrl: "https://www.gov.uk/use-lasting-power-of-attorney",
@@ -26,7 +26,7 @@ const useLastingPowerOfAttorney: Client = {
     cy: {
       header: "Defnyddio pwer atwrnai parhaus",
       description: "Rhannu manylion pwer atwrnai parhaus.",
-      linkText: "Ewch i'ch dangosfwrdd pwer atwrnai parhaus",
+      linkText: "Ewch i'r gwasanaeth Defnyddio Pŵer Atwrnai Parhaol",
       linkUrl:
         "https://use-lasting-power-of-attorney.service.gov.uk/lpa/dashboard",
       startUrl: "https://www.gov.uk/defnyddio-atwrneiaeth-arhosol",

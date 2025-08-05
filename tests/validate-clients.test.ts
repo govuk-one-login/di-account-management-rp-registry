@@ -141,13 +141,13 @@ describe("Client data validation", () => {
       });
 
       describe("clients/index.ts exports", () => {
-        test("should export all client files in index.ts", () => {
-          const indexContent = fs.readFileSync(indexFile, "utf8");
-          clientFiles.forEach((file: string) => {
-            const baseName = file.replace(/\.ts$/, "");
-            expect(indexContent).toMatch(new RegExp(baseName));
-          });
+        const indexContent = fs.readFileSync(indexFile, "utf8");
+        const missingExports = clientFiles.filter((file: string) => {
+          const baseName = file.replace(/\.ts$/, "");
+          return !new RegExp(baseName).test(indexContent);
         });
+
+        expect(missingExports).toEqual([]);
       });
 
       describe("URL validation", () => {

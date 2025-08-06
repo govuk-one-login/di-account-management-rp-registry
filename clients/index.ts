@@ -67,6 +67,7 @@ import ukSBS from "./UKSBS";
 import dftConnectivityTool from "./dftConnectivityTool";
 import govukApp from "./govukApp";
 import hoSubmitGeneralAviationReport from "./hoSubmitGeneralAviationReport";
+import dfeClaimAdditionalPaymentsEarlyYears from "./dfeClaimAdditionalPaymentsEarlyYears";
 import dbtSubmitCosmeticProductNotification from "./dbtSubmitCosmeticProductNotification";
 
 export {
@@ -139,5 +140,6 @@ export {
   dftConnectivityTool,
   govukApp,
   hoSubmitGeneralAviationReport,
+  dfeClaimAdditionalPaymentsEarlyYears,
   dbtSubmitCosmeticProductNotification,
 };

@@ -68,6 +68,7 @@ import dftConnectivityTool from "./dftConnectivityTool";
 import govukApp from "./govukApp";
 import hoSubmitGeneralAviationReport from "./hoSubmitGeneralAviationReport";
 import dbtSubmitCosmeticProductNotification from "./dbtSubmitCosmeticProductNotification";
+import dfeFindTeacherTrainingCourses from "./dfeFindTeacherTrainingCourses";
 
 export {
   govuk,
@@ -140,4 +141,5 @@ export {
   govukApp,
   hoSubmitGeneralAviationReport,
   dbtSubmitCosmeticProductNotification,
+  dfeFindTeacherTrainingCourses,
 };

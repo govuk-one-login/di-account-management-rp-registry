@@ -20,7 +20,7 @@ const dfeFindTeacherTrainingCourses: Client = {
       linkText: "Go to your Find teacher training courses account",
       linkUrl: "https://find-teacher-training-courses.service.gov.uk/",
       startUrl: "https://www.gov.uk/find-teacher-training-courses",
-      startText: "Find teacher training courses",
+      startText: "Find teacher training courses in England",
     },
   },
   isOffboarded: false,

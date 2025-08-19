@@ -70,6 +70,7 @@ import hoSubmitGeneralAviationReport from "./hoSubmitGeneralAviationReport";
 import dfeClaimAdditionalPaymentsEarlyYears from "./dfeClaimAdditionalPaymentsEarlyYears";
 import dbtSubmitCosmeticProductNotification from "./dbtSubmitCosmeticProductNotification";
 import dfeFindTeacherTrainingCourses from "./dfeFindTeacherTrainingCourses";
+import hmctsDtsLegacyGenderRecognition from "./hmctsDtsLegacyGenderRecognition";
 
 export {
   govuk,
@@ -144,4 +145,5 @@ export {
   dfeClaimAdditionalPaymentsEarlyYears,
   dbtSubmitCosmeticProductNotification,
   dfeFindTeacherTrainingCourses,
+  hmctsDtsLegacyGenderRecognition,
 };

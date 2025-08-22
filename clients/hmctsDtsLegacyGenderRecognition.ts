@@ -7,8 +7,8 @@ const hmctsDtsLegacyGenderRecognition: Client = {
     nonProduction: "hmctsDtsLegacyGenderRecognition",
   },
   isAvailableInWelsh: true,
-  showInAccounts: true,
-  showInServices: false,
+  showInAccounts: false,
+  showInServices: true,
   showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
@@ -17,8 +17,8 @@ const hmctsDtsLegacyGenderRecognition: Client = {
     en: {
       header: "Apply for a Gender Recognition Certificate",
       description:
-        "Continue your application for a Gender Recognition Certificate.",
-      linkText: "Go to your Gender Recognition Certificate application",
+        "Start or continue an application for a Gender Recognition Certificate.",
+      linkText: "Go to the Gender Recognition Certificate service",
       linkUrl: "https://apply-gender-recognition-certificate.service.gov.uk/",
       startText: "Apply for a Gender Recognition Certificate",
       startUrl:
@@ -26,8 +26,8 @@ const hmctsDtsLegacyGenderRecognition: Client = {
     },
     cy: {
       header: "Gwneud cais am Dystysgrif Cydnabod Rhywedd",
-      description: "Parhewch â'ch cais am Dystysgrif Cydnabod Rhywedd.",
-      linkText: "Ewch i'ch cais am Dystysgrif Cydnabod Rhywedd",
+      description: "Dechrau neu barhau â chais am Dystysgrif Cydnabod Rhywedd.",
+      linkText: "Ewch i'r gwasanaeth Tystysgrif Cydnabod Rhywedd",
       linkUrl: "https://apply-gender-recognition-certificate.service.gov.uk/",
       startText: "Gwneud cais am Dystysgrif Cydnabod Rhywedd",
       startUrl:

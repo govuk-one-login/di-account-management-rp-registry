@@ -70,6 +70,7 @@ import hoSubmitGeneralAviationReport from "./hoSubmitGeneralAviationReport";
 import dfeClaimAdditionalPaymentsEarlyYears from "./dfeClaimAdditionalPaymentsEarlyYears";
 import dbtSubmitCosmeticProductNotification from "./dbtSubmitCosmeticProductNotification";
 import dfeFindTeacherTrainingCourses from "./dfeFindTeacherTrainingCourses";
+import hmctsDtsLegacyGenderRecognition from "./hmctsDtsLegacyGenderRecognition";
 import nationalSecurityAndInvestments from "./nationalSecurityAndInvestments";
 
 export {
@@ -145,5 +146,6 @@ export {
   dfeClaimAdditionalPaymentsEarlyYears,
   dbtSubmitCosmeticProductNotification,
   dfeFindTeacherTrainingCourses,
+  hmctsDtsLegacyGenderRecognition,
   nationalSecurityAndInvestments,
 };

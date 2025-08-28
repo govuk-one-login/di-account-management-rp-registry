@@ -73,6 +73,7 @@ import dbtSubmitCosmeticProductNotification from "./dbtSubmitCosmeticProductNoti
 import dfeFindTeacherTrainingCourses from "./dfeFindTeacherTrainingCourses";
 import hmctsDtsLegacyGenderRecognition from "./hmctsDtsLegacyGenderRecognition";
 import nationalSecurityAndInvestments from "./nationalSecurityAndInvestments";
+import hoSubmitAPleasureCraftReport from "./hoSubmitAPleasureCraftReport";
 
 export {
   govuk,
@@ -150,4 +151,5 @@ export {
   dfeFindTeacherTrainingCourses,
   hmctsDtsLegacyGenderRecognition,
   nationalSecurityAndInvestments,
+  hoSubmitAPleasureCraftReport,
 };

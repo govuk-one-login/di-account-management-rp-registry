@@ -19,6 +19,7 @@ import veteransCard from "./veteransCard";
 import childDevelopmentTraining from "./childDevelopmentTraining";
 import hmrc from "./hmrc";
 import dwpBenefitOwed from "./dwpBenefitOwed";
+import dwpFindYourPensions from "./dwpFindYourPensions";
 import dfeFindAndUseAnApi from "./dfeFindAndUseAnApi";
 import mojPlanYourFuture from "./mojPlanYourFuture";
 import welshFisheriesPermit from "./welshFisheriesPermit";
@@ -96,6 +97,7 @@ export {
   childDevelopmentTraining,
   hmrc,
   dwpBenefitOwed,
+  dwpFindYourPensions,
   dfeFindAndUseAnApi,
   mojPlanYourFuture,
   welshFisheriesPermit,

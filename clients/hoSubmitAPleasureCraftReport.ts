@@ -12,7 +12,10 @@ const hoSubmitAPleasureCraftReport: Client = {
   showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
-  showInSearchableList: true,
+  showInSearchableList: {
+    production: new Date("Wed, 11 Sep 2025 00:00:00 GMT+1"),
+    nonProduction: true,
+  },
   translations: {
     en: {
       header: "Submit a Pleasure Craft Report",

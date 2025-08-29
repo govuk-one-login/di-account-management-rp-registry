@@ -19,6 +19,8 @@ interface Translations {
   additionalSearchTerms?: string;
 }
 
+export type BooleanOrDate = boolean | Date;
+
 interface BaseClient {
   clientId: EnvironmentValue<string>;
   translations?: {
@@ -26,13 +28,13 @@ interface BaseClient {
     cy?: Translations;
   };
   isAvailableInWelsh: boolean;
-  showInAccounts: boolean;
-  showInServices: boolean;
-  showDetailedCard: boolean;
-  showInActivityHistory: boolean;
-  showInSearchableList: EnvironmentValue<boolean>;
-  showInDeleteAccount: boolean;
-  isOffboarded: boolean;
+  showInAccounts: BooleanOrDate;
+  showInServices: BooleanOrDate;
+  showDetailedCard: BooleanOrDate;
+  showInActivityHistory: BooleanOrDate;
+  showInSearchableList: EnvironmentValue<BooleanOrDate>;
+  showInDeleteAccount: BooleanOrDate;
+  isOffboarded: BooleanOrDate;
 }
 
 export type Client = BaseClient;

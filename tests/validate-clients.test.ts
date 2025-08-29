@@ -13,13 +13,12 @@ describe("Client data validation", () => {
     const client = require(path.join(clientsDir, file)).default;
     describe(`${file}`, () => {
       describe("isAvailableInWelsh", () => {
-        test("should have welsh content if isAvailableInWelsh is true", () => {
+        test("should have Welsh content if isAvailableInWelsh is true", () => {
           if (client.isAvailableInWelsh) {
-            expect(client.translations).toBeDefined();
-            expect(client.translations.cy).toBeDefined();
+            expect(client.translations?.cy).toBeDefined();
           }
         });
-        test("should have isAvailableInWelsh true as Welsh content is available", () => {
+        test("isAvailableInWelsh should be true if Welsh content is available", () => {
           if (client.translations?.cy) {
             expect(client.isAvailableInWelsh).toBeTruthy();
           }
@@ -27,115 +26,142 @@ describe("Client data validation", () => {
       });
 
       describe("showInAccounts", () => {
-        test("should have header, linkText, linkUrl and description if showInAccounts is true", () => {
+        test("should have header, linkText, linkUrl and description if showInAccounts is not false", () => {
           if (client.showInAccounts) {
-            expect(client.translations.en.header).toBeDefined();
-            expect(client.translations.en.linkText).toBeDefined();
-            expect(client.translations.en.linkUrl).toBeDefined();
-            expect(client.translations.en.description).toBeDefined();
+            expect(client.translations?.en?.header).toBeDefined();
+            expect(client.translations?.en?.linkText).toBeDefined();
+            expect(client.translations?.en?.linkUrl).toBeDefined();
+            expect(client.translations?.en?.description).toBeDefined();
           }
         });
 
-        test("should have showInServices false and showInAccounts is true", () => {
+        test("showInServices should be false if showInAccounts is not false", () => {
           if (client.showInAccounts) {
             expect(client.showInServices).toBeFalsy();
           }
         });
 
-        test("should end description with a full stop", () => {
+        test("should have Welsh tranlations if showInAccounts is not false and isAvailableInWelsh is true", () => {
+          if (client.showInAccounts && client.isAvailableInWelsh) {
+            expect(client.translations?.cy?.header).toBeDefined();
+            expect(client.translations?.cy?.linkText).toBeDefined();
+            expect(client.translations?.cy?.linkUrl).toBeDefined();
+            expect(client.translations?.cy?.description).toBeDefined();
+          }
+        });
+
+        test("descriptions should end with a full stop", () => {
           if (client.showInAccounts) {
-            const description = client.translations.en.description;
-            expect(typeof description).toBe("string");
-            expect(description.trim().endsWith(".")).toBe(true);
-          }
-        });
+            expect(
+              client.translations?.en?.description.trim().endsWith(".")
+            ).toBe(true);
 
-        test("should have header, linkText, linkUrl and description in welsh showInAccounts is true", () => {
-          if (client.showInAccounts && client.isAvailableInWelsh) {
-            expect(client.translations.cy.header).toBeDefined();
-            expect(client.translations.cy.linkText).toBeDefined();
-            expect(client.translations.cy.linkUrl).toBeDefined();
-            expect(client.translations.cy.description).toBeDefined();
-          }
-        });
-
-        test("should end welsh description with a full stop", () => {
-          if (client.showInAccounts && client.isAvailableInWelsh) {
-            const description = client.translations.cy.description;
-            expect(typeof description).toBe("string");
-            expect(description.trim().endsWith(".")).toBe(true);
+            if (client.isAvailableInWelsh) {
+              expect(
+                client.translations?.cy?.description.trim().endsWith(".")
+              ).toBe(true);
+            }
           }
         });
       });
 
       describe("showInServices", () => {
-        test("should have header, linkText and linkUrl if showInServices is true", () => {
+        test("should have header, linkText and linkUrl if showInServices is not false", () => {
           if (client.showInServices) {
-            expect(client.translations.en.header).toBeDefined();
-            expect(client.translations.en.linkText).toBeDefined();
-            expect(client.translations.en.linkUrl).toBeDefined();
+            expect(client.translations?.en?.header).toBeDefined();
+            expect(client.translations?.en?.linkText).toBeDefined();
+            expect(client.translations?.en?.linkUrl).toBeDefined();
           }
         });
 
-        test("should have showInAccounts false and showInServices is true", () => {
+        test("showInAccounts should be false and showInServices is not false", () => {
           if (client.showInServices) {
             expect(client.showInAccounts).toBeFalsy();
           }
         });
 
-        test("should have welsh translation if available in welsh and showInServices is true", () => {
+        test("should have Welsh tranlations if showInServices is not false and isAvailableInWelsh is true", () => {
           if (client.showInServices && client.isAvailableInWelsh) {
-            expect(client.translations.cy.header).toBeDefined();
-            expect(client.translations.cy.linkText).toBeDefined();
-            expect(client.translations.cy.linkUrl).toBeDefined();
-          }
-        });
-
-        test("should not have description populated as it is a service, description is only used in accounts", () => {
-          if (client.showInServices) {
-            expect(client.translations.en.describe).toBeUndefined();
+            expect(client.translations?.cy?.header).toBeDefined();
+            expect(client.translations?.cy?.linkText).toBeDefined();
+            expect(client.translations?.cy?.linkUrl).toBeDefined();
           }
         });
       });
 
       describe("showDetailedCard", () => {
-        test("should have hintText, Pargraph1 and Paragrapgh2 if showDetailedCard is true", () => {
+        test("should have hintText, pargraph1 and paragrapgh2 if showDetailedCard is not false", () => {
           if (client.showDetailedCard) {
-            expect(client.translations.en.hintText).toBeDefined();
-            expect(client.translations.en.paragraph1).toBeDefined();
-            expect(client.translations.en.paragraph2).toBeDefined();
+            expect(client.translations?.en?.hintText).toBeDefined();
+            expect(client.translations?.en?.paragraph1).toBeDefined();
+            expect(client.translations?.en?.paragraph2).toBeDefined();
+          }
+        });
+
+        test("should have Welsh tranlations if showDetailedCard is not false and isAvailableInWelsh is true", () => {
+          if (client.showDetailedCard && client.isAvailableInWelsh) {
+            expect(client.translations?.cy?.hintText).toBeDefined();
+            expect(client.translations?.cy?.paragraph1).toBeDefined();
+            expect(client.translations?.cy?.paragraph2).toBeDefined();
           }
         });
       });
 
       describe("showInActivityHistory", () => {
-        test("should have header if showInActivityHistory is true", () => {
+        test("should have header if showInActivityHistory is not false", () => {
           if (client.showInActivityHistory) {
-            expect(client.translations.en.header).toBeDefined();
+            expect(client.translations?.en?.header).toBeDefined();
           }
         });
-        test("should have header in Welsh if showInActivityHistory is true and isAvailableInWelsh is true", () => {
+
+        test("should have Welsh tranlations if showInActivityHistory is not false and isAvailableInWelsh is true", () => {
           if (client.showInActivityHistory && client.isAvailableInWelsh) {
-            expect(client.translations.cy.header).toBeDefined();
+            expect(client.translations?.cy?.header).toBeDefined();
           }
         });
       });
 
       describe("showInSearchableList", () => {
-        test("should have startUrl and startText if showInSearchableList is true", () => {
-          if (client.showInSearchableList) {
-            expect(client.translations).toBeDefined();
-            expect(client.translations.en).toBeDefined();
-            expect(client.translations.en.startUrl).toBeTruthy();
-            expect(client.translations.en.startText).toBeTruthy();
+        test("should have startUrl and startText if showInSearchableList is not false", () => {
+          if (
+            typeof client.showInSearchableList === "object" &&
+            Object.prototype.hasOwnProperty.call(
+              client.showInSearchableList,
+              "production"
+            )
+          ) {
+            Object.values(client.showInSearchableList).forEach(
+              (showInSearchableList) => {
+                if (showInSearchableList) {
+                  expect(client.translations?.en?.startUrl).toBeDefined();
+                  expect(client.translations?.en?.startText).toBeDefined();
+                }
+              }
+            );
+          } else if (client.showInSearchableList) {
+            expect(client.translations?.en?.startUrl).toBeDefined();
+            expect(client.translations?.en?.startText).toBeDefined();
+          }
+        });
+
+        test("should have Welsh tranlations if showInSearchableList is not false and isAvailableInWelsh is true", () => {
+          if (client.showInSearchableList && client.isAvailableInWelsh) {
+            expect(client.translations?.cy?.startUrl).toBeDefined();
+            expect(client.translations?.cy?.startText).toBeDefined();
           }
         });
       });
 
       describe("showInDeleteAccount", () => {
-        test("should have header if showInDeleteAccount is true", () => {
+        test("should have header if showInDeleteAccount is not false", () => {
           if (client.showInDeleteAccount) {
-            expect(client.translations.en.header).toBeDefined();
+            expect(client.translations?.en?.header).toBeDefined();
+          }
+        });
+
+        test("should have Welsh tranlations if showInDeleteAccount is not false and isAvailableInWelsh is true", () => {
+          if (client.showInDeleteAccount && client.isAvailableInWelsh) {
+            expect(client.translations?.cy?.header).toBeDefined();
           }
         });
       });

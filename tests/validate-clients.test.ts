@@ -90,7 +90,7 @@ describe("Client data validation", () => {
       });
 
       describe("showDetailedCard", () => {
-        test("should have hintText, pargraph1 and paragrapgh2 if showDetailedCard is not false", () => {
+        test("should have hintText, paragraph1 and paragraph2 if showDetailedCard is not false", () => {
           if (client.showDetailedCard) {
             expect(client.translations?.en?.hintText).toBeDefined();
             expect(client.translations?.en?.paragraph1).toBeDefined();

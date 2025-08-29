@@ -13,7 +13,7 @@ const hoSubmitAPleasureCraftReport: Client = {
   showInActivityHistory: true,
   showInDeleteAccount: true,
   showInSearchableList: {
-    production: new Date("Wed, 10 Sep 2025 23:00:00 GMT"),
+    production: new Date("Wed, 11 Sep 2025 00:00:00 GMT+1"),
     nonProduction: true,
   },
   translations: {

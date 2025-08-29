@@ -114,6 +114,28 @@ jest.mock("../clients", () => ({
     },
     isOffboarded: new Date(2025, 7, 29),
   },
+  datedClient3: {
+    isAvailableInWelsh: true,
+    translations: {
+      en: {
+        header: "header en",
+        linkText: "link text en",
+        linkUrl: "link url en",
+        description: "description en",
+      },
+    },
+    clientId: "datedClient3",
+    showInAccounts: new Date("Wed, 11 Sep 2025 00:00:00 GMT+1"),
+    showInServices: new Date("Wed, 11 Sep 2025 00:00:00 GMT+1"),
+    showDetailedCard: new Date("Wed, 11 Sep 2025 00:00:00 GMT+1"),
+    showInActivityHistory: new Date("Wed, 11 Sep 2025 00:00:00 GMT+1"),
+    showInDeleteAccount: new Date("Wed, 11 Sep 2025 00:00:00 GMT+1"),
+    showInSearchableList: {
+      production: new Date("Wed, 11 Sep 2025 00:00:00 GMT+1"),
+      nonProduction: true,
+    },
+    isOffboarded: new Date("Wed, 11 Sep 2025 00:00:00 GMT+1"),
+  },
 }));
 
 describe("getClient", () => {
@@ -197,6 +219,61 @@ describe("getClient", () => {
 
     expect(getClient("test", "datedClient2")).toEqual({
       clientId: "datedClient2",
+      showInAccounts: false,
+      showInServices: false,
+      showInActivityHistory: false,
+      showInDeleteAccount: false,
+      isAvailableInWelsh: true,
+      showDetailedCard: false,
+      showInSearchableList: true,
+      isOffboarded: false,
+    });
+  });
+
+  test("should handle datetime offsets correctly", () => {
+    jest.useFakeTimers();
+    jest.setSystemTime(new Date("Wed, 10 Sep 2025 23:00:00 GMT").getTime());
+
+    expect(getClient("production", "datedClient3")).toEqual({
+      clientId: "datedClient3",
+      showInAccounts: true,
+      showInServices: true,
+      showInActivityHistory: true,
+      showInDeleteAccount: true,
+      isAvailableInWelsh: true,
+      showDetailedCard: true,
+      showInSearchableList: true,
+      isOffboarded: true,
+    });
+
+    expect(getClient("test", "datedClient3")).toEqual({
+      clientId: "datedClient3",
+      showInAccounts: true,
+      showInServices: true,
+      showInActivityHistory: true,
+      showInDeleteAccount: true,
+      isAvailableInWelsh: true,
+      showDetailedCard: true,
+      showInSearchableList: true,
+      isOffboarded: true,
+    });
+
+    jest.setSystemTime(new Date("Wed, 10 Sep 2025 22:00:00 GMT").getTime());
+
+    expect(getClient("production", "datedClient3")).toEqual({
+      clientId: "datedClient3",
+      showInAccounts: false,
+      showInServices: false,
+      showInActivityHistory: false,
+      showInDeleteAccount: false,
+      isAvailableInWelsh: true,
+      showDetailedCard: false,
+      showInSearchableList: false,
+      isOffboarded: false,
+    });
+
+    expect(getClient("test", "datedClient3")).toEqual({
+      clientId: "datedClient3",
       showInAccounts: false,
       showInServices: false,
       showInActivityHistory: false,

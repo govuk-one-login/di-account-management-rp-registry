@@ -23,7 +23,7 @@ const hoSubmitAPleasureCraftReport: Client = {
         "Before you sail to or from the UK, submit your voyage plan with details of your vessel, people and goods on board to Border Force and HMRC.",
       linkText: "Go to your Submit a Pleasure Craft Report account",
       linkUrl: "https://www.spcr.homeoffice.gov.uk/voyage-plans",
-      startText: "Submit a pleasure craft report",
+      startText: "Submit a Pleasure Craft Report",
       startUrl: "https://www.gov.uk/guidance/submit-a-pleasure-craft-report",
     },
   },

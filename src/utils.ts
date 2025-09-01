@@ -1,4 +1,8 @@
-import { Client, EnvironmentValue } from "../interfaces/client.interface";
+import {
+  BooleanOrDate,
+  Client,
+  EnvironmentValue,
+} from "../interfaces/client.interface";
 import { RegistryEntry } from "../interfaces/registry.interface";
 
 const isEnvironmentObject = <T>(
@@ -45,34 +49,40 @@ const getValueForEnvironment = <T>(
   return value.nonProduction;
 };
 
+export const booleanOrDateToBoolean = (value: BooleanOrDate) => {
+  return !(value instanceof Date) ? value : value <= new Date();
+};
+
 const transformClientObject = (
   client: Client,
   environment: string
 ): RegistryEntry => {
   return {
     clientId: getValueForEnvironment(environment, client.clientId),
-    showInAccounts: getValueForEnvironment(environment, client.showInAccounts),
-    showInServices: getValueForEnvironment(environment, client.showInServices),
-    isOffboarded: getValueForEnvironment(environment, client.isOffboarded),
-    showDetailedCard: getValueForEnvironment(
-      environment,
-      client.showDetailedCard
+    showInAccounts: booleanOrDateToBoolean(
+      getValueForEnvironment(environment, client.showInAccounts)
+    ),
+    showInServices: booleanOrDateToBoolean(
+      getValueForEnvironment(environment, client.showInServices)
+    ),
+    isOffboarded: booleanOrDateToBoolean(
+      getValueForEnvironment(environment, client.isOffboarded)
+    ),
+    showDetailedCard: booleanOrDateToBoolean(
+      getValueForEnvironment(environment, client.showDetailedCard)
     ),
     isAvailableInWelsh: getValueForEnvironment(
       environment,
       client.isAvailableInWelsh
     ),
-    showInSearchableList: getValueForEnvironment(
-      environment,
-      client.showInSearchableList
+    showInSearchableList: booleanOrDateToBoolean(
+      getValueForEnvironment(environment, client.showInSearchableList)
     ),
-    showInActivityHistory: getValueForEnvironment(
-      environment,
-      client.showInActivityHistory
+    showInActivityHistory: booleanOrDateToBoolean(
+      getValueForEnvironment(environment, client.showInActivityHistory)
     ),
-    showInDeleteAccount: getValueForEnvironment(
-      environment,
-      client.showInDeleteAccount
+    showInDeleteAccount: booleanOrDateToBoolean(
+      getValueForEnvironment(environment, client.showInDeleteAccount)
     ),
   };
 };

@@ -41,7 +41,7 @@ describe("Client data validation", () => {
           }
         });
 
-        test("should have Welsh tranlations if showInAccounts is not false and isAvailableInWelsh is true", () => {
+        test("should have Welsh translations if showInAccounts is not false and isAvailableInWelsh is true", () => {
           if (client.showInAccounts && client.isAvailableInWelsh) {
             expect(client.translations?.cy?.header).toBeDefined();
             expect(client.translations?.cy?.linkText).toBeDefined();
@@ -80,7 +80,7 @@ describe("Client data validation", () => {
           }
         });
 
-        test("should have Welsh tranlations if showInServices is not false and isAvailableInWelsh is true", () => {
+        test("should have Welsh translations if showInServices is not false and isAvailableInWelsh is true", () => {
           if (client.showInServices && client.isAvailableInWelsh) {
             expect(client.translations?.cy?.header).toBeDefined();
             expect(client.translations?.cy?.linkText).toBeDefined();
@@ -98,7 +98,7 @@ describe("Client data validation", () => {
           }
         });
 
-        test("should have Welsh tranlations if showDetailedCard is not false and isAvailableInWelsh is true", () => {
+        test("should have Welsh translations if showDetailedCard is not false and isAvailableInWelsh is true", () => {
           if (client.showDetailedCard && client.isAvailableInWelsh) {
             expect(client.translations?.cy?.hintText).toBeDefined();
             expect(client.translations?.cy?.paragraph1).toBeDefined();
@@ -114,7 +114,7 @@ describe("Client data validation", () => {
           }
         });
 
-        test("should have Welsh tranlations if showInActivityHistory is not false and isAvailableInWelsh is true", () => {
+        test("should have Welsh translations if showInActivityHistory is not false and isAvailableInWelsh is true", () => {
           if (client.showInActivityHistory && client.isAvailableInWelsh) {
             expect(client.translations?.cy?.header).toBeDefined();
           }
@@ -144,7 +144,7 @@ describe("Client data validation", () => {
           }
         });
 
-        test("should have Welsh tranlations if showInSearchableList is not false and isAvailableInWelsh is true", () => {
+        test("should have Welsh translations if showInSearchableList is not false and isAvailableInWelsh is true", () => {
           if (client.showInSearchableList && client.isAvailableInWelsh) {
             expect(client.translations?.cy?.startUrl).toBeDefined();
             expect(client.translations?.cy?.startText).toBeDefined();
@@ -159,7 +159,7 @@ describe("Client data validation", () => {
           }
         });
 
-        test("should have Welsh tranlations if showInDeleteAccount is not false and isAvailableInWelsh is true", () => {
+        test("should have Welsh translations if showInDeleteAccount is not false and isAvailableInWelsh is true", () => {
           if (client.showInDeleteAccount && client.isAvailableInWelsh) {
             expect(client.translations?.cy?.header).toBeDefined();
           }

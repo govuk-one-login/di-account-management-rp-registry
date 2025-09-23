@@ -36,6 +36,7 @@ import companyHouseAccounts from "./companyHouseAccounts";
 import dbtApplyForAnExportCertificate from "./dbtApplyForAnExportCertificate";
 import hmpoCancelPassport from "./hmpoCancelPassport";
 import defraDangerousDogsIndex from "./defraDangerousDogsIndex";
+import defraGioPlatform from "./defraGioPlatform";
 import dbtApplyForAnImportLicense from "./dbtApplyForAnImportLicense";
 import dfeTeacherVacancies from "./dfeTeacherVacancies";
 import ofgemLafReg from "./ofgemLafReg";
@@ -74,6 +75,8 @@ import dfeFindTeacherTrainingCourses from "./dfeFindTeacherTrainingCourses";
 import hmctsDtsLegacyGenderRecognition from "./hmctsDtsLegacyGenderRecognition";
 import nationalSecurityAndInvestments from "./nationalSecurityAndInvestments";
 import hoSubmitAPleasureCraftReport from "./hoSubmitAPleasureCraftReport";
+import desnzManageEnergySavings from "./desnzManageEnergySavings";
+import modSupplierCyberProtection from "./modSupplierCyberProtection";
 
 export {
   govuk,
@@ -114,6 +117,7 @@ export {
   dbtApplyForAnExportCertificate,
   hmpoCancelPassport,
   defraDangerousDogsIndex,
+  defraGioPlatform,
   dbtApplyForAnImportLicense,
   dfeTeacherVacancies,
   ofgemLafReg,
@@ -152,4 +156,6 @@ export {
   hmctsDtsLegacyGenderRecognition,
   nationalSecurityAndInvestments,
   hoSubmitAPleasureCraftReport,
+  desnzManageEnergySavings,
+  modSupplierCyberProtection,
 };

@@ -18,11 +18,7 @@ const defraGioPlatform: Client = {
       header: "Defra Digital Services",
       description: "Access your Defra Digital Services account.",
       linkText: "Go to your Defra account",
-      linkUrl: {
-        nonProduction: "https://your-account.defra.gov.uk/management",
-        integration: "https://your-account.defra.gov.uk/management",
-        production: "https://your-account.defra.gov.uk/management",
-      },
+      linkUrl: "https://your-account.defra.gov.uk/management",
     },
   },
   isOffboarded: false,

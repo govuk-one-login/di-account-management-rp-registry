@@ -76,6 +76,7 @@ import hmctsDtsLegacyGenderRecognition from "./hmctsDtsLegacyGenderRecognition";
 import nationalSecurityAndInvestments from "./nationalSecurityAndInvestments";
 import hoSubmitAPleasureCraftReport from "./hoSubmitAPleasureCraftReport";
 import desnzManageEnergySavings from "./desnzManageEnergySavings";
+import modSupplierCyberProtection from "./modSupplierCyberProtection";
 
 export {
   govuk,
@@ -156,4 +157,5 @@ export {
   nationalSecurityAndInvestments,
   hoSubmitAPleasureCraftReport,
   desnzManageEnergySavings,
+  modSupplierCyberProtection,
 };

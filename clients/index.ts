@@ -75,6 +75,7 @@ import dfeFindTeacherTrainingCourses from "./dfeFindTeacherTrainingCourses";
 import hmctsDtsLegacyGenderRecognition from "./hmctsDtsLegacyGenderRecognition";
 import nationalSecurityAndInvestments from "./nationalSecurityAndInvestments";
 import hoSubmitAPleasureCraftReport from "./hoSubmitAPleasureCraftReport";
+import desnzManageEnergySavings from "./desnzManageEnergySavings";
 
 export {
   govuk,
@@ -154,4 +155,5 @@ export {
   hmctsDtsLegacyGenderRecognition,
   nationalSecurityAndInvestments,
   hoSubmitAPleasureCraftReport,
+  desnzManageEnergySavings,
 };

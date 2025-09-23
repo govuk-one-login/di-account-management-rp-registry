@@ -36,6 +36,7 @@ import companyHouseAccounts from "./companyHouseAccounts";
 import dbtApplyForAnExportCertificate from "./dbtApplyForAnExportCertificate";
 import hmpoCancelPassport from "./hmpoCancelPassport";
 import defraDangerousDogsIndex from "./defraDangerousDogsIndex";
+import defraGioPlatform from "./defraGioPlatform";
 import dbtApplyForAnImportLicense from "./dbtApplyForAnImportLicense";
 import dfeTeacherVacancies from "./dfeTeacherVacancies";
 import ofgemLafReg from "./ofgemLafReg";
@@ -114,6 +115,7 @@ export {
   dbtApplyForAnExportCertificate,
   hmpoCancelPassport,
   defraDangerousDogsIndex,
+  defraGioPlatform,
   dbtApplyForAnImportLicense,
   dfeTeacherVacancies,
   ofgemLafReg,

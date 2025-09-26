@@ -77,6 +77,7 @@ import nationalSecurityAndInvestments from "./nationalSecurityAndInvestments";
 import hoSubmitAPleasureCraftReport from "./hoSubmitAPleasureCraftReport";
 import desnzManageEnergySavings from "./desnzManageEnergySavings";
 import modSupplierCyberProtection from "./modSupplierCyberProtection";
+import dwpManageMyStatePension from "./dwpManageMyStatePension";
 
 export {
   govuk,
@@ -158,4 +159,5 @@ export {
   hoSubmitAPleasureCraftReport,
   desnzManageEnergySavings,
   modSupplierCyberProtection,
+  dwpManageMyStatePension,
 };

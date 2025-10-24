@@ -79,6 +79,7 @@ import desnzManageEnergySavings from "./desnzManageEnergySavings";
 import modSupplierCyberProtection from "./modSupplierCyberProtection";
 import dwpManageMyStatePension from "./dwpManageMyStatePension";
 import productSafetyDatabase from "./productSafetyDatabase";
+import dcmsShortTermLetsRegistrationService from "./dcmsShortTermLetsRegistrationService";
 
 export {
   govuk,
@@ -162,4 +163,5 @@ export {
   modSupplierCyberProtection,
   dwpManageMyStatePension,
   productSafetyDatabase,
+  dcmsShortTermLetsRegistrationService,
 };

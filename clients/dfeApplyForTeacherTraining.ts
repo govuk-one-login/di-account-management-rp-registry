@@ -12,7 +12,7 @@ const dfeApplyForTeacherTraining: Client = {
   showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
-  showInSearchableList: false,
+  showInSearchableList: true,
   translations: {
     en: {
       header: "Apply for teacher training",

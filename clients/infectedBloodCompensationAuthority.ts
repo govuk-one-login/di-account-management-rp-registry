@@ -7,10 +7,10 @@ const icba: Client = {
     nonProduction: "icba",
   },
   showInAccounts: false,
-  showInServices: true,
+  showInServices: false,
   showDetailedCard: false,
-  showInActivityHistory: true,
-  showInDeleteAccount: true,
+  showInActivityHistory: false,
+  showInDeleteAccount: false,
   showInSearchableList: false,
   isAvailableInWelsh: false,
   translations: {
@@ -18,11 +18,9 @@ const icba: Client = {
       header: "Infected blood compensation",
       description:
         "Claim compensation if you were infected with or affected by HIV, or Hepatitis B or C through contaminated blood, blood products or tissue. ",
-      linkText: "Go to your compensation application.",
+      linkText: "Go to your compensation application",
       linkUrl:
         "https://ui.idv.ibca.gov.uk/fHKfqo7qVCApWwcK6if5pqQhIXSe9yx/postoffice?redirect=/one-login-result",
-      startUrl: "https://ibca.org.uk/",
-      startText: "Infected Blood Compensation Authority",
     },
   },
   isOffboarded: false,

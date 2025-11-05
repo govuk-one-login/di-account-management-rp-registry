@@ -11,7 +11,7 @@ const icba: Client = {
   showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
-  showInSearchableList: new Date(2025, 11, 10),
+  showInSearchableList: false,
   isAvailableInWelsh: false,
   translations: {
     en: {

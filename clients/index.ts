@@ -80,6 +80,7 @@ import modSupplierCyberProtection from "./modSupplierCyberProtection";
 import dwpManageMyStatePension from "./dwpManageMyStatePension";
 import productSafetyDatabase from "./productSafetyDatabase";
 import dcmsShortTermLetsRegistrationService from "./dcmsShortTermLetsRegistrationService";
+import dwpManageYourBenefitsAndStatePension from "./dwpManageYourBenefitsAndStatePension";
 
 export {
   govuk,
@@ -164,4 +165,5 @@ export {
   dwpManageMyStatePension,
   productSafetyDatabase,
   dcmsShortTermLetsRegistrationService,
+  dwpManageYourBenefitsAndStatePension,
 };

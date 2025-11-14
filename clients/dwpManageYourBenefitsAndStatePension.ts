@@ -1,6 +1,6 @@
 import { Client } from "../interfaces/client.interface";
 
-const dwpManageMyStatePension: Client = {
+const dwpManageYourBenefitsAndStatePension: Client = {
   clientId: {
     production: "fFINUNDOgj6yjWru8UUlfNvuz94",
     integration: "fFINUNDOgj6yjWru8UUlfNvuz94",
@@ -38,4 +38,4 @@ const dwpManageMyStatePension: Client = {
   isOffboarded: false,
 };
 
-export default dwpManageMyStatePension;
+export default dwpManageYourBenefitsAndStatePension;

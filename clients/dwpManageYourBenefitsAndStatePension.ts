@@ -18,7 +18,7 @@ const dwpManageYourBenefitsAndStatePension: Client = {
       header: "Manage your benefits and State Pension",
       description:
         "Get proof of your benefits or State Pension and update your personal information.",
-      linkText: "Go to your Manage your State Pension account",
+      linkText: "Go to your benefits and State Pension account",
       linkUrl:
         "https://www.manage-benefits-state-pension.service.gov.uk/account-home/your-account",
       startText: "Manage your benefits and State Pension",

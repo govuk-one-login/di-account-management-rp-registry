@@ -9,8 +9,8 @@ const icba: Client = {
   showInAccounts: false,
   showInServices: false,
   showDetailedCard: false,
-  showInActivityHistory: false,
-  showInDeleteAccount: false,
+  showInActivityHistory: true,
+  showInDeleteAccount: true,
   showInSearchableList: false,
   isAvailableInWelsh: false,
   translations: {

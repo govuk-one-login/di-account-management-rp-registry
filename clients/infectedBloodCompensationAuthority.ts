@@ -7,7 +7,7 @@ const icba: Client = {
     nonProduction: "icba",
   },
   showInAccounts: false,
-  showInServices: false,
+  showInServices: true,
   showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,

@@ -6,7 +6,7 @@ const companyHouseAccounts: Client = {
     integration: "VdmfAXiINT9wpUsGO_vVnPEbsAE",
     nonProduction: "companyHouseAccounts",
   },
-  isAvailableInWelsh: false,
+  isAvailableInWelsh: true,
   showInAccounts: true,
   showInServices: false,
   showDetailedCard: false,
@@ -15,13 +15,21 @@ const companyHouseAccounts: Client = {
   showInSearchableList: true,
   translations: {
     en: {
-      header: "Find and update company information",
-      description:
-        "View and update your company information, for example, filing history and registered office address.",
+      header: "Companies House services",
+      description: "View and update company information.",
       linkText: "Go to Companies House",
-      linkUrl: "https://find-and-update.company-information.service.gov.uk/",
-      startUrl: "https://find-and-update.company-information.service.gov.uk/",
-      startText: "Find and update company information",
+      linkUrl: "https://www.gov.uk/government/organisations/companies-house",
+      startUrl: "https://www.gov.uk/government/organisations/companies-house",
+      startText: "Companies House services",
+    },
+    cy: {
+      header: "Gwasanaethau Tŷ'r Cwmnïau",
+      description: "Gweld a diweddaru gwybodaeth y cwmni.",
+      linkText: "Ewch i Dŷ'r Cwmnïau",
+      linkUrl: "https://www.gov.uk/government/organisations/companies-house.cy",
+      startUrl:
+        "https://www.gov.uk/government/organisations/companies-house.cy",
+      startText: "Gwasanaethau Tŷ'r Cwmnïau",
     },
   },
   isOffboarded: false,

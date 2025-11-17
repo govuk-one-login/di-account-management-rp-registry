@@ -80,6 +80,7 @@ import modSupplierCyberProtection from "./modSupplierCyberProtection";
 import dwpManageMyStatePension from "./dwpManageMyStatePension";
 import productSafetyDatabase from "./productSafetyDatabase";
 import dcmsShortTermLetsRegistrationService from "./dcmsShortTermLetsRegistrationService";
+import icba from "./infectedBloodCompensationAuthority";
 import dwpManageYourBenefitsAndStatePension from "./dwpManageYourBenefitsAndStatePension";
 
 export {
@@ -165,5 +166,6 @@ export {
   dwpManageMyStatePension,
   productSafetyDatabase,
   dcmsShortTermLetsRegistrationService,
+  icba,
   dwpManageYourBenefitsAndStatePension,
 };

@@ -12,7 +12,7 @@ const dwpManageYourBenefitsAndStatePension: Client = {
   showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
-  showInSearchableList: false,
+  showInSearchableList: true,
   translations: {
     en: {
       header: "Manage your benefits and State Pension",

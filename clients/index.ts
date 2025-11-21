@@ -82,6 +82,7 @@ import productSafetyDatabase from "./productSafetyDatabase";
 import dcmsShortTermLetsRegistrationService from "./dcmsShortTermLetsRegistrationService";
 import icba from "./infectedBloodCompensationAuthority";
 import dwpManageYourBenefitsAndStatePension from "./dwpManageYourBenefitsAndStatePension";
+import dwpAccessToWork from "./dwpAccessToWork";
 
 export {
   govuk,
@@ -168,4 +169,5 @@ export {
   dcmsShortTermLetsRegistrationService,
   icba,
   dwpManageYourBenefitsAndStatePension,
+  dwpAccessToWork,
 };

@@ -7,12 +7,12 @@ const dwpAccessToWork: Client = {
     nonProduction: "dwpAccessToWork",
   },
   isAvailableInWelsh: true,
-  showInAccounts: true,
+  showInAccounts: new Date(2025, 10, 26),
   showInServices: false,
   showDetailedCard: false,
-  showInActivityHistory: true,
-  showInDeleteAccount: true,
-  showInSearchableList: true,
+  showInActivityHistory: new Date(2025, 10, 26),
+  showInDeleteAccount: new Date(2025, 10, 26),
+  showInSearchableList: new Date(2025, 10, 26),
   translations: {
     en: {
       header: "Claim money from your Access to Work grant",

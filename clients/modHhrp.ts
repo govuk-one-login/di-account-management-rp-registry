@@ -12,7 +12,7 @@ const modHhrp: Client = {
   showDetailedCard: false,
   showInActivityHistory: false,
   showInDeleteAccount: false,
-  showInSearchableList: true,
+  showInSearchableList: false,
   translations: {
     en: {
       header: "A service run by the Ministry of Defence (MOD)",

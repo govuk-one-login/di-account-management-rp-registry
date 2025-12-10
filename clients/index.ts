@@ -83,6 +83,9 @@ import dcmsShortTermLetsRegistrationService from "./dcmsShortTermLetsRegistratio
 import icba from "./infectedBloodCompensationAuthority";
 import dwpManageYourBenefitsAndStatePension from "./dwpManageYourBenefitsAndStatePension";
 import dwpAccessToWork from "./dwpAccessToWork";
+import dhscPmhcr from "./dhscPmhcr";
+import modHham from "./modHham";
+import modHhrp from "./modHhrp";
 
 export {
   govuk,
@@ -170,4 +173,7 @@ export {
   icba,
   dwpManageYourBenefitsAndStatePension,
   dwpAccessToWork,
+  dhscPmhcr,
+  modHham,
+  modHhrp,
 };

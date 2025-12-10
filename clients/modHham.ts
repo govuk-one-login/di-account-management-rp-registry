@@ -7,20 +7,20 @@ const modHham: Client = {
     nonProduction: "modHham",
   },
   isAvailableInWelsh: false,
-  showInAccounts: false,
-  showInServices: true,
+  showInAccounts: true,
+  showInServices: false,
   showDetailedCard: false,
   showInActivityHistory: false,
   showInDeleteAccount: false,
   showInSearchableList: false,
   translations: {
     en: {
-      header: "A service run by the Ministry of Defence (MOD)",
+      header: "HomeHub Appointments Manager",
+      description:
+        "Manage appointments for repairs for your service family accommodation.",
       linkText: "Go to your HomeHub appointments account.",
       linkUrl: "https://homehub.pinnacleservicefamilies.co.uk/appts",
-      hintText: "Book a repair appointment.",
-      paragraph1:
-        "Manage appointments for repairs for your service family accommodation.",
+      hintText: "Go to your HomeHub appointments account",
     },
   },
   isOffboarded: false,

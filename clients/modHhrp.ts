@@ -15,11 +15,11 @@ const modHhrp: Client = {
   showInSearchableList: false,
   translations: {
     en: {
-      header: "HomeHub Appointments Manager",
+      header: "HomeHub Portal",
       description:
-        "Manage appointments for repairs for your service family accommodation.",
-      linkText: "Go to your HomeHub appointments account",
-      linkUrl: "https://homehub.pinnacleservicefamilies.co.uk/appts",
+        "Report and manage repairs for your service family accommodation.",
+      linkText: "Go to your HomeHub repairs account",
+      linkUrl: "https://homehub.pinnacleservicefamilies.co.uk",
     },
   },
   isOffboarded: false,

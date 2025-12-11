@@ -18,7 +18,7 @@ const modHham: Client = {
       header: "HomeHub Appointments Manager",
       description:
         "Manage appointments for repairs for your service family accommodation.",
-      linkText: "Go to your HomeHub appointments account.",
+      linkText: "Go to your HomeHub appointments account",
       linkUrl: "https://homehub.pinnacleservicefamilies.co.uk/appts",
       hintText: "Go to your HomeHub appointments account",
     },

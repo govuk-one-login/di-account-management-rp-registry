@@ -29,7 +29,7 @@ const coClientServiceJobs: Client = {
       linkUrl: "http://beta.civilservicejobs.gov.uk/",
     },
   },
-  isOffboarded: false,
+  isOffboarded: true,
 };
 
 export default coClientServiceJobs;

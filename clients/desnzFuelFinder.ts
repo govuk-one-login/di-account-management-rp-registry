@@ -7,12 +7,12 @@ const desnzFuelFinder: Client = {
     nonProduction: "desnzFuelFinder",
   },
   isAvailableInWelsh: false,
-  showInAccounts: true,
+  showInAccounts: new Date(2025, 11, 18),
   showInServices: false,
   showDetailedCard: false,
-  showInActivityHistory: true,
-  showInDeleteAccount: true,
-  showInSearchableList: true,
+  showInActivityHistory: new Date(2025, 11, 18),
+  showInDeleteAccount: new Date(2025, 11, 18),
+  showInSearchableList: new Date(2025, 11, 18),
   translations: {
     en: {
       header: "Fuel Finder",

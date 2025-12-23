@@ -19,9 +19,10 @@ const desnzFuelFinder: Client = {
       description:
         "Update your petrol filling station details and fuel prices, or access the latest published data sets.",
       linkText: "Go to your Fuel Finder account",
-      linkUrl: "https://fuel-finder.service.gov.uk/account-creator-details",
+      linkUrl:
+        "https://www.register-fuel-finder-scheme.service.gov.uk/account-creator-details",
       startText: "Fuel Finder",
-      startUrl: "https://fuel-finder.service.gov.uk",
+      startUrl: "https://www.register-fuel-finder-scheme.service.gov.uk",
     },
   },
   isOffboarded: false,

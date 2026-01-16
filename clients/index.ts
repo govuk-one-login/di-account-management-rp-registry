@@ -87,6 +87,7 @@ import dhscPmhcr from "./dhscPmhcr";
 import modHham from "./modHham";
 import modHhrp from "./modHhrp";
 import desnzFuelFinder from "./desnzFuelFinder";
+import hoMyPolicePortal from "./hoMyPolicePortal";
 
 export {
   govuk,
@@ -178,4 +179,5 @@ export {
   modHham,
   modHhrp,
   desnzFuelFinder,
+  hoMyPolicePortal,
 };

@@ -89,6 +89,7 @@ import modHhrp from "./modHhrp";
 import desnzFuelFinder from "./desnzFuelFinder";
 import hoMyPolicePortal from "./hoMyPolicePortal";
 import adultSocialCare from "./adultSocialCare";
+import hoMyPolicePortal from "./hoMyPolicePortal";
 
 export {
   govuk,
@@ -181,8 +182,15 @@ export {
   modHhrp,
   desnzFuelFinder,
 <<<<<<< HEAD
+<<<<<<< HEAD
   hoMyPolicePortal,
 =======
   adultSocialCare
 >>>>>>> 76fb7af (OLH-3600 - Onboarding Adult Scoial Care)
+=======
+  adultSocialCare
+=======
+  hoMyPolicePortal,
+>>>>>>> 25249e6 (OLH-3077 Add HO My Police Portal for onboarding)
+>>>>>>> b313b09 (Merge onboarding for Adult Social Care)
 };

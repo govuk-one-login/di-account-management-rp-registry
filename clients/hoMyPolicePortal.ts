@@ -19,7 +19,7 @@ const hoMyPolicePortal: Client = {
       description:
         "Sign in to police force websites to get notifications, receive personalised updates and exchange messages.",
       linkText: "Go to your police account",
-      linkUrl: "www.police.uk/portal/account",
+      linkUrl: "https://www.police.uk/portal/account",
     },
   },
   isOffboarded: false,

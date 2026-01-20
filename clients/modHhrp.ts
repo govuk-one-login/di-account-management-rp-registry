@@ -7,20 +7,19 @@ const modHhrp: Client = {
     nonProduction: "modHhrp",
   },
   isAvailableInWelsh: false,
-  showInAccounts: false,
-  showInServices: true,
+  showInAccounts: true,
+  showInServices: false,
   showDetailedCard: false,
   showInActivityHistory: false,
   showInDeleteAccount: false,
-  showInSearchableList: true,
+  showInSearchableList: false,
   translations: {
     en: {
-      header: "A service run by the Ministry of Defence (MOD)",
-      linkText: "Go to your HomeHub repairs account.",
-      linkUrl: "https://homehub.pinnacleservicefamilies.co.uk",
-      hintText: "Report a repair for your service family accommodation.",
-      paragraph1:
+      header: "HomeHub Portal",
+      description:
         "Report and manage repairs for your service family accommodation.",
+      linkText: "Go to your HomeHub repairs account",
+      linkUrl: "https://homehub.pinnacleservicefamilies.co.uk",
     },
   },
   isOffboarded: false,

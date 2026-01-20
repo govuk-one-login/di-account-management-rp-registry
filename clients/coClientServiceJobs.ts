@@ -19,17 +19,17 @@ const coClientServiceJobs: Client = {
       description:
         "Find jobs in the Civil Service and manage your applications.",
       linkText: "Go to Civil Service Jobs",
-      linkUrl: "http://beta.civilservicejobs.gov.uk/",
+      linkUrl: "https://beta.civilservicejobs.gov.uk/",
     },
     cy: {
       header: "Swyddi'r Gwasanaeth Sifil",
       description:
         "Dod o hyd i swyddi yn y Gwasanaeth Sifil a rheoli eich ceisiadau.",
       linkText: "Ewch i Swyddi'r Gwasanaeth Sifil",
-      linkUrl: "http://beta.civilservicejobs.gov.uk/",
+      linkUrl: "https://beta.civilservicejobs.gov.uk/",
     },
   },
-  isOffboarded: false,
+  isOffboarded: true,
 };
 
 export default coClientServiceJobs;

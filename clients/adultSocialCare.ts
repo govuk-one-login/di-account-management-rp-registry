@@ -9,7 +9,7 @@ const adultSocialCare: Client = {
   isAvailableInWelsh: false,
   showInAccounts: false,
   showInServices: true,
-  showDetailedCard: false,  
+  showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
   showInSearchableList: false,
@@ -17,15 +17,14 @@ const adultSocialCare: Client = {
   translations: {
     en: {
       header: "Get adult social care data",
-      description: "Access a wide range of datasets relevant to adult social care in England.",
-      linkText: "Go to your Get adult social care data account",
-      linkUrl:
-        "https://getadultsocialcaredata.com",
-      startUrl:
-        "https://getadultsocialcaredata.com"
+      description:
+        "Access a wide range of datasets relevant to adult social care in England.",
+      linkText: "Get adult social care data",
+      linkUrl: "https://getadultsocialcaredata.com",
+      startUrl: "https://getadultsocialcaredata.com",
     },
   },
-  isOffboarded: false, 
+  isOffboarded: false,
 };
 
 export default adultSocialCare;

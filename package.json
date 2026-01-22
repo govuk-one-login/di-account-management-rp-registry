@@ -1,5 +1,5 @@
 {
-  "name": "di-account-management-client-registry",
+  "name": "di-account-management-rp-registry",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",

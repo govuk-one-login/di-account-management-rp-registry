@@ -1,35 +1,9 @@
 import {
-  Translation,
   TranslationsObject,
 } from "../interfaces/translations.interface";
-import { getValueForEnvironment } from "./utils";
+import { convertToTranslation, getValueForEnvironment } from "./utils";
 import * as clients from "../clients";
 
-const convertToTranslation = (
-  translations: Translation | undefined,
-  environment: string
-): Translation | undefined => {
-  if (translations?.header) {
-    return {
-      header: translations.header,
-      ...(translations.linkText && { linkText: translations.linkText }),
-      ...(translations.linkUrl && {
-        linkUrl: getValueForEnvironment(environment, translations.linkUrl),
-      }),
-      ...(translations.description && {
-        description: translations.description,
-      }),
-      ...(translations.hintText && { hintText: translations.hintText }),
-      ...(translations.paragraph1 && { paragraph1: translations.paragraph1 }),
-      ...(translations.paragraph2 && { paragraph2: translations.paragraph2 }),
-      ...(translations.startText && { startText: translations.startText }),
-      ...(translations.startUrl && { startUrl: translations.startUrl }),
-      ...(translations.additionalSearchTerms && {
-        additionalSearchTerms: translations.additionalSearchTerms,
-      }),
-    };
-  }
-};
 const getTranslations = (
   environment: string,
   language: "en" | "cy"
@@ -47,7 +21,7 @@ const getTranslations = (
 
       if (clientTranslations) {
         const convertedTranslation = convertToTranslation(
-          clientTranslations as Translation,
+          clientTranslations,
           environment
         );
         if (typeof convertedTranslation !== "undefined") {

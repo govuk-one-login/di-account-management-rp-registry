@@ -13,6 +13,22 @@ const hmrc: Client = {
   showInActivityHistory: true,
   showInDeleteAccount: true,
   showInSearchableList: false,
+  alternativeClients: [
+    {
+      en: {
+        header: "Tax Free Childcare",
+        startText: "Tax Free Childcare",
+        startUrl: "https://www.gov.uk/tax-free-childcare",
+      }
+    },
+    {
+      en: {
+        header: "Child Benefit",
+        startText: "Child Benefit",
+        startUrl: "https://www.gov.uk/child-benefit",
+      }
+    }
+  ],
   translations: {
     en: {
       header: "A service run by HM Revenue and Customs (HMRC)",
@@ -22,6 +38,8 @@ const hmrc: Client = {
       paragraph1:
         "At the moment, GOV.UK One Login cannot show you which HMRC service you’ve used.",
       paragraph2: "We’re working to make this possible.",
+      startText: "HMRC",
+      startUrl: "https://www.gov.uk/log-in-register-hmrc-online-services",
     },
     cy: {
       header: "Gwasanaeth a weithredir gan Gyllid a Thollau EF (CThEF)",

@@ -1,3 +1,4 @@
+import _testClient from "./_testClient";
 import govuk from "./govuk";
 import lite from "./lite";
 import ofqual from "./ofqual";
@@ -91,6 +92,7 @@ import hoMyPolicePortal from "./hoMyPolicePortal";
 import adultSocialCare from "./adultSocialCare";
 
 export {
+  _testClient,
   govuk,
   lite,
   ofqual,

@@ -6,7 +6,7 @@ export type EnvironmentValue<T> =
       nonProduction: T;
     };
 
-interface Translations {
+export interface ClientTranslations {
   header?: string;
   description?: string;
   linkText?: string;
@@ -24,8 +24,8 @@ export type BooleanOrDate = boolean | Date;
 interface BaseClient {
   clientId: EnvironmentValue<string>;
   translations?: {
-    en: Translations;
-    cy?: Translations;
+    en: ClientTranslations;
+    cy?: ClientTranslations;
   };
   isAvailableInWelsh: boolean;
   showInAccounts: BooleanOrDate;
@@ -35,6 +35,10 @@ interface BaseClient {
   showInSearchableList: EnvironmentValue<BooleanOrDate>;
   showInDeleteAccount: BooleanOrDate;
   isOffboarded: BooleanOrDate;
+  alternativeClients?: {
+    en: ClientTranslations,
+    cy?: ClientTranslations,
+  }[]
 }
 
 export type Client = BaseClient;

@@ -1,9 +1,11 @@
 import {
   BooleanOrDate,
   Client,
+  ClientTranslations,
   EnvironmentValue,
 } from "../interfaces/client.interface";
 import { RegistryEntry } from "../interfaces/registry.interface";
+import { Translation } from "../interfaces/translations.interface";
 
 const isEnvironmentObject = <T>(
   value: EnvironmentValue<T>
@@ -84,7 +86,38 @@ const transformClientObject = (
     showInDeleteAccount: booleanOrDateToBoolean(
       getValueForEnvironment(environment, client.showInDeleteAccount)
     ),
+    alternativeClients: client.alternativeClients?.map((altClient => ({
+      en: convertToTranslation(altClient.en, environment) as Translation,
+      ...(altClient.cy && { cy: convertToTranslation(altClient.cy, environment) as Translation })
+    })))
   };
 };
 
 export { getEnvironmentType, getValueForEnvironment, transformClientObject };
+
+export const convertToTranslation = (
+    translations: ClientTranslations | undefined,
+    environment: string
+  ): Translation | undefined => {
+    if (translations?.header) {
+      return {
+        header: translations.header,
+        ...(translations.linkText && { linkText: translations.linkText }),
+        ...(translations.linkUrl && {
+          linkUrl: getValueForEnvironment(environment, translations.linkUrl),
+        }),
+        ...(translations.description && {
+          description: translations.description,
+        }),
+        ...(translations.hintText && { hintText: translations.hintText }),
+        ...(translations.paragraph1 && { paragraph1: translations.paragraph1 }),
+        ...(translations.paragraph2 && { paragraph2: translations.paragraph2 }),
+        ...(translations.startText && { startText: translations.startText }),
+        ...(translations.startUrl && { startUrl: translations.startUrl }),
+        ...(translations.additionalSearchTerms && {
+          additionalSearchTerms: translations.additionalSearchTerms,
+        }),
+      };
+    }
+  };
+

@@ -6,33 +6,20 @@ const hmrc: Client = {
     integration: "mQDXGO7gWdK7V28v82nVcEGuacY",
     nonProduction: "hmrc",
   },
-  isAvailableInWelsh: true,
-  showInAccounts: false,
-  showInServices: true,
-  showDetailedCard: true,
+  isAvailableInWelsh: false,
+  showInAccounts: true,
+  showInServices: false,
+  showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
   showInSearchableList: false,
   translations: {
     en: {
-      header: "A service run by HM Revenue and Customs (HMRC)",
-      linkText: "Find the HMRC service you need",
-      linkUrl: "https://www.gov.uk/government/organisations/hm-revenue-customs",
-      hintText: "For example services about tax, childcare, or state pensions.",
-      paragraph1:
-        "At the moment, GOV.UK One Login cannot show you which HMRC service you’ve used.",
-      paragraph2: "We’re working to make this possible.",
-    },
-    cy: {
-      header: "Gwasanaeth a weithredir gan Gyllid a Thollau EF (CThEF)",
-      linkText: "Dod o hyd i wasanaeth CThEF rydych ei angen",
-      linkUrl:
-        "https://www.gov.uk/government/organisations/hm-revenue-customs.cy",
-      hintText:
-        "Er enghraifft gwasanaethau am dreth, gofal plant, neu bensiynau'r wladwriaeth.",
-      paragraph1:
-        "Ar hyn o bryd, ni all GOV.UK One Login ddangos i chi pa wasanaeth CThEF rydych wedi'i ddefnyddio.",
-      paragraph2: "Rydym yn gweithio i wneud hyn yn bosibl.",
+      header: "Services run by HM Revenue and Customs (HMRC)",
+      linkText: "Search for or sign in to find HMRC services",
+      linkUrl: "https://www.gov.uk/log-in-register-hmrc-online-services",
+      description:
+        "Search for HMRC services or sign in to find HMRC services you have added to your personal or business tax account.",
     },
   },
   isOffboarded: false,

@@ -2,7 +2,7 @@ import { Client } from "../interfaces/client.interface";
 
 const dwpAccessToWork: Client = {
   clientId: {
-    production: "hgJbq8BgcVcNLqjweZS-DP0TdNo",
+    production: "zc7NmawFmzcouFBU86FgfC6ZrJc",
     integration: "hgJbq8BgcVcNLqjweZS-DP0TdNo",
     nonProduction: "dwpAccessToWork",
   },

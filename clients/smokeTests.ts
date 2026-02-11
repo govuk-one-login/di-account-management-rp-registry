@@ -2,8 +2,8 @@ import { Client } from "../interfaces/client.interface";
 
 const smokeTests: Client = {
   clientId: {
-    production: "MjQc1h7nFVbNM05iawAdkkZ2W89uloDK",
-    integration: "MjQc1h7nFVbNM05iawAdkkZ2W89uloDK",
+    production: "db2488166f2b2b0574de727a60a9e981",
+    integration: "db2488166f2b2b0574de727a60a9e981",
     nonProduction: "smokeTests",
   },
   isAvailableInWelsh: false,

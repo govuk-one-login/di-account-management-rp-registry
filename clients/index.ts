@@ -90,6 +90,7 @@ import modHhrp from "./modHhrp";
 import desnzFuelFinder from "./desnzFuelFinder";
 import hoMyPolicePortal from "./hoMyPolicePortal";
 import adultSocialCare from "./adultSocialCare";
+import dfeAccessToYourTeachingQualifications from "./dfeAccessToYourTeachingQualifications";
 
 export {
   _testClient,
@@ -184,4 +185,5 @@ export {
   desnzFuelFinder,
   hoMyPolicePortal,
   adultSocialCare,
+  dfeAccessToYourTeachingQualifications,
 };

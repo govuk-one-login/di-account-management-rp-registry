@@ -21,7 +21,7 @@ const dfeAccessToYourTeachingQualifications: Client = {
       header: "Access your teaching qualifications in England",
       description:
         "Download and update teaching certificates or check a qualification or early career induction status.",
-      linkText: "Go to your access your teaching qualifications account",
+      linkText: "Go to your Access your teaching qualifications account",
       linkUrl:
         "https://access-your-teaching-qualifications.education.gov.uk/qualifications",
       startUrl:

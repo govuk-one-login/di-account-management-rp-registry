@@ -91,6 +91,7 @@ import desnzFuelFinder from "./desnzFuelFinder";
 import hoMyPolicePortal from "./hoMyPolicePortal";
 import adultSocialCare from "./adultSocialCare";
 import dfeAccessToYourTeachingQualifications from "./dfeAccessToYourTeachingQualifications";
+import applyForMedal from "./applyForMedal";
 
 export {
   _testClient,
@@ -186,4 +187,5 @@ export {
   hoMyPolicePortal,
   adultSocialCare,
   dfeAccessToYourTeachingQualifications,
+  applyForMedal,
 };

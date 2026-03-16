@@ -92,6 +92,7 @@ import hoMyPolicePortal from "./hoMyPolicePortal";
 import adultSocialCare from "./adultSocialCare";
 import dfeAccessToYourTeachingQualifications from "./dfeAccessToYourTeachingQualifications";
 import applyForMedal from "./applyForMedal";
+import energyPerformanceOfBuildingsDataPlatform from "./energyPerformanceOfBuildingsDataPlatform"
 
 export {
   _testClient,
@@ -188,4 +189,5 @@ export {
   adultSocialCare,
   dfeAccessToYourTeachingQualifications,
   applyForMedal,
+  energyPerformanceOfBuildingsDataPlatform
 };

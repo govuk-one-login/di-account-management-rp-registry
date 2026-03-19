@@ -23,6 +23,7 @@ import dwpBenefitOwed from "./dwpBenefitOwed";
 import dwpFindYourPensions from "./dwpFindYourPensions";
 import dfeFindAndUseAnApi from "./dfeFindAndUseAnApi";
 import mojPlanYourFuture from "./mojPlanYourFuture";
+import mojVictimsPathFinderToDAP from "./mojVictimsPathFinderToDAP";
 import welshFisheriesPermit from "./welshFisheriesPermit";
 import iaa from "./iaa";
 import prisonVisits from "./prisonVisits";
@@ -77,6 +78,7 @@ import hmctsDtsLegacyGenderRecognition from "./hmctsDtsLegacyGenderRecognition";
 import nationalSecurityAndInvestments from "./nationalSecurityAndInvestments";
 import hoSubmitAPleasureCraftReport from "./hoSubmitAPleasureCraftReport";
 import desnzManageEnergySavings from "./desnzManageEnergySavings";
+import desnzHeatNetworkZoningPortal from "./desnzHeatNetworkZoningPortal";
 import modSupplierCyberProtection from "./modSupplierCyberProtection";
 import dwpManageMyStatePension from "./dwpManageMyStatePension";
 import productSafetyDatabase from "./productSafetyDatabase";
@@ -92,7 +94,7 @@ import hoMyPolicePortal from "./hoMyPolicePortal";
 import adultSocialCare from "./adultSocialCare";
 import dfeAccessToYourTeachingQualifications from "./dfeAccessToYourTeachingQualifications";
 import applyForMedal from "./applyForMedal";
-import energyPerformanceOfBuildingsDataPlatform from "./energyPerformanceOfBuildingsDataPlatform"
+import energyPerformanceOfBuildingsDataPlatform from "./energyPerformanceOfBuildingsDataPlatform";
 
 export {
   _testClient,
@@ -120,6 +122,7 @@ export {
   dwpFindYourPensions,
   dfeFindAndUseAnApi,
   mojPlanYourFuture,
+  mojVictimsPathFinderToDAP,
   welshFisheriesPermit,
   iaa,
   prisonVisits,
@@ -174,6 +177,7 @@ export {
   nationalSecurityAndInvestments,
   hoSubmitAPleasureCraftReport,
   desnzManageEnergySavings,
+  desnzHeatNetworkZoningPortal,
   modSupplierCyberProtection,
   dwpManageMyStatePension,
   productSafetyDatabase,
@@ -189,5 +193,5 @@ export {
   adultSocialCare,
   dfeAccessToYourTeachingQualifications,
   applyForMedal,
-  energyPerformanceOfBuildingsDataPlatform
+  energyPerformanceOfBuildingsDataPlatform,
 };

@@ -3,14 +3,11 @@ import pluginJs from "@eslint/js";
 import tsEslint from "typescript-eslint";
 import mochaPlugin from "eslint-plugin-mocha";
 import eslintConfigPrettier from "eslint-config-prettier";
-import tsEslintParser from "@typescript-eslint/parser";
-
 export default [
   { files: ["**/*.{js,mjs,cjs,ts}"] },
   {
     languageOptions: {
       globals: globals.browser,
-      parser: tsEslintParser,
     },
   },
   pluginJs.configs.recommended,
@@ -42,9 +39,6 @@ export default [
     },
   },
   {
-    plugins: {
-      tsEslint,
-    },
     files: ["**/*.test.ts", "**/*.test.js"],
     rules: {
       "@typescript-eslint/no-require-imports": "off",

@@ -1,12 +1,42 @@
 import { expect, test, describe } from "@jest/globals";
 
+const fs = require("fs");
+const path = require("path");
+const clientsDir = path.join(__dirname, "../clients");
+const clientFiles = fs
+  .readdirSync(clientsDir)
+  .filter((file: string) => file.endsWith(".ts") && file !== "index.ts");
+
+describe("Unique client IDs per environment", () => {
+  const environments = ["production", "integration", "nonProduction"] as const;
+
+  environments.forEach((env) => {
+    test(`client IDs should be unique across all clients for ${env}`, () => {
+      const seen = new Map<string, string>();
+      const duplicates: string[] = [];
+
+      clientFiles.forEach((file: string) => {
+        const client = require(path.join(clientsDir, file)).default;
+        const clientId = client.clientId;
+        const id = typeof clientId === "string" ? clientId : clientId?.[env];
+
+        if (id) {
+          if (seen.has(id)) {
+            duplicates.push(
+              `"${id}" is used by both ${seen.get(id)} and ${file}`
+            );
+          } else {
+            seen.set(id, file);
+          }
+        }
+      });
+
+      expect(duplicates).toEqual([]);
+    });
+  });
+});
+
 describe("Client data validation", () => {
-  const fs = require("fs");
-  const path = require("path");
-  const clientsDir = path.join(__dirname, "../clients");
-  const clientFiles = fs
-    .readdirSync(clientsDir)
-    .filter((file: string) => file.endsWith(".ts") && file !== "index.ts");
   const indexFile = path.join(clientsDir, "index.ts");
 
   clientFiles.forEach((file: string) => {

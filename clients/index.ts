@@ -64,6 +64,7 @@ import relyingPartyStub from "./relyingPartyStub";
 import hmrcGovernmentGateway from "./hmrcGovernmentGateway";
 import welshGovChildcareOfferForWalesParents from "./welshGovChildcareOfferForWalesParents";
 import welshGovChildcareOfferForWalesProviders from "./welshGovChildcareOfferForWalesProviders";
+import welshGovFarmingConnect from "./welshGovFarmingConnect";
 import hoDORS from "./hoDORS";
 import securityTokenService from "./securityTokenService";
 import hoOnlineApis from "./hoOnlineApis";
@@ -79,6 +80,7 @@ import nationalSecurityAndInvestments from "./nationalSecurityAndInvestments";
 import hoSubmitAPleasureCraftReport from "./hoSubmitAPleasureCraftReport";
 import desnzManageEnergySavings from "./desnzManageEnergySavings";
 import desnzHeatNetworkZoningPortal from "./desnzHeatNetworkZoningPortal";
+import desnzOfgemFinancialResilience from "./desnzOfgemFinancialResilience";
 import modSupplierCyberProtection from "./modSupplierCyberProtection";
 import dwpManageMyStatePension from "./dwpManageMyStatePension";
 import productSafetyDatabase from "./productSafetyDatabase";
@@ -163,6 +165,7 @@ export {
   hmrcGovernmentGateway,
   welshGovChildcareOfferForWalesParents,
   welshGovChildcareOfferForWalesProviders,
+  welshGovFarmingConnect,
   hoDORS,
   securityTokenService,
   hoOnlineApis,
@@ -178,6 +181,7 @@ export {
   hoSubmitAPleasureCraftReport,
   desnzManageEnergySavings,
   desnzHeatNetworkZoningPortal,
+  desnzOfgemFinancialResilience,
   modSupplierCyberProtection,
   dwpManageMyStatePension,
   productSafetyDatabase,

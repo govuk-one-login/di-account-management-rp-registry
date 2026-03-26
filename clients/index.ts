@@ -97,6 +97,8 @@ import adultSocialCare from "./adultSocialCare";
 import dfeAccessToYourTeachingQualifications from "./dfeAccessToYourTeachingQualifications";
 import applyForMedal from "./applyForMedal";
 import energyPerformanceOfBuildingsDataPlatform from "./energyPerformanceOfBuildingsDataPlatform";
+import ofgemFinancialResilience from "./ofgemFinancialResilience";
+import ofgemHeatNetworks from "./ofgemHeatNetworks"
 
 export {
   _testClient,
@@ -198,4 +200,6 @@ export {
   dfeAccessToYourTeachingQualifications,
   applyForMedal,
   energyPerformanceOfBuildingsDataPlatform,
+  ofgemFinancialResilience,
+  ofgemHeatNetworks
 };

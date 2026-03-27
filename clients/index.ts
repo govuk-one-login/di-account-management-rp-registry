@@ -80,7 +80,6 @@ import nationalSecurityAndInvestments from "./nationalSecurityAndInvestments";
 import hoSubmitAPleasureCraftReport from "./hoSubmitAPleasureCraftReport";
 import desnzManageEnergySavings from "./desnzManageEnergySavings";
 import desnzHeatNetworkZoningPortal from "./desnzHeatNetworkZoningPortal";
-import desnzOfgemFinancialResilience from "./desnzOfgemFinancialResilience";
 import modSupplierCyberProtection from "./modSupplierCyberProtection";
 import dwpManageMyStatePension from "./dwpManageMyStatePension";
 import productSafetyDatabase from "./productSafetyDatabase";
@@ -183,7 +182,6 @@ export {
   hoSubmitAPleasureCraftReport,
   desnzManageEnergySavings,
   desnzHeatNetworkZoningPortal,
-  desnzOfgemFinancialResilience,
   modSupplierCyberProtection,
   dwpManageMyStatePension,
   productSafetyDatabase,

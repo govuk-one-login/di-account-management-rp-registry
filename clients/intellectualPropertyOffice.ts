@@ -30,7 +30,7 @@ const intellectualPropertyOffice: Client = {
       linkText: "Ewch i reoli eich eiddo deallusol",
       linkUrl: "https://www.manage-intellectual-property.service.gov.uk/cy",
       startUrl: "https://www.manage-intellectual-property.service.gov.uk/",
-      startText: "Manage intellectual property",
+      startText: "Rheoli eiddo deallusol",
     },
   },
   isOffboarded: false,

@@ -20,8 +20,9 @@ const ofgemFinancialResilience: Client = {
       description:
         "Submit regulatory information and supporting documentation to Ofgem.",
       linkText: "Go to your Ofgem Financial Resilience account",
-      linkUrl: "regulation-portal.ofgem.gov.uk",
-      startUrl: "regulation-portal.ofgem.gov.uk",
+      linkUrl: "https://regulation-portal.ofgem.gov.uk",
+      startUrl: "https://regulation-portal.ofgem.gov.uk",
+      startText: "Ofgem Financial Resilience",
     },
   },
   isOffboarded: false,

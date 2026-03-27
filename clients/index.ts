@@ -98,6 +98,7 @@ import applyForMedal from "./applyForMedal";
 import energyPerformanceOfBuildingsDataPlatform from "./energyPerformanceOfBuildingsDataPlatform";
 import ofgemFinancialResilience from "./ofgemFinancialResilience";
 import ofgemHeatNetworks from "./ofgemHeatNetworks"
+import dwpPersonalIndependencePayment from "./dwpPersonalIndependencePayment"
 
 export {
   _testClient,
@@ -199,5 +200,6 @@ export {
   applyForMedal,
   energyPerformanceOfBuildingsDataPlatform,
   ofgemFinancialResilience,
-  ofgemHeatNetworks
+  ofgemHeatNetworks,
+  dwpPersonalIndependencePayment
 };

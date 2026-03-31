@@ -21,8 +21,6 @@ const ofgemHeatNetworks: Client = {
         "Start or continue providing information about your organisation and registering your heat networks with Ofgem.",
       linkText: "Go to the Comply with heat networks consumer protection regulations service",
       linkUrl: "https://heat-network-consumer-protections.ofgem.gov.uk",
-      startUrl: "https://www.ofgem.gov.uk/energy-regulation/low-carbon/heat-networks/comply-heat-networks-consumer-protection-regulations",
-      startText: "Ofgem Heat Networks",
     },
   },
   isOffboarded: false,

@@ -12,7 +12,7 @@ const ofgemFinancialResilience: Client = {
   showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
-  showInSearchableList: true,
+  showInSearchableList: false,
 
   translations: {
     en: {
@@ -21,8 +21,6 @@ const ofgemFinancialResilience: Client = {
         "Submit regulatory information and supporting documentation to Ofgem.",
       linkText: "Go to your Ofgem Financial Resilience account",
       linkUrl: "https://regulation-portal.ofgem.gov.uk",
-      startUrl: "https://regulation-portal.ofgem.gov.uk",
-      startText: "Ofgem Financial Resilience",
     },
   },
   isOffboarded: false,

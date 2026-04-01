@@ -80,7 +80,6 @@ import nationalSecurityAndInvestments from "./nationalSecurityAndInvestments";
 import hoSubmitAPleasureCraftReport from "./hoSubmitAPleasureCraftReport";
 import desnzManageEnergySavings from "./desnzManageEnergySavings";
 import desnzHeatNetworkZoningPortal from "./desnzHeatNetworkZoningPortal";
-import desnzOfgemFinancialResilience from "./desnzOfgemFinancialResilience";
 import modSupplierCyberProtection from "./modSupplierCyberProtection";
 import dwpManageMyStatePension from "./dwpManageMyStatePension";
 import productSafetyDatabase from "./productSafetyDatabase";
@@ -97,6 +96,9 @@ import adultSocialCare from "./adultSocialCare";
 import dfeAccessToYourTeachingQualifications from "./dfeAccessToYourTeachingQualifications";
 import applyForMedal from "./applyForMedal";
 import energyPerformanceOfBuildingsDataPlatform from "./energyPerformanceOfBuildingsDataPlatform";
+import ofgemFinancialResilience from "./ofgemFinancialResilience";
+import ofgemHeatNetworks from "./ofgemHeatNetworks"
+import dwpPersonalIndependencePayment from "./dwpPersonalIndependencePayment"
 
 export {
   _testClient,
@@ -181,7 +183,6 @@ export {
   hoSubmitAPleasureCraftReport,
   desnzManageEnergySavings,
   desnzHeatNetworkZoningPortal,
-  desnzOfgemFinancialResilience,
   modSupplierCyberProtection,
   dwpManageMyStatePension,
   productSafetyDatabase,
@@ -198,4 +199,7 @@ export {
   dfeAccessToYourTeachingQualifications,
   applyForMedal,
   energyPerformanceOfBuildingsDataPlatform,
+  ofgemFinancialResilience,
+  ofgemHeatNetworks,
+  dwpPersonalIndependencePayment
 };

@@ -21,7 +21,7 @@ const icsDigitalPrsExemptions: Client = {
       header: "ICS digital: Private Rented Sector (PRS) exemptions Register",
       description: "Register exemptions for private rented sector properties.",
       linkText: "Go to PRS exemptions register",
-      linkUrl: "#", // Placeholder - actual URL to be provided
+      linkUrl: "https://example.com", // Placeholder - actual URL to be provided
     },
   },
   isOffboarded: true,

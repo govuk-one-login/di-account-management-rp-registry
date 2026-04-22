@@ -12,7 +12,7 @@ const intellectualPropertyOffice: Client = {
   showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
-  showInSearchableList: false,
+  showInSearchableList: true,
   translations: {
     en: {
       header: "Manage intellectual property",
@@ -20,13 +20,17 @@ const intellectualPropertyOffice: Client = {
         "Manage patents and applications you own or represent with the Intellectual Property Office.",
       linkText: "Go to manage your intellectual property",
       linkUrl: "https://www.manage-intellectual-property.service.gov.uk/",
+      startText: "Manage intellectual property",
+      startUrl: "https://www.manage-intellectual-property.service.gov.uk/",
     },
     cy: {
       header: "Rheoli eiddo deallusol",
       description:
         "Rheoli patentau a cheisiadau rydych yn berchen arnynt neu'n eu cynrychioli gyda'r Swyddfa Eiddo Deallusol.",
       linkText: "Ewch i reoli eich eiddo deallusol",
-      linkUrl: "https://www.manage-intellectual-property.service.gov.uk/cy",
+      linkUrl: "https://www.manage-intellectual-property.service.gov.uk/",
+      startText: "Rheoli eiddo deallusol",
+      startUrl: "https://www.manage-intellectual-property.service.gov.uk/",
     },
   },
   isOffboarded: false,

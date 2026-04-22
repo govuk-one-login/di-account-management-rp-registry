@@ -23,7 +23,7 @@ const ofgemFinancialResilience: Client = {
       linkUrl: "https://regulation-portal.ofgem.gov.uk",
     },
   },
-  isOffboarded: false,
+  isOffboarded: true,
 };
 
 export default ofgemFinancialResilience;

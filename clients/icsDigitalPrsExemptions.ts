@@ -5,8 +5,8 @@ import { Client } from "../interfaces/client.interface";
 // Production client ID causing errors in live environment, added to prevent issues
 const icsDigitalPrsExemptions: Client = {
   clientId: {
-    production: "REiRoFh0lDHTgZd7j-ecAjPrMw",
-    integration: "REiRoFh0lDHTgZd7j-ecAjPrMw",
+    production: "-REiRoFh0lDHTgZd7j-ecAjPrMw",
+    integration: "-REiRoFh0lDHTgZd7j-ecAjPrMw",
     nonProduction: "icsDigitalPrsExemptions",
   },
   isAvailableInWelsh: false,

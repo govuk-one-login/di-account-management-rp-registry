@@ -22,8 +22,6 @@ pip install gitlint # or `brew install gitlint` if using the Homebrew package ma
 
 ## Adding new RPs
 
-To add a new RP, agents should
-
 - Copy the test client at ./clients/\_testClient.ts
 - The file name should be a human readable camel case identifier based on the RP's name
 - Update the values as appriopriate
@@ -33,14 +31,10 @@ To add a new RP, agents should
 
 ## Updating existing RPs
 
-To update an existing RP, agents should
-
 - Update the values in the corresponding file in the ./clients folder
 - Run the command `npm run test` to verify that there are no integrity errors.
 
 ## Offboarding RPs
-
-To offboard an existing RP, agents should
 
 - Locate the RP in ./clients
 - Change the `isOffboarded` boolean to `true`

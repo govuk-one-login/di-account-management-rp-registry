@@ -21,7 +21,7 @@ const intellectualPropertyOffice: Client = {
       linkText: "Go to manage your intellectual property",
       linkUrl: "https://www.manage-intellectual-property.service.gov.uk/",
       startText: "Manage intellectual property",
-      startUrl: "https://www.manage-intellectual-property.service.gov.uk/",
+      startUrl: "https://www.gov.uk/manage-intellectual-property",
     },
     cy: {
       header: "Rheoli eiddo deallusol",
@@ -30,7 +30,7 @@ const intellectualPropertyOffice: Client = {
       linkText: "Ewch i reoli eich eiddo deallusol",
       linkUrl: "https://www.manage-intellectual-property.service.gov.uk/",
       startText: "Rheoli eiddo deallusol",
-      startUrl: "https://www.manage-intellectual-property.service.gov.uk/",
+      startUrl: "https://www.gov.uk/manage-intellectual-property", 
     },
   },
   isOffboarded: false,

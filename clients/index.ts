@@ -99,6 +99,7 @@ import energyPerformanceOfBuildingsDataPlatform from "./energyPerformanceOfBuild
 import ofgemFinancialResilience from "./ofgemFinancialResilience";
 import ofgemHeatNetworks from "./ofgemHeatNetworks"
 import dwpPersonalIndependencePayment from "./dwpPersonalIndependencePayment"
+import icsDigitalPrsExemptions from "./icsDigitalPrsExemptions"
 
 export {
   _testClient,
@@ -201,5 +202,6 @@ export {
   energyPerformanceOfBuildingsDataPlatform,
   ofgemFinancialResilience,
   ofgemHeatNetworks,
-  dwpPersonalIndependencePayment
+  dwpPersonalIndependencePayment,
+  icsDigitalPrsExemptions
 };

@@ -1,8 +1,5 @@
 import { Client } from "../interfaces/client.interface";
 
-// ICS digital: Private Rented Sector (PRS) exemptions Register
-// Temporarily offboarded - placeholder data used as not all information available
-// Production client ID causing errors in live environment, added to prevent issues
 const icsDigitalPrsExemptions: Client = {
   clientId: {
     production: "-REiRoFh0lDHTgZd7j-ecAjPrMw",
@@ -10,21 +7,26 @@ const icsDigitalPrsExemptions: Client = {
     nonProduction: "icsDigitalPrsExemptions",
   },
   isAvailableInWelsh: false,
-  showInAccounts: false,
+  showInAccounts: true,
   showInServices: false,
   showDetailedCard: false,
-  showInActivityHistory: false,
-  showInDeleteAccount: false,
+  showInActivityHistory: true,
+  showInDeleteAccount: true,
   showInSearchableList: false,
   translations: {
     en: {
-      header: "ICS digital: Private Rented Sector (PRS) exemptions Register",
-      description: "Register exemptions for private rented sector properties.",
-      linkText: "Go to PRS exemptions register",
-      linkUrl: "https://example.com", // Placeholder - actual URL to be provided
+      header:
+        "Register an exemption for private rented sector energy standards ",
+      description:
+        "Register a property for an exemption to the private rented sector minimum efficiency standards.",
+      linkText: "Go to your Private Rental Sector Exemptions Register account",
+      linkUrl:
+        "https://www.register-energy-efficiency-exemption.service.gov.uk/dashboard",
+      startUrl:
+        "https://www.register-energy-efficiency-exemption.service.gov.uk/",
     },
   },
-  isOffboarded: true,
+  isOffboarded: false,
 };
 
 export default icsDigitalPrsExemptions;

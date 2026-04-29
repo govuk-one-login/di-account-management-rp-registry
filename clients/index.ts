@@ -100,6 +100,7 @@ import ofgemFinancialResilience from "./ofgemFinancialResilience";
 import ofgemHeatNetworks from "./ofgemHeatNetworks"
 import dwpPersonalIndependencePayment from "./dwpPersonalIndependencePayment"
 import icsDigitalPrsExemptions from "./icsDigitalPrsExemptions"
+import dwpJobsAndCareers from "./dwpJobsAndCareers";
 
 export {
   _testClient,
@@ -203,5 +204,6 @@ export {
   ofgemFinancialResilience,
   ofgemHeatNetworks,
   dwpPersonalIndependencePayment,
-  icsDigitalPrsExemptions
+  icsDigitalPrsExemptions,
+  dwpJobsAndCareers,
 };

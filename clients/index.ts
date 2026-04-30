@@ -101,6 +101,7 @@ import ofgemHeatNetworks from "./ofgemHeatNetworks"
 import dwpPersonalIndependencePayment from "./dwpPersonalIndependencePayment"
 import icsDigitalPrsExemptions from "./icsDigitalPrsExemptions"
 import dwpJobsAndCareers from "./dwpJobsAndCareers";
+import mojPensionRelief from "./mojPensionRelief";
 
 export {
   _testClient,
@@ -206,4 +207,5 @@ export {
   dwpPersonalIndependencePayment,
   icsDigitalPrsExemptions,
   dwpJobsAndCareers,
+  mojPensionRelief
 };

@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",
     "target": "es2020",
+    "types": ["node"],
+    "rootDir": "./",
     "module": "CommonJS",
     "moduleResolution": "Node",
     "strict": true,

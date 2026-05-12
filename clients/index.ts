@@ -45,7 +45,6 @@ import ofgemLafReg from "./ofgemLafReg";
 import dfeQualifiedTeacherStatus from "./dfeQualifiedTeacherStatus";
 import checkFamilyEligibility from "./checkFamilyEligibility";
 import findATender from "./findATender";
-import airPollutionAssesment from "./airPollutionAssesment";
 import oneLoginHome from "./oneLoginHome";
 import homeOfficeSEAS from "./homeOfficeSEAS";
 import dfeApplyForTeacherTraining from "./dfeApplyForTeacherTraining";
@@ -102,7 +101,7 @@ import dwpPersonalIndependencePayment from "./dwpPersonalIndependencePayment"
 import icsDigitalPrsExemptions from "./icsDigitalPrsExemptions"
 import dwpJobsAndCareers from "./dwpJobsAndCareers";
 import mojPensionRelief from "./mojPensionRelief";
-import jointNatureConservationCommittee from './jointNatureConservationCommittee'
+import jointNatureConservationCommittee from "./jointNatureConservationCommittee";
 
 export {
   _testClient,
@@ -152,7 +151,6 @@ export {
   dfeQualifiedTeacherStatus,
   checkFamilyEligibility,
   findATender,
-  airPollutionAssesment,
   oneLoginHome,
   homeOfficeSEAS,
   dfeApplyForTeacherTraining,
@@ -209,5 +207,5 @@ export {
   icsDigitalPrsExemptions,
   dwpJobsAndCareers,
   mojPensionRelief,
-  jointNatureConservationCommittee
+  jointNatureConservationCommittee,
 };

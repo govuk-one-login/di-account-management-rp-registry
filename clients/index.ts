@@ -102,6 +102,7 @@ import dwpPersonalIndependencePayment from "./dwpPersonalIndependencePayment"
 import icsDigitalPrsExemptions from "./icsDigitalPrsExemptions"
 import dwpJobsAndCareers from "./dwpJobsAndCareers";
 import mojPensionRelief from "./mojPensionRelief";
+import jointNatureConservationCommittee from './jointNatureConservationCommittee'
 
 export {
   _testClient,
@@ -207,5 +208,6 @@ export {
   dwpPersonalIndependencePayment,
   icsDigitalPrsExemptions,
   dwpJobsAndCareers,
-  mojPensionRelief
+  mojPensionRelief,
+  jointNatureConservationCommittee
 };

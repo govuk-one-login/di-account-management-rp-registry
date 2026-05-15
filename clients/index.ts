@@ -102,6 +102,7 @@ import icsDigitalPrsExemptions from "./icsDigitalPrsExemptions"
 import dwpJobsAndCareers from "./dwpJobsAndCareers";
 import mojPensionRelief from "./mojPensionRelief";
 import jointNatureConservationCommittee from "./jointNatureConservationCommittee";
+import treeFellingLicence from "./treeFellingLicence";
 
 export {
   _testClient,
@@ -208,4 +209,5 @@ export {
   dwpJobsAndCareers,
   mojPensionRelief,
   jointNatureConservationCommittee,
+  treeFellingLicence,
 };

@@ -70,9 +70,6 @@ const transformClientObject = (
     isOffboarded: booleanOrDateToBoolean(
       getValueForEnvironment(environment, client.isOffboarded)
     ),
-    showDetailedCard: booleanOrDateToBoolean(
-      getValueForEnvironment(environment, client.showDetailedCard)
-    ),
     isAvailableInWelsh: getValueForEnvironment(
       environment,
       client.isAvailableInWelsh
@@ -110,8 +107,6 @@ export const convertToTranslation = (
           description: translations.description,
         }),
         ...(translations.hintText && { hintText: translations.hintText }),
-        ...(translations.paragraph1 && { paragraph1: translations.paragraph1 }),
-        ...(translations.paragraph2 && { paragraph2: translations.paragraph2 }),
         ...(translations.startText && { startText: translations.startText }),
         ...(translations.startUrl && { startUrl: translations.startUrl }),
         ...(translations.additionalSearchTerms && {

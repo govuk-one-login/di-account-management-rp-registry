@@ -23,8 +23,6 @@ jest.mock("../clients", () => ({
     clientId: "welshClient",
     showInAccounts: true,
     showInServices: false,
-    showDetailedCard: false,
-
     showInSearchableList: true,
   },
   enClient: {
@@ -40,8 +38,6 @@ jest.mock("../clients", () => ({
     clientId: "englishClient",
     showInAccounts: true,
     showInServices: false,
-    showDetailedCard: false,
-
     showInSearchableList: true,
   },
   hmrcClient: {
@@ -53,15 +49,11 @@ jest.mock("../clients", () => ({
         linkUrl: "link url en",
         description: "description en",
         hintText: "hint text en",
-        paragraph1: "paragraph 1 en",
-        paragraph2: "paragraph 2 en",
       },
     },
     clientId: "englishClientHmrc",
     showInAccounts: true,
     showInServices: false,
-    showDetailedCard: false,
-
     showInSearchableList: true,
   },
   internalClient: {
@@ -71,8 +63,6 @@ jest.mock("../clients", () => ({
     },
     clientId: "internalClient",
     clientType: "internal",
-    showDetailedCard: false,
-
     showInSearchableList: false,
   },
 }));
@@ -98,8 +88,6 @@ describe("getTranslations", () => {
         hintText: "hint text en",
         linkUrl: "link url en",
         linkText: "link text en",
-        paragraph1: "paragraph 1 en",
-        paragraph2: "paragraph 2 en",
       },
     });
   });
@@ -123,8 +111,6 @@ describe("getTranslations", () => {
         hintText: "hint text en",
         linkUrl: "link url en",
         linkText: "link text en",
-        paragraph1: "paragraph 1 en",
-        paragraph2: "paragraph 2 en",
       },
     });
   });
@@ -148,8 +134,6 @@ describe("getTranslations", () => {
         hintText: "hint text en",
         linkUrl: "link url en",
         linkText: "link text en",
-        paragraph1: "paragraph 1 en",
-        paragraph2: "paragraph 2 en",
       },
     });
   });

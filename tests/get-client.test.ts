@@ -26,7 +26,6 @@ jest.mock("../clients", () => ({
     },
     showInAccounts: true,
     showInServices: false,
-    showDetailedCard: false,
     showInActivityHistory: true,
     showInDeleteAccount: true,
     showInSearchableList: true,
@@ -44,7 +43,6 @@ jest.mock("../clients", () => ({
     clientId: "englishClient",
     showInAccounts: true,
     showInServices: false,
-    showDetailedCard: false,
     showInActivityHistory: true,
     showInDeleteAccount: true,
     showInSearchableList: true,
@@ -58,14 +56,11 @@ jest.mock("../clients", () => ({
         linkUrl: "link url en",
         description: "description en",
         hintText: "hint text en",
-        paragraph1: "paragraph 1 en",
-        paragraph2: "paragraph 2 en",
       },
     },
     clientId: "englishClient",
     showInAccounts: true,
     showInServices: false,
-    showDetailedCard: false,
     showInActivityHistory: true,
     showInDeleteAccount: true,
     showInSearchableList: true,
@@ -83,7 +78,6 @@ jest.mock("../clients", () => ({
     clientId: "datedClient1",
     showInAccounts: new Date(2025, 7, 29),
     showInServices: new Date(2025, 7, 29),
-    showDetailedCard: new Date(2025, 7, 29),
     showInActivityHistory: new Date(2025, 7, 29),
     showInDeleteAccount: new Date(2025, 7, 29),
     showInSearchableList: {
@@ -105,7 +99,6 @@ jest.mock("../clients", () => ({
     clientId: "datedClient2",
     showInAccounts: new Date(2025, 7, 29),
     showInServices: new Date(2025, 7, 29),
-    showDetailedCard: new Date(2025, 7, 29),
     showInActivityHistory: new Date(2025, 7, 29),
     showInDeleteAccount: new Date(2025, 7, 29),
     showInSearchableList: {
@@ -127,7 +120,6 @@ jest.mock("../clients", () => ({
     clientId: "datedClient3",
     showInAccounts: new Date("Wed, 11 Sep 2025 00:00:00 GMT+1"),
     showInServices: new Date("Wed, 11 Sep 2025 00:00:00 GMT+1"),
-    showDetailedCard: new Date("Wed, 11 Sep 2025 00:00:00 GMT+1"),
     showInActivityHistory: new Date("Wed, 11 Sep 2025 00:00:00 GMT+1"),
     showInDeleteAccount: new Date("Wed, 11 Sep 2025 00:00:00 GMT+1"),
     showInSearchableList: {
@@ -153,7 +145,6 @@ describe("getClient", () => {
       showInActivityHistory: true,
       showInDeleteAccount: true,
       isAvailableInWelsh: true,
-      showDetailedCard: false,
       showInSearchableList: true,
     });
   });
@@ -167,7 +158,6 @@ describe("getClient", () => {
       showInActivityHistory: true,
       showInDeleteAccount: true,
       isAvailableInWelsh: true,
-      showDetailedCard: false,
       showInSearchableList: true,
     });
   });
@@ -183,7 +173,6 @@ describe("getClient", () => {
       showInActivityHistory: true,
       showInDeleteAccount: true,
       isAvailableInWelsh: false,
-      showDetailedCard: true,
       showInSearchableList: true,
       isOffboarded: true,
     });
@@ -195,7 +184,6 @@ describe("getClient", () => {
       showInActivityHistory: true,
       showInDeleteAccount: true,
       isAvailableInWelsh: false,
-      showDetailedCard: true,
       showInSearchableList: false,
       isOffboarded: true,
     });
@@ -212,7 +200,6 @@ describe("getClient", () => {
       showInActivityHistory: false,
       showInDeleteAccount: false,
       isAvailableInWelsh: true,
-      showDetailedCard: false,
       showInSearchableList: false,
       isOffboarded: false,
     });
@@ -224,7 +211,6 @@ describe("getClient", () => {
       showInActivityHistory: false,
       showInDeleteAccount: false,
       isAvailableInWelsh: true,
-      showDetailedCard: false,
       showInSearchableList: true,
       isOffboarded: false,
     });
@@ -241,7 +227,6 @@ describe("getClient", () => {
       showInActivityHistory: true,
       showInDeleteAccount: true,
       isAvailableInWelsh: true,
-      showDetailedCard: true,
       showInSearchableList: true,
       isOffboarded: true,
     });
@@ -253,7 +238,6 @@ describe("getClient", () => {
       showInActivityHistory: true,
       showInDeleteAccount: true,
       isAvailableInWelsh: true,
-      showDetailedCard: true,
       showInSearchableList: true,
       isOffboarded: true,
     });
@@ -267,7 +251,6 @@ describe("getClient", () => {
       showInActivityHistory: false,
       showInDeleteAccount: false,
       isAvailableInWelsh: true,
-      showDetailedCard: false,
       showInSearchableList: false,
       isOffboarded: false,
     });
@@ -279,7 +262,6 @@ describe("getClient", () => {
       showInActivityHistory: false,
       showInDeleteAccount: false,
       isAvailableInWelsh: true,
-      showDetailedCard: false,
       showInSearchableList: true,
       isOffboarded: false,
     });

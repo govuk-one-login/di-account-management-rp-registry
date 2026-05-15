@@ -11,7 +11,6 @@ const mojPensionRelief: Client = {
   },
   showInAccounts: false,
   showInServices: false,
-  showDetailedCard: false,
   showInActivityHistory: false,
   showInDeleteAccount: false,
   showInSearchableList: false,

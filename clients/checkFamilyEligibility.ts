@@ -9,7 +9,6 @@ const checkFamilyEligibility: Client = {
   isAvailableInWelsh: false,
   showInAccounts: false,
   showInServices: true,
-  showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
   showInSearchableList: false,

@@ -32,7 +32,6 @@ jest.mock("../clients", () => ({
       nonProduction: "welshClientNonProd",
     },
     showInAccounts: true,
-    showDetailedCard: false,
     showInActivityHistory: true,
     showInSearchableList: { production: true, nonProduction: true },
     isOffboarded: false,
@@ -51,7 +50,6 @@ jest.mock("../clients", () => ({
     },
     clientId: "englishClient",
     showInAccounts: true,
-    showDetailedCard: false,
     showInActivityHistory: true,
     showInSearchableList: { production: true, nonProduction: false },
     isOffboarded: false,
@@ -67,13 +65,10 @@ jest.mock("../clients", () => ({
         linkUrl: "link url en",
         description: "description en",
         hintText: "hint text en",
-        paragraph1: "paragraph 1 en",
-        paragraph2: "paragraph 2 en",
       },
     },
     clientId: "hmrcClient",
     showInAccounts: true,
-    showDetailedCard: true,
     showInActivityHistory: true,
     showInSearchableList: { production: true, nonProduction: false },
     isOffboarded: false,
@@ -84,7 +79,6 @@ jest.mock("../clients", () => ({
     isAvailableInWelsh: false,
     clientId: "internalClient",
     clientType: "internal",
-    showDetailedCard: false,
     showInActivityHistory: true,
     showInSearchableList: { production: false, nonProduction: true },
     showInDeleteAccount: false,
@@ -99,13 +93,10 @@ jest.mock("../clients", () => ({
         linkUrl: "link url en",
         description: "description en",
         hintText: "hint text en",
-        paragraph1: "paragraph 1 en",
-        paragraph2: "paragraph 2 en",
       },
     },
     clientId: "offboardedClient",
     showInAccounts: true,
-    showDetailedCard: false,
     showInActivityHistory: true,
     showInSearchableList: false,
     isOffboarded: true,
@@ -125,7 +116,6 @@ jest.mock("../clients", () => ({
     clientId: "datedClient1",
     showInAccounts: new Date(2025, 7, 29),
     showInServices: new Date(2025, 7, 29),
-    showDetailedCard: new Date(2025, 7, 29),
     showInActivityHistory: new Date(2025, 7, 29),
     showInDeleteAccount: new Date(2025, 7, 29),
     showInSearchableList: {
@@ -147,7 +137,6 @@ jest.mock("../clients", () => ({
     clientId: "datedClient2",
     showInAccounts: new Date(2025, 7, 29),
     showInServices: new Date(2025, 7, 29),
-    showDetailedCard: new Date(2025, 7, 29),
     showInActivityHistory: new Date(2025, 7, 29),
     showInDeleteAccount: new Date(2025, 7, 29),
     showInSearchableList: {
@@ -170,8 +159,18 @@ describe("filterClient", () => {
   });
 
   test("should return the client objects that match the given criteria", () => {
-    const client = filterClients("test", { showDetailedCard: true });
+    const client = filterClients("test", { showInDeleteAccount: true });
     expect(client).toEqual([
+      {
+         clientId: "welshClientNonProd",
+         isAvailableInWelsh: true,
+         isOffboarded: false,
+         showInAccounts: true,
+         showInActivityHistory: true,
+         showInDeleteAccount: true,
+         showInSearchableList: true,
+         showInServices: false,
+      },
       {
         clientId: "hmrcClient",
         showInAccounts: true,
@@ -179,7 +178,6 @@ describe("filterClient", () => {
         showInActivityHistory: true,
         showInDeleteAccount: true,
         isAvailableInWelsh: false,
-        showDetailedCard: true,
         showInSearchableList: false,
         isOffboarded: false,
       },
@@ -187,8 +185,18 @@ describe("filterClient", () => {
 
     jest.setSystemTime(new Date(2099, 11, 31).getTime());
 
-    const client2 = filterClients("test", { showDetailedCard: true });
+    const client2 = filterClients("test", { showInDeleteAccount: true });
     expect(client2).toEqual([
+      {
+         clientId: "welshClientNonProd",
+         isAvailableInWelsh: true,
+         isOffboarded: false,
+         showInAccounts: true,
+         showInActivityHistory: true,
+         showInDeleteAccount: true,
+         showInSearchableList: true,
+         showInServices: false,
+      },
       {
         clientId: "hmrcClient",
         showInAccounts: true,
@@ -196,7 +204,6 @@ describe("filterClient", () => {
         showInActivityHistory: true,
         showInDeleteAccount: true,
         isAvailableInWelsh: false,
-        showDetailedCard: true,
         showInSearchableList: false,
         isOffboarded: false,
       },
@@ -207,7 +214,6 @@ describe("filterClient", () => {
         showInActivityHistory: true,
         showInDeleteAccount: true,
         isAvailableInWelsh: false,
-        showDetailedCard: true,
         showInSearchableList: false,
         isOffboarded: true,
       },
@@ -218,7 +224,6 @@ describe("filterClient", () => {
         showInActivityHistory: true,
         showInDeleteAccount: true,
         isAvailableInWelsh: true,
-        showDetailedCard: true,
         showInSearchableList: true,
         isOffboarded: true,
       },
@@ -235,7 +240,6 @@ describe("filterClient", () => {
         showInActivityHistory: true,
         showInDeleteAccount: true,
         isAvailableInWelsh: true,
-        showDetailedCard: false,
         showInSearchableList: true,
         isOffboarded: false,
       },
@@ -246,7 +250,6 @@ describe("filterClient", () => {
         showInActivityHistory: false,
         showInDeleteAccount: false,
         isAvailableInWelsh: true,
-        showDetailedCard: false,
         showInSearchableList: true,
         isOffboarded: false,
       },
@@ -265,7 +268,6 @@ describe("filterClient", () => {
         showInActivityHistory: true,
         showInDeleteAccount: true,
         isAvailableInWelsh: true,
-        showDetailedCard: false,
         showInSearchableList: true,
         isOffboarded: false,
       },
@@ -276,7 +278,6 @@ describe("filterClient", () => {
         showInActivityHistory: true,
         showInDeleteAccount: true,
         isAvailableInWelsh: true,
-        showDetailedCard: true,
         showInSearchableList: true,
         isOffboarded: true,
       },
@@ -321,16 +322,6 @@ describe("filterClient", () => {
       showInSearchableList: false,
     });
     expect(result8).toHaveLength(4);
-  });
-
-  test("should work with boolean filters", () => {
-    const result = filterClients("nonProduction", { showDetailedCard: true });
-    expect(result).toHaveLength(1);
-
-    jest.setSystemTime(new Date(2099, 11, 31).getTime());
-
-    const result2 = filterClients("nonProduction", { showDetailedCard: true });
-    expect(result2).toHaveLength(3);
   });
 
   test("should return clients matching multiple filters (showInAccounts: true, isOffboarded: false)", () => {
@@ -381,8 +372,6 @@ describe("filterClient", () => {
         showInActivityHistory: true,
         showInDeleteAccount: true,
         isAvailableInWelsh: true,
-        showDetailedCard: false,
-
         showInSearchableList: true,
         isOffboarded: false,
       },
@@ -390,7 +379,6 @@ describe("filterClient", () => {
         clientId: "datedClient2",
         isAvailableInWelsh: true,
         isOffboarded: false,
-        showDetailedCard: false,
         showInAccounts: false,
         showInActivityHistory: false,
         showInDeleteAccount: false,
@@ -410,8 +398,6 @@ describe("filterClient", () => {
         showInActivityHistory: true,
         showInDeleteAccount: true,
         isAvailableInWelsh: true,
-        showDetailedCard: false,
-
         showInSearchableList: true,
         isOffboarded: false,
       },
@@ -419,7 +405,6 @@ describe("filterClient", () => {
         clientId: "datedClient2",
         isAvailableInWelsh: true,
         isOffboarded: true,
-        showDetailedCard: true,
         showInAccounts: true,
         showInActivityHistory: true,
         showInDeleteAccount: true,
@@ -439,7 +424,6 @@ describe("filterClient", () => {
         showInActivityHistory: true,
         showInDeleteAccount: true,
         isAvailableInWelsh: true,
-        showDetailedCard: false,
         showInSearchableList: true,
         isOffboarded: false,
       },
@@ -447,7 +431,6 @@ describe("filterClient", () => {
         clientId: "datedClient2",
         isAvailableInWelsh: true,
         isOffboarded: false,
-        showDetailedCard: false,
         showInAccounts: false,
         showInActivityHistory: false,
         showInDeleteAccount: false,
@@ -469,7 +452,6 @@ describe("filterClient", () => {
         showInActivityHistory: true,
         showInDeleteAccount: true,
         isAvailableInWelsh: true,
-        showDetailedCard: false,
         showInSearchableList: true,
         isOffboarded: false,
       },
@@ -477,7 +459,6 @@ describe("filterClient", () => {
         clientId: "datedClient2",
         isAvailableInWelsh: true,
         isOffboarded: true,
-        showDetailedCard: true,
         showInAccounts: true,
         showInActivityHistory: true,
         showInDeleteAccount: true,
@@ -502,12 +483,12 @@ describe("filterClient", () => {
   });
 
   test("should correctly handle falsy values in filters", () => {
-    const result = filterClients("production", { showDetailedCard: false });
-    expect(result).toHaveLength(6);
+    const result = filterClients("production", { showInSearchableList: false });
+    expect(result).toHaveLength(4);
 
     jest.setSystemTime(new Date(2099, 11, 31).getTime());
 
-    const result2 = filterClients("production", { showDetailedCard: false });
-    expect(result2).toHaveLength(4);
+    const result2 = filterClients("production", { showInSearchableList: false });
+    expect(result2).toHaveLength(2);
   });
 });

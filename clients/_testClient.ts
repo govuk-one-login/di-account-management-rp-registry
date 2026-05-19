@@ -8,7 +8,6 @@ const aas: Client = {
   },
   showInAccounts: false,
   showInServices: false,
-  showDetailedCard: false,
   showInActivityHistory: false,
   showInDeleteAccount: false,
   showInSearchableList: {

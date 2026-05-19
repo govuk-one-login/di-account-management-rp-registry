@@ -9,7 +9,6 @@ const modHham: Client = {
   isAvailableInWelsh: false,
   showInAccounts: true,
   showInServices: false,
-  showDetailedCard: false,
   showInActivityHistory: false,
   showInDeleteAccount: false,
   showInSearchableList: false,

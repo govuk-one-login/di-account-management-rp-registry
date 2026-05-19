@@ -9,7 +9,6 @@ const desnzFuelFinder: Client = {
   isAvailableInWelsh: false,
   showInAccounts: new Date(2025, 11, 18),
   showInServices: false,
-  showDetailedCard: false,
   showInActivityHistory: new Date(2025, 11, 18),
   showInDeleteAccount: new Date(2025, 11, 18),
   showInSearchableList: new Date(2025, 11, 18),

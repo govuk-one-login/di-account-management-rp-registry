@@ -4,8 +4,6 @@ export interface Translation {
   linkText?: string;
   linkUrl?: string;
   hintText?: string;
-  paragraph1?: string;
-  paragraph2?: string;
   startText?: string;
   startUrl?: string;
   additionalSearchTerms?: string;

@@ -9,7 +9,6 @@ const dwpAccessToWork: Client = {
   isAvailableInWelsh: true,
   showInAccounts: new Date(2025, 10, 26),
   showInServices: false,
-  showDetailedCard: false,
   showInActivityHistory: new Date(2025, 10, 26),
   showInDeleteAccount: new Date(2025, 10, 26),
   showInSearchableList: new Date(2025, 10, 26),

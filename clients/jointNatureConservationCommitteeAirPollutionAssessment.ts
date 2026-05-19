@@ -1,6 +1,6 @@
 import { Client } from "../interfaces/client.interface";
 
-const jointNatureConservationCommittee: Client = {
+const jointNatureConservationCommitteeAirPollutionAssessment: Client = {
   clientId: {
     production: "glcH6E9VxtnCAPPwBt550zDh22Q",
     integration: "glcH6E9VxtnCAPPwBt550zDh22Q",
@@ -16,24 +16,22 @@ const jointNatureConservationCommittee: Client = {
   translations: {
     en: {
       header: "Air pollution assessment service",
-      description: "Upload environmental risk assessment results to use for in-combination assessments.",
+      description:
+        "Upload environmental risk assessment results to use for in-combination assessments.",
       linkText: "Go to your Air pollution assessment service account",
-      linkUrl:
-        "https://get-an-air-pollution-assessment-archive.service.gov.uk",
-      startUrl:
-        "https://www.gov.uk/guidance/get-an-air-pollution-assessment",
+      linkUrl: "https://archive.get-an-air-pollution-assessment.service.gov.uk",
+      startUrl: "https://www.gov.uk/guidance/get-an-air-pollution-assessment",
     },
     cy: {
       header: "Gwasanaeth asesu llygredd aer",
-      description: "Llwytho canlyniadau asesu risg amgylcheddol i'w defnyddio ar gyfer asesiadau cyfunol.",
+      description:
+        "Llwytho canlyniadau asesu risg amgylcheddol i'w defnyddio ar gyfer asesiadau cyfunol.",
       linkText: "Ewch i'ch Cyfrif gwasanaeth asesu llygredd aer",
-      linkUrl:
-        "https://get-an-air-pollution-assessment-archive.service.gov.uk",
-      startUrl:
-        "https://www.gov.uk/guidance/get-an-air-pollution-assessment",
-    }
+      linkUrl: "https://archive.get-an-air-pollution-assessment.service.gov.uk",
+      startUrl: "https://www.gov.uk/guidance/get-an-air-pollution-assessment",
+    },
   },
   isOffboarded: false,
 };
 
-export default jointNatureConservationCommittee;
+export default jointNatureConservationCommitteeAirPollutionAssessment;

@@ -9,7 +9,6 @@ const ofgemHeatNetworks: Client = {
   isAvailableInWelsh: false,
   showInAccounts: true,
   showInServices: false,
-  showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
   showInSearchableList: false,

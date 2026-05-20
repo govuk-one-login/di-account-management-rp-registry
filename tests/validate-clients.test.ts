@@ -119,24 +119,6 @@ describe("Client data validation", () => {
         });
       });
 
-      describe("showDetailedCard", () => {
-        test("should have hintText, paragraph1 and paragraph2 if showDetailedCard is not false", () => {
-          if (client.showDetailedCard) {
-            expect(client.translations?.en?.hintText).toBeDefined();
-            expect(client.translations?.en?.paragraph1).toBeDefined();
-            expect(client.translations?.en?.paragraph2).toBeDefined();
-          }
-        });
-
-        test("should have Welsh translations if showDetailedCard is not false and isAvailableInWelsh is true", () => {
-          if (client.showDetailedCard && client.isAvailableInWelsh) {
-            expect(client.translations?.cy?.hintText).toBeDefined();
-            expect(client.translations?.cy?.paragraph1).toBeDefined();
-            expect(client.translations?.cy?.paragraph2).toBeDefined();
-          }
-        });
-      });
-
       describe("showInActivityHistory", () => {
         test("should have header if showInActivityHistory is not false", () => {
           if (client.showInActivityHistory) {

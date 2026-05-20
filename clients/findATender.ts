@@ -9,7 +9,6 @@ const findATender: Client = {
   isAvailableInWelsh: true,
   showInAccounts: true,
   showInServices: false,
-  showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
   showInSearchableList: true,

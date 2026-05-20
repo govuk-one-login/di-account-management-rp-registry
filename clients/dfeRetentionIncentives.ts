@@ -9,7 +9,6 @@ const dfeRetentionIncentives: Client = {
   isAvailableInWelsh: false,
   showInAccounts: false,
   showInServices: true,
-  showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
   showInSearchableList: true,

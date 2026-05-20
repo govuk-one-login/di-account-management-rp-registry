@@ -12,8 +12,6 @@ export interface ClientTranslations {
   linkText?: string;
   linkUrl?: EnvironmentValue<string>;
   hintText?: string;
-  paragraph1?: string;
-  paragraph2?: string;
   startUrl?: string;
   startText?: string;
   additionalSearchTerms?: string;
@@ -30,7 +28,6 @@ interface BaseClient {
   isAvailableInWelsh: boolean;
   showInAccounts: BooleanOrDate;
   showInServices: BooleanOrDate;
-  showDetailedCard: BooleanOrDate;
   showInActivityHistory: BooleanOrDate;
   showInSearchableList: EnvironmentValue<BooleanOrDate>;
   showInDeleteAccount: BooleanOrDate;

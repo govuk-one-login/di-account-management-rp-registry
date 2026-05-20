@@ -9,7 +9,6 @@ const oneLoginHome: Client = {
   isAvailableInWelsh: true,
   showInAccounts: false,
   showInServices: false,
-  showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
   showInSearchableList: false,

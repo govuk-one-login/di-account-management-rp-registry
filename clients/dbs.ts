@@ -9,7 +9,6 @@ const dbs: Client = {
   isAvailableInWelsh: true,
   showInAccounts: false,
   showInServices: true,
-  showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
   showInSearchableList: true,

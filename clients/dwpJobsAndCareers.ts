@@ -8,7 +8,6 @@ const dwpJobsAndCareers: Client = {
   },
   showInAccounts: true,
   showInServices: false,
-  showDetailedCard: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
   showInSearchableList: {

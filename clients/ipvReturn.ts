@@ -9,7 +9,6 @@ const ipvReturn: Client = {
   isAvailableInWelsh: false,
   showInAccounts: false,
   showInServices: false,
-  showDetailedCard: false,
   showInActivityHistory: false,
   showInDeleteAccount: false,
   showInSearchableList: false,

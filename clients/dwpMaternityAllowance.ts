@@ -1,5 +1,7 @@
 import { Client } from "../interfaces/client.interface";
 
+const goLiveAt = new Date("Mon Jun 1 2026 00:00:00 GMT+0100");
+
 const dwpMaternityAllowance: Client = {
   clientId: {
     production: "fa96gl_XKILTF5IyuzmVUPnSa20",
@@ -7,10 +9,10 @@ const dwpMaternityAllowance: Client = {
     nonProduction: "dwpMaternityAllowance",
   },
   isAvailableInWelsh: false,
-  showInAccounts: true,
+  showInAccounts: goLiveAt,
   showInServices: false,
-  showInActivityHistory: true,
-  showInDeleteAccount: true,
+  showInActivityHistory: goLiveAt,
+  showInDeleteAccount: goLiveAt,
   showInSearchableList: false,
   translations: {
     en: {

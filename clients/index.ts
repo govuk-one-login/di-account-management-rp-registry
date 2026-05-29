@@ -104,6 +104,7 @@ import mojPensionRelief from "./mojPensionRelief";
 import jointNatureConservationCommitteeAirPollutionAssessment from "./jointNatureConservationCommitteeAirPollutionAssessment";
 import treeFellingLicence from "./treeFellingLicence";
 import dwpMaternityAllowance from "./dwpMaternityAllowance";
+import dfeApprenticeshipCertificates from "./dfeApprenticeshipCertificates";
 
 export {
   _testClient,
@@ -212,4 +213,5 @@ export {
   jointNatureConservationCommitteeAirPollutionAssessment,
   treeFellingLicence,
   dwpMaternityAllowance,
+  dfeApprenticeshipCertificates,
 };

@@ -18,7 +18,7 @@ const earlyYearsTeacherFinancialIncentives: Client = {
       description:
         "Start or continue an application to claim an early years teacher recognition payment.",
       linkText: "Go to your early years teacher recognition claim",
-      linkUrl: "",
+      linkUrl: "https://www.claim-additional-teaching-payment.service.gov.uk/early-years-teachers-financial-incentive-payments/sign-in",
       startText: "",
       startUrl: "https://www.claim-additional-teaching-payment.service.gov.uk/early-years-teachers-recognition-payments/landing-page",
     },

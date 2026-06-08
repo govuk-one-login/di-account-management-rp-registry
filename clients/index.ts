@@ -106,6 +106,7 @@ import treeFellingLicence from "./treeFellingLicence";
 import dwpMaternityAllowance from "./dwpMaternityAllowance";
 import dfeApprenticeshipCertificates from "./dfeApprenticeshipCertificates";
 import earlyYearsTeacherFinancialIncentives from "./earlyYearsTeacherFinancialIncentives";
+import ofgemSupplierUploadPortal from "./ofgemSupplierUploadPortal";
 
 export {
   _testClient,
@@ -215,5 +216,6 @@ export {
   treeFellingLicence,
   dwpMaternityAllowance,
   dfeApprenticeshipCertificates,
-  earlyYearsTeacherFinancialIncentives
+  earlyYearsTeacherFinancialIncentives,
+  ofgemSupplierUploadPortal
 };

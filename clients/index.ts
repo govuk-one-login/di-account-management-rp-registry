@@ -107,6 +107,7 @@ import dwpMaternityAllowance from "./dwpMaternityAllowance";
 import dfeApprenticeshipCertificates from "./dfeApprenticeshipCertificates";
 import earlyYearsTeacherFinancialIncentives from "./earlyYearsTeacherFinancialIncentives";
 import ofgemSupplierUploadPortal from "./ofgemSupplierUploadPortal";
+import farmingConnectSkillsHub from "./farmingConnectSkillsHub";
 
 export {
   _testClient,
@@ -217,5 +218,6 @@ export {
   dwpMaternityAllowance,
   dfeApprenticeshipCertificates,
   earlyYearsTeacherFinancialIncentives,
-  ofgemSupplierUploadPortal
+  ofgemSupplierUploadPortal,
+  farmingConnectSkillsHub
 };

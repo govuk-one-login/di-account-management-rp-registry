@@ -108,6 +108,7 @@ import dfeApprenticeshipCertificates from "./dfeApprenticeshipCertificates";
 import earlyYearsTeacherFinancialIncentives from "./earlyYearsTeacherFinancialIncentives";
 import ofgemSupplierUploadPortal from "./ofgemSupplierUploadPortal";
 import farmingConnectSkillsHub from "./farmingConnectSkillsHub";
+import dfeRegisterForNPQ from "./dfeRegisterForNPQ";
 
 export {
   _testClient,
@@ -219,5 +220,6 @@ export {
   dfeApprenticeshipCertificates,
   earlyYearsTeacherFinancialIncentives,
   ofgemSupplierUploadPortal,
-  farmingConnectSkillsHub
+  farmingConnectSkillsHub,
+  dfeRegisterForNPQ
 };

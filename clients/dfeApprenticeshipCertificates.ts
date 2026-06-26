@@ -18,7 +18,8 @@ const dfeApprenticeshipCertificates: Client = {
       description:
         "View, share or download your certificates, or view your results.",
       linkText: "Go to your Apprenticeship certificates account",
-      linkUrl: "https://certificates.apprenticeship.education.gov.uk/certificates/list",
+      linkUrl:
+        "https://certificates.apprenticeships.education.gov.uk/certificates/list",
     },
   },
   isOffboarded: false,

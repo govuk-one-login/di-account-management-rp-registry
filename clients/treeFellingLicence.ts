@@ -11,15 +11,15 @@ const treeFellingLicence: Client = {
   showInServices: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
-  showInSearchableList: true,
+  showInSearchableList: false,
   translations: {
     en: {
       header: "Apply for a tree felling licence",
       description:
         "Manage your account, applications, properties and tree felling licences.",
-      linkText:
-        "Go to your Apply for a tree felling licence account",
-      linkUrl: "https://apply-for-a-tree-felling-licence.service.gov.uk/Account/RegisterAccountType",
+      linkText: "Go to your Apply for a tree felling licence account",
+      linkUrl:
+        "https://apply-for-a-tree-felling-licence.service.gov.uk/Account/RegisterAccountType",
       startUrl:
         "https://apply-for-a-tree-felling-licence.service.gov.uk/Home/ApplyForALicence",
       startText: "Apply for a tree felling licence",

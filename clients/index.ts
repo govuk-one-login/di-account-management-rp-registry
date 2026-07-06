@@ -109,6 +109,7 @@ import earlyYearsTeacherFinancialIncentives from "./earlyYearsTeacherFinancialIn
 import ofgemSupplierUploadPortal from "./ofgemSupplierUploadPortal";
 import farmingConnectSkillsHub from "./farmingConnectSkillsHub";
 import dfeRegisterForNPQ from "./dfeRegisterForNPQ";
+import hmppsProbationAccount from "./hmppsProbationAccount";
 
 export {
   _testClient,
@@ -221,5 +222,6 @@ export {
   earlyYearsTeacherFinancialIncentives,
   ofgemSupplierUploadPortal,
   farmingConnectSkillsHub,
-  dfeRegisterForNPQ
+  dfeRegisterForNPQ,
+  hmppsProbationAccount,
 };

@@ -2,8 +2,8 @@ import { Client } from "../interfaces/client.interface";
 
 const dfeNationalProfessionalDevelopmentCourse: Client = {
   clientId: {
-    production: "3XJkCpoGvLi5t-RUBBAnvMA_Zhc",
-    integration: "3XJkCpoGvLi5t-RUBBAnvMA_Zhc",
+    production: "3XJkCpoGvLi5t-RUBBAnvMA_Zhc", // pragma: allowlist secret
+    integration: "3XJkCpoGvLi5t-RUBBAnvMA_Zhc", // pragma: allowlist secret
     nonProduction: "dfeNationalProfessionalDevelopmentCourse",
   },
   isAvailableInWelsh: false,

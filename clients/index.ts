@@ -110,6 +110,7 @@ import ofgemSupplierUploadPortal from "./ofgemSupplierUploadPortal";
 import farmingConnectSkillsHub from "./farmingConnectSkillsHub";
 import dfeRegisterForNPQ from "./dfeRegisterForNPQ";
 import hmppsProbationAccount from "./hmppsProbationAccount";
+import dfeNationalProfessionalDevelopmentCourse from "./dfeNationalProfessionalDevelopmentCourse";
 
 export {
   _testClient,
@@ -224,4 +225,5 @@ export {
   farmingConnectSkillsHub,
   dfeRegisterForNPQ,
   hmppsProbationAccount,
+  dfeNationalProfessionalDevelopmentCourse,
 };

@@ -15,7 +15,6 @@ const desnzHeatNetworkZoningPortal: Client = {
   translations: {
     en: {
       header: "Heat Network Zoning Portal",
-      description: "",
       linkText: "",
       linkUrl: "",
     },

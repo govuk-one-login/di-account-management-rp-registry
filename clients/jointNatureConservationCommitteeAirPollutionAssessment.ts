@@ -19,7 +19,6 @@ const jointNatureConservationCommitteeAirPollutionAssessment: Client = {
         "Upload environmental risk assessment results to use for in-combination assessments.",
       linkText: "Go to your Air pollution assessment service account",
       linkUrl: "https://archive.get-an-air-pollution-assessment.service.gov.uk",
-      startUrl: "https://www.gov.uk/guidance/get-an-air-pollution-assessment",
     },
     cy: {
       header: "Gwasanaeth asesu llygredd aer",
@@ -27,7 +26,6 @@ const jointNatureConservationCommitteeAirPollutionAssessment: Client = {
         "Llwytho canlyniadau asesu risg amgylcheddol i'w defnyddio ar gyfer asesiadau cyfunol.",
       linkText: "Ewch i'ch Cyfrif gwasanaeth asesu llygredd aer",
       linkUrl: "https://archive.get-an-air-pollution-assessment.service.gov.uk",
-      startUrl: "https://www.gov.uk/guidance/get-an-air-pollution-assessment",
     },
   },
   isOffboarded: false,

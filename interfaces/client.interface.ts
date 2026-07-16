@@ -6,9 +6,8 @@ export type EnvironmentValue<T> =
       nonProduction: T;
     };
 
-export interface ClientTranslations {
+export interface CommonClientTranslations {
   header?: string;
-  description?: string;
   linkText?: string;
   linkUrl?: EnvironmentValue<string>;
   hintText?: string;
@@ -17,25 +16,46 @@ export interface ClientTranslations {
   additionalSearchTerms?: string;
 }
 
+interface ClientTranslationsWithDescription extends CommonClientTranslations {
+  description?: string;
+}
+
+interface ClientTranslationsWithoutDescription extends CommonClientTranslations {
+  description?: never;
+}
+
+export type ClientTranslations = ClientTranslationsWithDescription | ClientTranslationsWithoutDescription;
 export type BooleanOrDate = boolean | Date;
 
-interface BaseClient {
+interface CommonClient {
   clientId: EnvironmentValue<string>;
-  translations?: {
-    en: ClientTranslations;
-    cy?: ClientTranslations;
-  };
   isAvailableInWelsh: boolean;
-  showInAccounts: BooleanOrDate;
   showInServices: BooleanOrDate;
   showInActivityHistory: BooleanOrDate;
   showInSearchableList: EnvironmentValue<BooleanOrDate>;
   showInDeleteAccount: BooleanOrDate;
   isOffboarded: BooleanOrDate;
   alternativeClients?: {
-    en: ClientTranslations,
-    cy?: ClientTranslations,
-  }[]
+    en: CommonClientTranslations,
+    cy?: CommonClientTranslations,
+  }[];
 }
 
-export type Client = BaseClient;
+interface NonAccountClient extends CommonClient {
+  showInAccounts: false;
+  translations?: {
+    en: CommonClientTranslations;
+    cy?: CommonClientTranslations;
+  };
+}
+
+interface AccountClient extends CommonClient {
+  showInAccounts: true | Date;
+  translations?: {
+    en: ClientTranslationsWithDescription;
+    cy?: ClientTranslationsWithDescription;
+  };
+}
+
+export type Client = AccountClient | NonAccountClient;
+

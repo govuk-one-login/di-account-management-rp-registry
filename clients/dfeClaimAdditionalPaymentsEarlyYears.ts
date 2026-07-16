@@ -15,8 +15,6 @@ const dfeClaimAdditionalPaymentsEarlyYears: Client = {
   translations: {
     en: {
       header: "Early years financial incentives",
-      description:
-        "Start or continue an application to claim an early years financial incentive if you are an early years educator.",
       linkText:
         "Start or continue an application to claim a targeted retention incentive payment",
       linkUrl:

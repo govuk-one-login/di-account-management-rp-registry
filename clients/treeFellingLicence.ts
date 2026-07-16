@@ -20,9 +20,6 @@ const treeFellingLicence: Client = {
       linkText: "Go to your Apply for a tree felling licence account",
       linkUrl:
         "https://apply-for-a-tree-felling-licence.service.gov.uk/Account/RegisterAccountType",
-      startUrl:
-        "https://apply-for-a-tree-felling-licence.service.gov.uk/Home/ApplyForALicence",
-      startText: "Apply for a tree felling licence",
     },
   },
   isOffboarded: false,

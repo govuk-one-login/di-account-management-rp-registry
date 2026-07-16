@@ -12,15 +12,11 @@ const adultSocialCare: Client = {
   showInActivityHistory: true,
   showInDeleteAccount: true,
   showInSearchableList: false,
-
   translations: {
     en: {
       header: "Get adult social care data",
-      description:
-        "Access a wide range of datasets relevant to adult social care in England.",
       linkText: "Get adult social care data",
       linkUrl: "https://getadultsocialcaredata.com",
-      startUrl: "https://getadultsocialcaredata.com",
     },
   },
   isOffboarded: false,

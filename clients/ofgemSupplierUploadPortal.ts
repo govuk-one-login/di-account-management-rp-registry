@@ -19,8 +19,6 @@ const ofgemSupplierUploadPortal: Client = {
         "Upload the completed template requested by Ofgem.",
       linkText: "Go to your Ofgem Supplier Upload Portal account",
       linkUrl: "https://marketsdataportal.ofgem.gov.uk/",
-      startText: "",
-      startUrl: "",
     },
   },
   isOffboarded: false,

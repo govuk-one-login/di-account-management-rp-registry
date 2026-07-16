@@ -12,7 +12,6 @@ const ofgemFinancialResilience: Client = {
   showInActivityHistory: true,
   showInDeleteAccount: true,
   showInSearchableList: false,
-
   translations: {
     en: {
       header: "Ofgem Financial Resilience",

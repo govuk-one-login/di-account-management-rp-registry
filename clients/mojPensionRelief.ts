@@ -18,13 +18,9 @@ const mojPensionRelief: Client = {
   translations: {
     en: {
       header: "MOJ Pension Relief",
-      description: "placeholder",
       linkText: "Go to your MOJ Pension Relief account",
       linkUrl:
         "https://example.com",
-      startUrl:
-        "https://example.com",
-      startText: "MOJ Pension Relief",
     },
   },
   isOffboarded: true,

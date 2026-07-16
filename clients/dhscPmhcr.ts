@@ -20,9 +20,6 @@ const dhscPmhcr: Client = {
         "https://fd-rsp-applications-prod-uks-dqa3dydwg4h6f6dp.a02.azurefd.net/",
       description:
         "Use this service for making changes to research that has previously been approved.",
-      startUrl:
-        "https://fd-rsp-applications-prod-uks-dqa3dydwg4h6f6dp.a02.azurefd.net/",
-      startText: "Plan and manage health and care research.",
     },
   },
   isOffboarded: false,

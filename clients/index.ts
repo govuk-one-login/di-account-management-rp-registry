@@ -64,6 +64,7 @@ import hmrcGovernmentGateway from "./hmrcGovernmentGateway";
 import welshGovChildcareOfferForWalesParents from "./welshGovChildcareOfferForWalesParents";
 import welshGovChildcareOfferForWalesProviders from "./welshGovChildcareOfferForWalesProviders";
 import welshGovFarmingConnect from "./welshGovFarmingConnect";
+import welshGovElectronicRegisterForCommonLand from "./welshGovElectronicRegisterForCommonLand";
 import hoDORS from "./hoDORS";
 import securityTokenService from "./securityTokenService";
 import hoOnlineApis from "./hoOnlineApis";
@@ -179,6 +180,7 @@ export {
   welshGovChildcareOfferForWalesParents,
   welshGovChildcareOfferForWalesProviders,
   welshGovFarmingConnect,
+  welshGovElectronicRegisterForCommonLand,
   hoDORS,
   securityTokenService,
   hoOnlineApis,

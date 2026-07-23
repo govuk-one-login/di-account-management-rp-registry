@@ -15,8 +15,6 @@ const icba: Client = {
   translations: {
     en: {
       header: "Infected blood compensation",
-      description:
-        "Claim compensation if you were infected with or affected by HIV, or Hepatitis B or C through contaminated blood, blood products or tissue. ",
       linkText: "Infected blood compensation",
       linkUrl: "https://ibca.org.uk/",
     },

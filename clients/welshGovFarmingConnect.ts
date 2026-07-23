@@ -15,7 +15,6 @@ const welshGovFarmingConnect: Client = {
   translations: {
     en: {
       header: "Welsh Government: Farming Connect",
-      description: "",
       linkText: "",
       linkUrl: "",
     },

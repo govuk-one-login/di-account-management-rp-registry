@@ -117,6 +117,13 @@ describe("Client data validation", () => {
             expect(client.translations?.cy?.linkUrl).toBeDefined();
           }
         });
+
+        test("should not have description if showInServices is not false", () => {
+          if (client.showInServices) {
+            expect(client.translations?.en?.description).not.toBeDefined();
+            expect(client.translations?.cy?.description).not.toBeDefined();
+          }
+        });
       });
 
       describe("showInActivityHistory", () => {
@@ -162,6 +169,14 @@ describe("Client data validation", () => {
             expect(client.translations?.cy?.startText).toBeDefined();
           }
         });
+
+        test("should not have startUrl and startText if showInSearchableList is false", () => {
+          if (!client.showInSearchableList) {
+            expect(client.translations?.cy?.startUrl).not.toBeDefined();
+            expect(client.translations?.cy?.startText).not.toBeDefined();
+            expect(client.translations?.en?.startUrl).not.toBeDefined();
+            expect(client.translations?.en?.startText).not.toBeDefined();
+        }});
       });
 
       describe("showInDeleteAccount", () => {

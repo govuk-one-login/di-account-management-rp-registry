@@ -22,7 +22,6 @@ const dwpMaternityAllowance: Client = {
       linkText: "Go to apply for Maternity Allowance",
       linkUrl:
         "https://maternity-allowance.dwp.gov.uk/maternity-allowance/apply/claimant-details/your-name",
-      startUrl: "https://www.gov.uk/maternity-allowance",
     },
   },
   isOffboarded: false,

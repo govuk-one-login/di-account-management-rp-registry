@@ -21,8 +21,6 @@ const icsDigitalPrsExemptions: Client = {
       linkText: "Go to your Private Rental Sector Exemptions Register account",
       linkUrl:
         "https://www.register-energy-efficiency-exemption.service.gov.uk/dashboard",
-      startUrl:
-        "https://www.register-energy-efficiency-exemption.service.gov.uk/",
     },
   },
   isOffboarded: false,

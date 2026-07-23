@@ -12,7 +12,6 @@ const ofgemHeatNetworks: Client = {
   showInActivityHistory: true,
   showInDeleteAccount: true,
   showInSearchableList: false,
-
   translations: {
     en: {
       header: "Comply with heat networks consumer protection regulations",

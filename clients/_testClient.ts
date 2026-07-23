@@ -19,7 +19,6 @@ const aas: Client = {
   translations: {
     en: {
       header: "Test Client",
-      description: "non functional client that only appears in lower environments",
       linkText: "Go to your test client account",
       linkUrl:
         "https://example.com",
@@ -32,7 +31,6 @@ const aas: Client = {
     {
       en: {
         header: "Alternative Client for Test Client",
-        description: "This is an alternative client for testing purposes.",
         startText: "Alternative Test Client",
         startUrl: "https://alternative-example.com",
       },

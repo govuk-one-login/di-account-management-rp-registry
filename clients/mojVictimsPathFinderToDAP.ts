@@ -15,7 +15,6 @@ const mojVictimsPathFinderToDAP: Client = {
   translations: {
     en: {
       header: "Victims Pathfinder to DAP",
-      description: "",
       linkText: "",
       linkUrl: "",
     },

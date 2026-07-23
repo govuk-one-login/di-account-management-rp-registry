@@ -15,7 +15,6 @@ const oneLoginHome: Client = {
   translations: {
     en: {
       header: "Your GOV.UK One Login",
-      description: "This includes ‘Security’ and ‘Your services’",
       linkText: "",
       linkUrl: {
         nonProduction: "https://home.staging.account.gov.uk",
@@ -25,7 +24,6 @@ const oneLoginHome: Client = {
     },
     cy: {
       header: "Eich GOV.UK One Login",
-      description: "Mae hyn yn cynnwys 'Diogelwch' a 'Eich gwasanaethau'",
       linkText: "",
       linkUrl: {
         nonProduction: "https://home.staging.account.gov.uk",

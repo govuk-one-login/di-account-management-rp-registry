@@ -9,7 +9,6 @@ const smokeTests: Client = {
   isAvailableInWelsh: false,
   showInAccounts: false,
   showInServices: false,
-
   showInActivityHistory: false,
   showInDeleteAccount: false,
   showInSearchableList: false,

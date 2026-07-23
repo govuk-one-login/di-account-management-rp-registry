@@ -19,8 +19,6 @@ const modSupplierCyberProtection: Client = {
         "The tool supporting the Cyber Security Model (DEFCON 658). Your portal to completing and managing MOD Supplier Assurance Questionnaires (SAQs).",
       linkText: "Go to your Supplier Cyber Protection Service account",
       linkUrl: "https://www.supplier-cyber-protection.service.gov.uk/",
-      startUrl: "https://www.supplier-cyber-protection.service.gov.uk/",
-      startText: "Supplier Cyber Protection",
     },
   },
   isOffboarded: false,

@@ -112,6 +112,7 @@ import dfeRegisterForNPQ from "./dfeRegisterForNPQ";
 import hmppsProbationAccount from "./hmppsProbationAccount";
 import dfeNationalProfessionalDevelopmentCourse from "./dfeNationalProfessionalDevelopmentCourse";
 import dhscNihrVolunteers from "./dhscNihrVolunteers";
+import icsDesnzSyeia from "./icsDesnzSyeia";
 
 export {
   _testClient,
@@ -228,4 +229,5 @@ export {
   hmppsProbationAccount,
   dfeNationalProfessionalDevelopmentCourse,
   dhscNihrVolunteers,
+  icsDesnzSyeia,
 };

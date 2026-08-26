@@ -111,6 +111,7 @@ import farmingConnectSkillsHub from "./farmingConnectSkillsHub";
 import dfeRegisterForNPQ from "./dfeRegisterForNPQ";
 import hmppsProbationAccount from "./hmppsProbationAccount";
 import dfeNationalProfessionalDevelopmentCourse from "./dfeNationalProfessionalDevelopmentCourse";
+import dhscNihrVolunteers from "./dhscNihrVolunteers";
 
 export {
   _testClient,
@@ -226,4 +227,5 @@ export {
   dfeRegisterForNPQ,
   hmppsProbationAccount,
   dfeNationalProfessionalDevelopmentCourse,
+  dhscNihrVolunteers,
 };

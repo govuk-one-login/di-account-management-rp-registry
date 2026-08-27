@@ -7,11 +7,11 @@ const welshGovElectronicRegisterForCommonLand: Client = {
     nonProduction: "welshGovElectronicRegisterForCommonLand",
   },
   isAvailableInWelsh: true,
-  showInAccounts: true,
+  showInAccounts: new Date(2025, 9, 15),
   showInServices: false,
-  showInActivityHistory: true,
-  showInDeleteAccount: true,
-  showInSearchableList: true,
+  showInActivityHistory: new Date(2025, 9, 15),
+  showInDeleteAccount: new Date(2025, 9, 15),
+  showInSearchableList: new Date(2025, 9, 15),
   translations: {
     en: {
       header: "Manage the Register of Common Land in Wales",

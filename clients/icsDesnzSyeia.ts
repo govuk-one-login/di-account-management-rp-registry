@@ -7,14 +7,15 @@ const icsDesnzSyeia: Client = {
     nonProduction: "icsDesnzSyeia",
   },
   isAvailableInWelsh: false,
-  showInAccounts: false,
-  showInServices: true,
+  showInAccounts: true,
+  showInServices: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
   showInSearchableList: false,
   translations: {
     en: {
       header: "Submit your energy infrastructure application",
+      description: "Submit and manage your statutory energy infrastructure applications, documents, consultations and payments.",
       linkText: "Go to your Submit your energy infrastructure application account",
       linkUrl:
         "https://syeia.energysecurity.gov.uk/",

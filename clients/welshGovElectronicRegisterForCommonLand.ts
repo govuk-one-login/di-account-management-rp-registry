@@ -11,25 +11,19 @@ const welshGovElectronicRegisterForCommonLand: Client = {
   showInServices: false,
   showInActivityHistory: new Date(2025, 9, 15),
   showInDeleteAccount: new Date(2025, 9, 15),
-  showInSearchableList: new Date(2025, 9, 15),
+  showInSearchableList: false,
   translations: {
     en: {
       header: "Manage the Register of Common Land in Wales",
       description: "Update and maintain common land registers.",
       linkText: "Go to your Manage the Register of Common Land account",
       linkUrl: "https://commonland.service.gov.wales/admin",
-      startUrl:
-        "https://commonland.service.gov.wales/",
-      startText: "Manage the Register of Common Land in Wales",
     },
     cy: {
       header: "Rheoli’r Gofrestr Tir Comin yng Nghymru",
       description: "Diweddaru a chynnal cofrestrau tir comin yng Nghymru.",
       linkText: "Ewch i'ch cyfrif Rheoli'r Gofrestr Tir Comin yng Nghymru",
       linkUrl: "https://tircomin.gwasanaeth.llyw.cymru/admin",
-      startUrl:
-        "https://tircomin.gwasanaeth.llyw.cymru/",
-      startText: "Rheoli’r Gofrestr Tir Comin yng Nghymru",
     },
   },
   isOffboarded: false,

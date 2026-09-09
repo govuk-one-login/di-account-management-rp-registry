@@ -7,10 +7,10 @@ const welshGovElectronicRegisterForCommonLand: Client = {
     nonProduction: "welshGovElectronicRegisterForCommonLand",
   },
   isAvailableInWelsh: true,
-  showInAccounts: new Date(2025, 9, 15),
+  showInAccounts: new Date(2026, 9, 15),
   showInServices: false,
-  showInActivityHistory: new Date(2025, 9, 15),
-  showInDeleteAccount: new Date(2025, 9, 15),
+  showInActivityHistory: new Date(2026, 9, 15),
+  showInDeleteAccount: new Date(2026, 9, 15),
   showInSearchableList: false,
   translations: {
     en: {

@@ -11,14 +11,14 @@ const farmingConnectSkillsHub: Client = {
   showInServices: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
-  showInSearchableList: true,
+  showInSearchableList: false,
   translations: {
     en: {
       header: "Farming Connect Skills Hub",
       description:
         "Access online support, skills and training, or update your personal skills account.",
       linkText: "Go to the Farming Connect Skills Hub",
-      linkUrl:"https://boss.businesswales.gov.wales/",
+      linkUrl: "https://skills.farmingconnect.gov.wales/",
       startUrl: "https://gov.wales/farmingconnect/skillshub",
       startText: "Farming Connect Skills Hub",
     },
@@ -27,10 +27,8 @@ const farmingConnectSkillsHub: Client = {
       description:
         "Mynediad at gymorth, sgiliau a hyfforddiant ar-lein, neu ddiweddaru eich cyfrif sgiliau personol.",
       linkText: "Ewch i Cyswllt Ffermio Hwb Sgiliau",
-      linkUrl:
-        "https://boss.businesswales.gov.wales/",
-      startUrl:
-        "https://gov.wales/farmingconnect/skillshub",
+      linkUrl: "https://skills.farmingconnect.gov.wales/",
+      startUrl: "https://gov.wales/farmingconnect/skillshub",
       startText: "Cyswllt Ffermio Hwb Sgiliau",
     },
   },

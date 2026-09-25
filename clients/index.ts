@@ -40,6 +40,7 @@ import hmpoCancelPassport from "./hmpoCancelPassport";
 import defraDangerousDogsIndex from "./defraDangerousDogsIndex";
 import defraGioPlatform from "./defraGioPlatform";
 import dbtApplyForAnImportLicense from "./dbtApplyForAnImportLicense";
+import dbtApplyForBICS from "./dbtApplyForBICS";
 import dfeTeacherVacancies from "./dfeTeacherVacancies";
 import ofgemLafReg from "./ofgemLafReg";
 import dfeQualifiedTeacherStatus from "./dfeQualifiedTeacherStatus";
@@ -158,6 +159,7 @@ export {
   defraDangerousDogsIndex,
   defraGioPlatform,
   dbtApplyForAnImportLicense,
+  dbtApplyForBICS,
   dfeTeacherVacancies,
   ofgemLafReg,
   dfeQualifiedTeacherStatus,

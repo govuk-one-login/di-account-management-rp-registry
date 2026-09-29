@@ -115,6 +115,7 @@ import hmppsProbationAccount from "./hmppsProbationAccount";
 import dfeNationalProfessionalDevelopmentCourse from "./dfeNationalProfessionalDevelopmentCourse";
 import dhscNihrVolunteers from "./dhscNihrVolunteers";
 import icsDesnzSyeia from "./icsDesnzSyeia";
+import heloBlod from "./heloBlod";
 
 export {
   _testClient,
@@ -234,4 +235,5 @@ export {
   dfeNationalProfessionalDevelopmentCourse,
   dhscNihrVolunteers,
   icsDesnzSyeia,
+  heloBlod,
 };

@@ -116,6 +116,7 @@ import dfeNationalProfessionalDevelopmentCourse from "./dfeNationalProfessionalD
 import dhscNihrVolunteers from "./dhscNihrVolunteers";
 import icsDesnzSyeia from "./icsDesnzSyeia";
 import publishPaymentPractices from "./publishPaymentPractices";
+import dhscGetAdultSocialCareDataAdmin from "./dhscGetAdultSocialCareDataAdmin";
 
 export {
   _testClient,
@@ -236,4 +237,5 @@ export {
   dhscNihrVolunteers,
   icsDesnzSyeia,
   publishPaymentPractices,
+  dhscGetAdultSocialCareDataAdmin,
 };

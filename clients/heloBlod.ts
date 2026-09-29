@@ -11,7 +11,7 @@ const heloBlod: Client = {
   showInServices: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
-  showInSearchableList: false,
+  showInSearchableList: true,
   translations: {
     en: {
       header: "Get Welsh translations and advice",
@@ -19,6 +19,8 @@ const heloBlod: Client = {
       linkText: "Go to your Helo Blod account",
       linkUrl:
         "https://businesswales.gov.wales/heloblod/my-account?check_logged_in=1",
+      startText: "Go to your Welsh translation service",
+      startUrl: "https://businesswales.gov.wales/heloblod/",
       additionalSearchTerms: "Welsh translation service",
     },
     cy: {
@@ -28,6 +30,8 @@ const heloBlod: Client = {
       linkText: "Ewch i'ch cyfrif Helo Blod",
       linkUrl:
         "https://busnescymru.llyw.cymru/heloblod/my-account?check_logged_in=1",
+      startText: "Dos I dy wasanaeth cyfieithu Cymraeg",
+      startUrl: "https://businesswales.gov.wales/heloblod/",
     },
   },
   isOffboarded: false,

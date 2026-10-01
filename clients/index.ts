@@ -115,6 +115,7 @@ import hmppsProbationAccount from "./hmppsProbationAccount";
 import dfeNationalProfessionalDevelopmentCourse from "./dfeNationalProfessionalDevelopmentCourse";
 import dhscNihrVolunteers from "./dhscNihrVolunteers";
 import icsDesnzSyeia from "./icsDesnzSyeia";
+import dhscGetAdultSocialCareDataAdmin from "./dhscGetAdultSocialCareDataAdmin";
 import heloBlod from "./heloBlod";
 import ofqualRenewOrReapply from "./ofqualRenewOrReapply";
 
@@ -236,6 +237,7 @@ export {
   dfeNationalProfessionalDevelopmentCourse,
   dhscNihrVolunteers,
   icsDesnzSyeia,
+  dhscGetAdultSocialCareDataAdmin,
   heloBlod,
   ofqualRenewOrReapply,
 };

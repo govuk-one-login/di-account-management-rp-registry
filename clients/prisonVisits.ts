@@ -6,7 +6,7 @@ const prisonVisits: Client = {
     integration: "XbPzF-ccO0utCxlifxSyA4Ng0API2XTCQQ",
     nonProduction: "prisonVisits",
   },
-  isAvailableInWelsh: false,
+  isAvailableInWelsh: true,
   showInAccounts: true,
   showInServices: false,
   showInActivityHistory: true,
@@ -19,6 +19,12 @@ const prisonVisits: Client = {
       linkText: "Go to your visit someone in prison account",
       linkUrl: "https://prison-visits.service.justice.gov.uk/",
     },
+    cy: {
+      header: "Ymweld â rhywun yn y carchar",
+      description: "Gwneud archeb i ymweld â rhywun yn y carchar.",
+      linkText: "Ewch i'ch cyfrif ymweld â rhywun yn y carchar",
+      linkUrl: "https://prison-visits.service.justice.gov.uk/",
+    }
   },
   isOffboarded: false,
 };

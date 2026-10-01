@@ -40,6 +40,7 @@ import hmpoCancelPassport from "./hmpoCancelPassport";
 import defraDangerousDogsIndex from "./defraDangerousDogsIndex";
 import defraGioPlatform from "./defraGioPlatform";
 import dbtApplyForAnImportLicense from "./dbtApplyForAnImportLicense";
+import dbtApplyForBICS from "./dbtApplyForBICS";
 import dfeTeacherVacancies from "./dfeTeacherVacancies";
 import ofgemLafReg from "./ofgemLafReg";
 import dfeQualifiedTeacherStatus from "./dfeQualifiedTeacherStatus";
@@ -64,6 +65,7 @@ import hmrcGovernmentGateway from "./hmrcGovernmentGateway";
 import welshGovChildcareOfferForWalesParents from "./welshGovChildcareOfferForWalesParents";
 import welshGovChildcareOfferForWalesProviders from "./welshGovChildcareOfferForWalesProviders";
 import welshGovFarmingConnect from "./welshGovFarmingConnect";
+import welshGovElectronicRegisterForCommonLand from "./welshGovElectronicRegisterForCommonLand";
 import hoDORS from "./hoDORS";
 import securityTokenService from "./securityTokenService";
 import hoOnlineApis from "./hoOnlineApis";
@@ -113,6 +115,9 @@ import hmppsProbationAccount from "./hmppsProbationAccount";
 import dfeNationalProfessionalDevelopmentCourse from "./dfeNationalProfessionalDevelopmentCourse";
 import dhscNihrVolunteers from "./dhscNihrVolunteers";
 import icsDesnzSyeia from "./icsDesnzSyeia";
+import dhscGetAdultSocialCareDataAdmin from "./dhscGetAdultSocialCareDataAdmin";
+import heloBlod from "./heloBlod";
+import ofqualRenewOrReapply from "./ofqualRenewOrReapply";
 
 export {
   _testClient,
@@ -157,6 +162,7 @@ export {
   defraDangerousDogsIndex,
   defraGioPlatform,
   dbtApplyForAnImportLicense,
+  dbtApplyForBICS,
   dfeTeacherVacancies,
   ofgemLafReg,
   dfeQualifiedTeacherStatus,
@@ -181,6 +187,7 @@ export {
   welshGovChildcareOfferForWalesParents,
   welshGovChildcareOfferForWalesProviders,
   welshGovFarmingConnect,
+  welshGovElectronicRegisterForCommonLand,
   hoDORS,
   securityTokenService,
   hoOnlineApis,
@@ -230,4 +237,7 @@ export {
   dfeNationalProfessionalDevelopmentCourse,
   dhscNihrVolunteers,
   icsDesnzSyeia,
+  dhscGetAdultSocialCareDataAdmin,
+  heloBlod,
+  ofqualRenewOrReapply,
 };

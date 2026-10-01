@@ -26,19 +26,19 @@
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@jest/globals": "^30.4.1",
-    "@types/node": "^26.2.0",
-    "eslint": "^10.8.1",
+    "@jest/globals": "^30.5.2",
+    "@types/node": "^26.6.2",
+    "eslint": "^10.11.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-mocha": "^12.0.2",
-    "globals": "^17.11.0",
+    "globals": "^17.12.0",
     "husky": "^9.1.7",
-    "jest": "^30.4.2",
-    "lint-staged": "^17.3.0",
-    "prettier": "^3.9.6",
-    "ts-jest": "^29.4.12",
+    "jest": "^30.5.2",
+    "lint-staged": "^17.5.1",
+    "prettier": "^3.9.9",
+    "ts-jest": "^29.4.13",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.67.0"
+    "typescript-eslint": "^8.70.1"
   }
 }

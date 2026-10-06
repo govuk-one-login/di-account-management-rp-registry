@@ -19,7 +19,7 @@ const farmingConnectSkillsHub: Client = {
         "Access online support, skills and training, or update your personal skills account.",
       linkText: "Go to the Farming Connect Skills Hub",
       linkUrl: "https://skills.farmingconnect.gov.wales/",
-      //startUrl: "https://gov.wales/farmingconnect/skillshub",
+      //startUrl: "https://skills.farmingconnect.gov.wales",
       //startText: "Farming Connect Skills Hub",
     },
     cy: {
@@ -28,7 +28,7 @@ const farmingConnectSkillsHub: Client = {
         "Mynediad at gymorth, sgiliau a hyfforddiant ar-lein, neu ddiweddaru eich cyfrif sgiliau personol.",
       linkText: "Ewch i Cyswllt Ffermio Hwb Sgiliau",
       linkUrl: "https://skills.farmingconnect.gov.wales/",
-      //startUrl: "https://gov.wales/farmingconnect/skillshub",
+      //startUrl: "https://skills.farmingconnect.gov.wales",
       //startText: "Cyswllt Ffermio Hwb Sgiliau",
     },
   },

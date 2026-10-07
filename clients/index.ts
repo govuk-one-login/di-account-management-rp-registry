@@ -118,6 +118,7 @@ import icsDesnzSyeia from "./icsDesnzSyeia";
 import dhscGetAdultSocialCareDataAdmin from "./dhscGetAdultSocialCareDataAdmin";
 import heloBlod from "./heloBlod";
 import ofqualRenewOrReapply from "./ofqualRenewOrReapply";
+import bistPaymentPracticesReporting from "./bistPaymentPracticesReporting";
 
 export {
   _testClient,
@@ -240,4 +241,5 @@ export {
   dhscGetAdultSocialCareDataAdmin,
   heloBlod,
   ofqualRenewOrReapply,
+  bistPaymentPracticesReporting,
 };

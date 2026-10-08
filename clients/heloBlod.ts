@@ -31,7 +31,7 @@ const heloBlod: Client = {
       linkUrl:
         "https://busnescymru.llyw.cymru/heloblod/my-account?check_logged_in=1",
       startText: "Dos I dy wasanaeth cyfieithu Cymraeg",
-      startUrl: "https://businesswales.gov.wales/heloblod/",
+      startUrl: "https://busnescymru.llyw.cymru/heloblod/",
     },
   },
   isOffboarded: false,

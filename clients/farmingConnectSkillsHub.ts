@@ -28,7 +28,7 @@ const farmingConnectSkillsHub: Client = {
         "Mynediad at gymorth, sgiliau a hyfforddiant ar-lein, neu ddiweddaru eich cyfrif sgiliau personol.",
       linkText: "Ewch i Cyswllt Ffermio Hwb Sgiliau",
       linkUrl: "https://skills.farmingconnect.gov.wales/",
-      startUrl: "https://businesswales.gov.wales/farmingconnect/skills-hub",
+      startUrl: "https://busnescymru.llyw.cymru/cyswlltffermio/hwb-sgiliau",
       startText: "Cyswllt Ffermio Hwb Sgiliau",
     },
   },

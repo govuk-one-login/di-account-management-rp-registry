@@ -119,6 +119,7 @@ import dhscGetAdultSocialCareDataAdmin from "./dhscGetAdultSocialCareDataAdmin";
 import heloBlod from "./heloBlod";
 import ofqualRenewOrReapply from "./ofqualRenewOrReapply";
 import bistPaymentPracticesReporting from "./bistPaymentPracticesReporting";
+import submitTransportData from "./submitTransportData";
 
 export {
   _testClient,
@@ -242,4 +243,5 @@ export {
   heloBlod,
   ofqualRenewOrReapply,
   bistPaymentPracticesReporting,
+  submitTransportData
 };

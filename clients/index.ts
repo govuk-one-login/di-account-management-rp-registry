@@ -120,6 +120,7 @@ import heloBlod from "./heloBlod";
 import ofqualRenewOrReapply from "./ofqualRenewOrReapply";
 import bistPaymentPracticesReporting from "./bistPaymentPracticesReporting";
 import submitTransportData from "./submitTransportData";
+import welshRevAuthVisitorAccomodationProviders from "./welshRevAuthVisitorAccomodationProviders";
 
 export {
   _testClient,
@@ -243,5 +244,6 @@ export {
   heloBlod,
   ofqualRenewOrReapply,
   bistPaymentPracticesReporting,
-  submitTransportData
+  submitTransportData,
+  welshRevAuthVisitorAccomodationProviders
 };

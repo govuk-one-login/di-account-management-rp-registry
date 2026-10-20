@@ -17,13 +17,13 @@ const welshRevAuthVisitorAccomodationProviders: Client = {
       header: "Register your visitor accommodation in Wales",
       description: "Register your visitor accommodation and search for visitor accommodation providers in Wales.",
       linkText: "Go to your Register your visitor accommodation in Wales account",
-      linkUrl: "https://registervisitoraccommodation.service.gov.wales/user/your-name",
+      linkUrl: "https://registervisitoraccommodation.service.gov.wales/user/your-name"
     },
     cy: {
-      header: "",
-      description: "Cofrestrwch eich llety i ymwelwyr yng Nghymru.",
+      header: "Cofrestrwch eich llety i ymwelwyr yng Nghymru",
+      description: "Cofrestrwch eich llety i ymwelwyr a chwiliwch am ddarparwyr llety i ymwelwyr yng Nghymru.",
       linkText: "Ewch i'ch cyfrif llety i ymwelwyr yng Nghymru",
-      linkUrl: "https://registervisitoraccommodation.service.gov.wales/user/your-name",
+      linkUrl: "https://registervisitoraccommodation.service.gov.wales/user/your-name"
     },
   },
   isOffboarded: false,

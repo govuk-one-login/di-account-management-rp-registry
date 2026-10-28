@@ -121,6 +121,7 @@ import ofqualRenewOrReapply from "./ofqualRenewOrReapply";
 import bistPaymentPracticesReporting from "./bistPaymentPracticesReporting";
 import submitTransportData from "./submitTransportData";
 import welshRevAuthVisitorAccomodationProviders from "./welshRevAuthVisitorAccomodationProviders";
+import desnzHomeEnergyAdvice from "./desnzHomeEnergyAdvice";
 
 export {
   _testClient,
@@ -245,5 +246,6 @@ export {
   ofqualRenewOrReapply,
   bistPaymentPracticesReporting,
   submitTransportData,
-  welshRevAuthVisitorAccomodationProviders
+  welshRevAuthVisitorAccomodationProviders,
+  desnzHomeEnergyAdvice
 };

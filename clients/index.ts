@@ -121,6 +121,11 @@ import ofqualRenewOrReapply from "./ofqualRenewOrReapply";
 import bistPaymentPracticesReporting from "./bistPaymentPracticesReporting";
 import submitTransportData from "./submitTransportData";
 import welshRevAuthVisitorAccomodationProviders from "./welshRevAuthVisitorAccomodationProviders";
+import slcManageStudentLoanBalance from "./slcManageStudentLoanBalance";
+import slcUpdateEmploymentDetailsStudentLoans from "./slcUpdateEmploymentDetailsStudentLoans";
+import slcManageStudentFinance from "./slcManageStudentFinance";
+import NHSDentalServicesPortal from "./NHSDentalServicesPortal";
+import HNTAS from "./HNTAS";
 
 export {
   _testClient,
@@ -245,5 +250,10 @@ export {
   ofqualRenewOrReapply,
   bistPaymentPracticesReporting,
   submitTransportData,
-  welshRevAuthVisitorAccomodationProviders
+  welshRevAuthVisitorAccomodationProviders,
+  slcManageStudentLoanBalance,
+  slcUpdateEmploymentDetailsStudentLoans,
+  slcManageStudentFinance,
+  NHSDentalServicesPortal,
+  HNTAS
 };

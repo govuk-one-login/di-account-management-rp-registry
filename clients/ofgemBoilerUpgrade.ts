@@ -11,14 +11,14 @@ const ofgemBoilerUpgrade: Client = {
   showInServices: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
-  showInSearchableList: false,
+  showInSearchableList: true,
   translations: {
     en: {
       header: "Boiler Upgrade Scheme",
       description: "Apply for a voucher, redeem a voucher or cancel an application or voucher.",
       linkText: "Go to your BUS installer account",
       linkUrl: "https://boiler-upgrade-scheme.service.gov.uk/",
-      startUrl: "https://boiler-upgrade-scheme.service.gov.uk/",
+      startUrl: "https://www.ofgem.gov.uk/environmental-and-social-schemes/boiler-upgrade-scheme-bus/installer-sign-and-apply",
       startText: "Boiler upgrade scheme",
     }
   },

@@ -121,6 +121,11 @@ import ofqualRenewOrReapply from "./ofqualRenewOrReapply";
 import bistPaymentPracticesReporting from "./bistPaymentPracticesReporting";
 import submitTransportData from "./submitTransportData";
 import welshRevAuthVisitorAccomodationProviders from "./welshRevAuthVisitorAccomodationProviders";
+import slcManageStudentLoanBalance from "./slcManageStudentLoanBalance";
+import slcUpdateEmploymentDetailsStudentLoans from "./slcUpdateEmploymentDetailsStudentLoans";
+import slcManageStudentFinance from "./slcManageStudentFinance";
+import NHSDentalServicesPortal from "./NHSDentalServicesPortal";
+import HNTAS from "./HNTAS";
 import desnzHomeEnergyAdvice from "./desnzHomeEnergyAdvice";
 
 export {
@@ -247,5 +252,10 @@ export {
   bistPaymentPracticesReporting,
   submitTransportData,
   welshRevAuthVisitorAccomodationProviders,
+  slcManageStudentLoanBalance,
+  slcUpdateEmploymentDetailsStudentLoans,
+  slcManageStudentFinance,
+  NHSDentalServicesPortal,
+  HNTAS,
   desnzHomeEnergyAdvice
 };

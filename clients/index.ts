@@ -127,6 +127,7 @@ import slcManageStudentFinance from "./slcManageStudentFinance";
 import NHSDentalServicesPortal from "./NHSDentalServicesPortal";
 import HNTAS from "./HNTAS";
 import desnzHomeEnergyAdvice from "./desnzHomeEnergyAdvice";
+import ofgemBoilerUpgrade from "./ofgemBoilerUpgrade";
 
 export {
   _testClient,
@@ -257,5 +258,6 @@ export {
   slcManageStudentFinance,
   NHSDentalServicesPortal,
   HNTAS,
-  desnzHomeEnergyAdvice
+  desnzHomeEnergyAdvice,
+  ofgemBoilerUpgrade
 };

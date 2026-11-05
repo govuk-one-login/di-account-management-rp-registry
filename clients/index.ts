@@ -126,6 +126,7 @@ import slcUpdateEmploymentDetailsStudentLoans from "./slcUpdateEmploymentDetails
 import slcManageStudentFinance from "./slcManageStudentFinance";
 import NHSDentalServicesPortal from "./NHSDentalServicesPortal";
 import HNTAS from "./HNTAS";
+import desnzHomeEnergyAdvice from "./desnzHomeEnergyAdvice";
 
 export {
   _testClient,
@@ -255,5 +256,6 @@ export {
   slcUpdateEmploymentDetailsStudentLoans,
   slcManageStudentFinance,
   NHSDentalServicesPortal,
-  HNTAS
+  HNTAS,
+  desnzHomeEnergyAdvice
 };

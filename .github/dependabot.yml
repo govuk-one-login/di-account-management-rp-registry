@@ -16,6 +16,10 @@ updates:
     ignore:
       - dependency-name: "node"
         versions: ["17.x", "18.x", "19.x"]
+      # Typescript v7 and above is incompatible with the version of ts-jest currently used on this repo
+      # TS v7 did not ship with an API. That is expected to arrive with v7.1 and to be implemented subsequently: https://github.com/kulshekhar/ts-jest/issues/5366
+      - dependency-name: "typescript"
+        versions: [">= 7.0.0"]
     commit-message:
       prefix: BAU
     groups:

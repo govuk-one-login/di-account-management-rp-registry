@@ -11,19 +11,23 @@ const welshRevAuthVisitorAccomodationProviders: Client = {
   showInServices: false,
   showInActivityHistory: true,
   showInDeleteAccount: true,
-  showInSearchableList: false,
+  showInSearchableList: true,
   translations: {
     en: {
       header: "Register your visitor accommodation in Wales",
       description: "Register your visitor accommodation and search for visitor accommodation providers in Wales.",
       linkText: "Go to your Register your visitor accommodation in Wales account",
-      linkUrl: "https://registervisitoraccommodation.service.gov.wales/"
+      linkUrl: "https://registervisitoraccommodation.service.gov.wales/",
+      startUrl: "https://registervisitoraccommodation.service.gov.wales/",
+      startText: "Register your visitor accommodation in Wales account",
     },
     cy: {
       header: "Cofrestrwch eich llety i ymwelwyr yng Nghymru",
       description: "Cofrestrwch eich llety i ymwelwyr a chwiliwch am ddarparwyr llety i ymwelwyr yng Nghymru.",
       linkText: "Ewch i'ch cyfrif llety i ymwelwyr yng Nghymru",
-      linkUrl: "https://registervisitoraccommodation.service.gov.wales/"
+      linkUrl: "https://registervisitoraccommodation.service.gov.wales/",
+      startUrl: "https://registervisitoraccommodation.service.gov.wales/",
+      startText: "Cofrestru eich llety i ymwelwyr yng Nghymru",
     },
   },
   isOffboarded: false,

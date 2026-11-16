@@ -128,6 +128,7 @@ import NHSDentalServicesPortal from "./NHSDentalServicesPortal";
 import HNTAS from "./HNTAS";
 import desnzHomeEnergyAdvice from "./desnzHomeEnergyAdvice";
 import ofgemBoilerUpgrade from "./ofgemBoilerUpgrade";
+import ruralPaymentsService from "./ruralPaymentsService";
 
 export {
   _testClient,
@@ -259,5 +260,6 @@ export {
   NHSDentalServicesPortal,
   HNTAS,
   desnzHomeEnergyAdvice,
-  ofgemBoilerUpgrade
+  ofgemBoilerUpgrade,
+  ruralPaymentsService
 };

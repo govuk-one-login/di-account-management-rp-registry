@@ -26,7 +26,7 @@ const mojPowerOfAttorney: Client = {
       startUrl: "https://www.gov.uk/power-of-attorney/make-lasting-power",
     },
   },
-  isOffboarded: true,
+  isOffboarded: false,
 };
 
 export default mojPowerOfAttorney;

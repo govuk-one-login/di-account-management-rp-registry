@@ -129,6 +129,7 @@ import HNTAS from "./HNTAS";
 import desnzHomeEnergyAdvice from "./desnzHomeEnergyAdvice";
 import ofgemBoilerUpgrade from "./ofgemBoilerUpgrade";
 import ruralPaymentsService from "./ruralPaymentsService";
+import mojPowerOfAttorney from "./mojPowerOfAttorney";
 
 export {
   _testClient,
@@ -261,5 +262,6 @@ export {
   HNTAS,
   desnzHomeEnergyAdvice,
   ofgemBoilerUpgrade,
-  ruralPaymentsService
+  ruralPaymentsService,
+  mojPowerOfAttorney,
 };

@@ -130,6 +130,7 @@ import desnzHomeEnergyAdvice from "./desnzHomeEnergyAdvice";
 import ofgemBoilerUpgrade from "./ofgemBoilerUpgrade";
 import ruralPaymentsService from "./ruralPaymentsService";
 import mojPowerOfAttorney from "./mojPowerOfAttorney";
+import applyArmedForcesCompensation from "./applyArmedForcesCompensation";
 
 export {
   _testClient,
@@ -264,4 +265,5 @@ export {
   ofgemBoilerUpgrade,
   ruralPaymentsService,
   mojPowerOfAttorney,
+  applyArmedForcesCompensation,
 };

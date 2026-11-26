@@ -40,5 +40,8 @@
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.73.0"
+  },
+  "overrides": {
+    "minimatch": "^11.0.1"
   }
 }
